@@ -1,0 +1,18 @@
+{
+ "certificate": "Records used by the subtraction Lemma 6.6",
+ "statement": "In the full-group records of S_gen every trivial involution entry has an exact pair identifier, at most one per lattice and only for |Aut L| = 4 mod 8; every Hermitian entry of order 4 has a key, and all keys belong to the list of Proposition 4.6 with equal |U| and f.",
+ "computations": [
+  "C29"
+ ],
+ "scope": "Read-only consistency of saved records; full groups and complete class rows are assumptions (Table 10).",
+ "successful_records": 17736,
+ "trivial_involution_rows": 312,
+ "trivial_involution_rows_without_identifier": 0,
+ "lemma_6_2_violations": 0,
+ "hermitian_rows": 16163,
+ "hermitian_rows_without_key": 0,
+ "distinct_keys": 11545,
+ "keys_not_in_list": 0,
+ "list_classes": 76742,
+ "unitary_order_or_f_mismatches": 0
+}

@@ -1,0 +1,364 @@
+{
+ "version": "v2026-11-14.1",
+ "research_commit": "c91a1ae2194937d5492bb3583f94ee7b3946d1c3",
+ "source_date_epoch": 1794585060,
+ "files": [
+  {
+   "path": "LICENSE",
+   "bytes": 1370,
+   "sha256": "07af88823e4ce9b76b5502a399f2d6e8ace143ebb53506f2b015e18f3ec740bc"
+  },
+  {
+   "path": "README.ja.md",
+   "bytes": 10103,
+   "sha256": "e4d5de0469fee51dd32b96d0edf6af8165594d5ad31f3d7036b6322e9f8df0d9"
+  },
+  {
+   "path": "README.md",
+   "bytes": 8476,
+   "sha256": "56963b08f17b66c1a23d981854f27338e6b0578feb1b67435d1c9a48c55eba14"
+  },
+  {
+   "path": "certificates/README.ja.md",
+   "bytes": 18427,
+   "sha256": "ee70f8928d64ccf49d65432725814fb4e56ff681ecdb5800e5e1a058573ec3d5"
+  },
+  {
+   "path": "certificates/README.md",
+   "bytes": 15939,
+   "sha256": "1dc5822602bf1844d5e73659d822a789358013c9fb2473d96c868feae4ab2172"
+  },
+  {
+   "path": "certificates/c2xc2-part.json",
+   "bytes": 5646472,
+   "sha256": "763e7d3169d24a8a08d504383dff24a6e8e0327bf458f262ef50af24f0bdb388"
+  },
+  {
+   "path": "certificates/exceptional-full-groups.json",
+   "bytes": 587055,
+   "sha256": "539a0bc5580b3498d38d9af906b957ddf77b021ba3252cf4bda4f59cbcd77ef0"
+  },
+  {
+   "path": "certificates/exponent-9-reduction.json",
+   "bytes": 7375,
+   "sha256": "ad775144ee40fa41077d088a39c7b9c32075ea1c36293623781f20ec23117566"
+  },
+  {
+   "path": "certificates/gaussian-list-weights.json",
+   "bytes": 3350791,
+   "sha256": "d13c2afd55b66c0d7050d5c094e6106cbbdbc7d8c59ebe5220227019c0ca7ae6"
+  },
+  {
+   "path": "certificates/gaussian-rootless-mass.json",
+   "bytes": 2545407,
+   "sha256": "2611333d8d2b022397eb5de8ffff4b7347029d80f3e6ad572035be781f1a443a"
+  },
+  {
+   "path": "certificates/general-part-distinctness.json",
+   "bytes": 8697,
+   "sha256": "656bd6518cfe1aa0da547a722f842b0fdbaee2509f04bef402b120971ef3d0f8"
+  },
+  {
+   "path": "certificates/general-part-identification.json",
+   "bytes": 2005757,
+   "sha256": "7c4884bd397edfdc3500ab7f69cb693aeec29a71edc6626f78101248832549d7"
+  },
+  {
+   "path": "certificates/general-part-witnesses.json",
+   "bytes": 8531547,
+   "sha256": "d1ffa2f0f2849bae0d467a4b666e950a80aa364271f4fe7cad3fa2099628dd26"
+  },
+  {
+   "path": "certificates/involution-gluing-masses.json",
+   "bytes": 4281772,
+   "sha256": "aa23f15af0636d02edf80b740b78cf97b4408ceba09de3126e75f7adf9183404"
+  },
+  {
+   "path": "certificates/king-rootless-mass.json",
+   "bytes": 550,
+   "sha256": "8f34734bf437cd39bf674dae16050554e52d005bb561c64294b0f1a2f3b7d2dc"
+  },
+  {
+   "path": "certificates/odd-prime-masses.json",
+   "bytes": 204066,
+   "sha256": "9a2b5d4dfd1855692d700544b08a1c04d693a3209686f6ed8767f2b85d523804"
+  },
+  {
+   "path": "certificates/quadratic-2-form-orbits.json",
+   "bytes": 144345,
+   "sha256": "9d16a876d8774c937f4507c99503b39a66ebe0a973bacb841372fe80cbd8e76e"
+  },
+  {
+   "path": "certificates/quaternion-triples.json",
+   "bytes": 16826092,
+   "sha256": "7344862f753119dddb1ff7d5daf469085455e2311f9a9525bb4182d30a7c267e"
+  },
+  {
+   "path": "certificates/root-coefficients.json",
+   "bytes": 917,
+   "sha256": "741641ab9c880963b7f535e0f3177a7114734cf72691f15c04c1d56922f58fbb"
+  },
+  {
+   "path": "certificates/subtraction-records.json",
+   "bytes": 809,
+   "sha256": "e6c2616228fb15ba57262202320f6891ce434be2c69555ba0d0906608baa0dfb"
+  },
+  {
+   "path": "certificates/type-8-24-masses.json",
+   "bytes": 3181394,
+   "sha256": "c60ec4cb0ebbe96e8ea243a82806b1d6124c8cc8eeee037eaae1927aad5cf5b5"
+  },
+  {
+   "path": "certificates/type-exclusion-lp.json",
+   "bytes": 349262,
+   "sha256": "828f990ad36135d3934902c598f5d1230ab7a419ad1e2dc8e1aa0210d301aec6"
+  },
+  {
+   "path": "data/README.ja.md",
+   "bytes": 16217,
+   "sha256": "d536837d5df61b782f94e1d4095e43064006835da1d2df7cdb405a2500e5818d"
+  },
+  {
+   "path": "data/README.md",
+   "bytes": 14069,
+   "sha256": "d067e0e4c9138b02bf32fcb033baeffe045b77d46d7c9553d026dbf79913bb7d"
+  },
+  {
+   "path": "data/classified-lattices.jsonl",
+   "bytes": 32527385,
+   "sha256": "f5f101f615653ed15bcc994bb0917f161b869a35335f0c1dddf07c0fdfdb1dcc"
+  },
+  {
+   "path": "data/largest-groups.jsonl",
+   "bytes": 8113140,
+   "sha256": "92d4c6f0b1bc2595f69303b6d10ec76a70893ccdb3af4ce275686922451dacef"
+  },
+  {
+   "path": "paper/assignment-count.ja.pdf",
+   "bytes": 1008782,
+   "sha256": "9fafea4e9030991aefe6bd1f1558b7b44e9977b4e65550a2243615ab5e82ec32"
+  },
+  {
+   "path": "paper/assignment-count.ja.typ",
+   "bytes": 52336,
+   "sha256": "ce2429bbe1003ed9020c0017a1616af7dcb72d97fb1e1752c8666052ee7bead4"
+  },
+  {
+   "path": "paper/assignment-count.pdf",
+   "bytes": 665744,
+   "sha256": "4757bce60908bb18c6658ef573c2c4ae5598affed884d7664b2d37f751e10d7c"
+  },
+  {
+   "path": "paper/assignment-count.typ",
+   "bytes": 44424,
+   "sha256": "45c4ab70907b0a5df955ccc011065189cf05f506c5e7c59882b3d40a9e078600"
+  },
+  {
+   "path": "paper/automorphism-groups-rank-32.ja.pdf",
+   "bytes": 1956789,
+   "sha256": "5f0cdf929d5221264a8d157c4374dd20405656af2548a09334f058c15bd69f30"
+  },
+  {
+   "path": "paper/automorphism-groups-rank-32.ja.typ",
+   "bytes": 106110,
+   "sha256": "2b66e86333e917bff98f1e6c46908ad880fe340959ddb1f2bb37427819ecc502"
+  },
+  {
+   "path": "paper/automorphism-groups-rank-32.pdf",
+   "bytes": 1466643,
+   "sha256": "d72f112685b6f9217fda9409a70a8c759eb7aafa94cecc9232e55c72918887f2"
+  },
+  {
+   "path": "paper/automorphism-groups-rank-32.typ",
+   "bytes": 94985,
+   "sha256": "526a63af04e892025b06722f2af0adbc3e294f231acd5855e5ef53788420caa8"
+  },
+  {
+   "path": "paper/computations-ja.typ",
+   "bytes": 15725,
+   "sha256": "f8b89cfd6fe901c2d0fcbbda952e02e0da493e7aa392d61604445cf24c4320c7"
+  },
+  {
+   "path": "paper/computations-p2.typ",
+   "bytes": 5995,
+   "sha256": "0447be2a8bf0dbc507262b405def0592c9e7868fef4b040476559aeb7e82573c"
+  },
+  {
+   "path": "paper/computations.typ",
+   "bytes": 13449,
+   "sha256": "56e27443b4705e4efe6f06ad19baf996a0258659367808c28e4f71a3528103f7"
+  },
+  {
+   "path": "paper/exponent9.ja.typ",
+   "bytes": 6377,
+   "sha256": "c3a53b21d9e7930919fad6c238e11083668bdc716695e04531d5f2783084e05c"
+  },
+  {
+   "path": "paper/exponent9.typ",
+   "bytes": 4971,
+   "sha256": "a877ec055d5bdfacb0769d9218c316af4e2ce33ad0405ca33436ed7d92f9404b"
+  },
+  {
+   "path": "paper/extremal-lattices-rank-32.ja.pdf",
+   "bytes": 4473049,
+   "sha256": "debb30222b99cc85d39973ddccc2c6039400400c5424787fa86426f3e335d58a"
+  },
+  {
+   "path": "paper/extremal-lattices-rank-32.ja.typ",
+   "bytes": 335889,
+   "sha256": "a3e283b760c96bc3b0432d67d92a02b42733d06e4816aeb1b62fc72176d96e5b"
+  },
+  {
+   "path": "paper/extremal-lattices-rank-32.pdf",
+   "bytes": 3179745,
+   "sha256": "e702ecf7ac679681e12175579b9077980f91b186c6c337a5df96da1b4ac8e844"
+  },
+  {
+   "path": "paper/extremal-lattices-rank-32.typ",
+   "bytes": 278048,
+   "sha256": "d15b5144a743a6ce0187b6ef948b481b26f829eabf3e570a15edf40fdc25c6c2"
+  },
+  {
+   "path": "paper/finite-type-exclusions.ja.typ",
+   "bytes": 9729,
+   "sha256": "b83edcb5c4049c6213746898f0ef9d5b3c4393c5eb8d8c1a2c694a805b744379"
+  },
+  {
+   "path": "paper/finite-type-exclusions.typ",
+   "bytes": 8142,
+   "sha256": "58a5ed8ddd660e38c2a352c1f2464fe4660baee443f4fbeb7827153c3a937cf4"
+  },
+  {
+   "path": "paper/integer2-orbits.ja.typ",
+   "bytes": 4741,
+   "sha256": "611b53c50dd9da1ca2f841ca5abedc9b43d438fb6def0e63a4f76e29f921fc4c"
+  },
+  {
+   "path": "paper/integer2-orbits.typ",
+   "bytes": 3862,
+   "sha256": "5e5b53fdbbf94622ddd7e01c47481eb3b7e02ed266b8552ab2186c47a0d38ff7"
+  },
+  {
+   "path": "paper/m2-odd-factors.ja.typ",
+   "bytes": 4168,
+   "sha256": "7f632e69efbf355597d0d0774030648c1da80db13d8e355e675fb07feca031da"
+  },
+  {
+   "path": "paper/m2-odd-factors.typ",
+   "bytes": 3290,
+   "sha256": "928231b07dc702cc3ef29cd14907b598b6f1104f0603c551d74d2a8007bd0416"
+  },
+  {
+   "path": "paper/p2-lattices-99.json",
+   "bytes": 33385,
+   "sha256": "0f757cf960a080367bdfd4d4040dc9992cea0f8fb6506560c75c976c00202839"
+  },
+  {
+   "path": "paper/release-files.json",
+   "bytes": 3420,
+   "sha256": "0b0fc711422b084beb7edb5ac469a725b83e752db16fcd21c7b2b52ceead6009"
+  },
+  {
+   "path": "paper/style-base.typ",
+   "bytes": 3736,
+   "sha256": "201128946fcebce0c4880cc7fd6edae88304f3f46b9b7b5aeab2663a5930e28b"
+  },
+  {
+   "path": "paper/style-ja.typ",
+   "bytes": 2167,
+   "sha256": "9861101720229d5f5819c5a708ee6c17f949a69da0850deec28e3c4196365ec4"
+  },
+  {
+   "path": "paper/style.typ",
+   "bytes": 2326,
+   "sha256": "12d479258822e8c12369023a450b21074794713fcecb0e0b01ac9f5759fbef17"
+  },
+  {
+   "path": "verify/README.ja.md",
+   "bytes": 14288,
+   "sha256": "09b95f2446749c81e68dd8bf1cecec16fa88c8a19e0e88e63f652a2237eb2e0c"
+  },
+  {
+   "path": "verify/README.md",
+   "bytes": 12244,
+   "sha256": "8f10143c7eb046446ee95191c34e1407a1fa7a6c56982e627d765c98d8863596"
+  },
+  {
+   "path": "verify/check_exponent9.py",
+   "bytes": 2177,
+   "sha256": "28f42e5baaa444a91ea6974c61a2a10893487dc7180e83122ad7b46591933e60"
+  },
+  {
+   "path": "verify/check_m2_terms.py",
+   "bytes": 30547,
+   "sha256": "594d9577c19e791e0316e2eaac81a23f4a948bae6518495c419f4dd848283be5"
+  },
+  {
+   "path": "verify/check_quadratic2_orbits.py",
+   "bytes": 4218,
+   "sha256": "5b41ad10448808628a40883188ac173fc09fe63f8e8410cab89c3817df893add"
+  },
+  {
+   "path": "verify/verify.py",
+   "bytes": 56511,
+   "sha256": "c9c8cf2e9e2084355bb53b39d947c0b093b5b76463316c8a16d65176cf4ee363"
+  },
+  {
+   "path": "verify/verify_database.py",
+   "bytes": 10963,
+   "sha256": "215c79c2ae9286b5e17c7534b01ecd4d6f58a7bf0ffb7756b0931a53d133d910"
+  },
+  {
+   "path": "verify/verify_p2.py",
+   "bytes": 26198,
+   "sha256": "19981ec51166cf6591fc203327b1f734b3ac74f9977c88d5e432172500b0b980"
+  }
+ ],
+ "release_assets": [
+  {
+   "name": "research-record.tar.gz",
+   "bytes": 10288756,
+   "sha256": "5d8e2f282e1e3569d9cc45bac7fae1637c734d1907c6e221ce5d832bab09d981"
+  },
+  {
+   "name": "research-runs.tar.gz",
+   "bytes": 347684963,
+   "sha256": "f08b1cf95cae0210f1133d67b4280be0434e7a85df66f65911ed2b20b756c055"
+  },
+  {
+   "name": "gaussian-walk-grams-1.jsonl.gz",
+   "bytes": 81276158,
+   "sha256": "7d03e622def823827fb26c3df58a688ffaacadc99f05dc1941ad9ffe16342ace"
+  },
+  {
+   "name": "gaussian-walk-grams-2.jsonl.gz",
+   "bytes": 81330477,
+   "sha256": "98ce247e53eb3000e5bdb6388cd7d7f4f12dbf8ecb424fb1bf494b5b9d12c36d"
+  },
+  {
+   "name": "gaussian-classes.jsonl.gz",
+   "bytes": 69917890,
+   "sha256": "7e8e1b92a2936de1fc7af40d7bb4fbbb1a789d810eff87495d1b676a916b8263"
+  },
+  {
+   "name": "general-part-groups.tar",
+   "bytes": 29665280,
+   "sha256": "f75a42f14de3578580dd555823ca6373bc4fcde8b0451806e88b99d132429036"
+  },
+  {
+   "name": "type-8-24-classes.tar",
+   "bytes": 119091200,
+   "sha256": "d25b90009a6617708fe194b78d655bb448126efe6cec025d17d4637589068ce3"
+  },
+  {
+   "name": "general-part-records.tar.gz",
+   "bytes": 1295287,
+   "sha256": "ef1187d1c734cff8a7862e1190d2989c9ef292f6748ee9abbbf16d422e733a08"
+  },
+  {
+   "name": "database-v2.tar.gz",
+   "bytes": 90221636,
+   "sha256": "a0c9d3211bf71d3785bb74a827840a2726bdcd2140e5704c767dffedf4f3f023"
+  }
+ ]
+}

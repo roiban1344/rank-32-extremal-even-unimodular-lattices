@@ -1,0 +1,10 @@
+{
+ "certificate": "King's rootless mass in rank 32",
+ "statement": "m = sum over extremal even unimodular lattices L of rank 32 of 1/|Aut L|.",
+ "computations": [
+  "C14",
+  "C15"
+ ],
+ "scope": "The exact value of [Kin03, Table 1, PDF p. 6], row of the empty root system (Weyl group of order 1). Adopted from the source. This certificate holds the value only: the inclusion-exclusion of [Kin03] was recomputed with our implementation (Table 10 of the paper), and verify does not repeat it.",
+ "mass": "1310037331282023326658917/238863431761920000"
+}

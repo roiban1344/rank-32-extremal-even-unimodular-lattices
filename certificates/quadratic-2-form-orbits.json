@@ -1,0 +1,8872 @@
+{
+ "certificate": "Orbits of elementary quadratic 2-forms used in the 2-adic counts",
+ "statement": "For every diagonal elementary quadratic form over F_2 of dimension 1 to 20, the element orbits used by the compressed counting are orbits of actual isometries (Appendix D.4.6).",
+ "computations": [
+  "C18"
+ ],
+ "scope": "Finite check of all 230 forms.",
+ "forms_checked": 230,
+ "max_rank": 20,
+ "cases": [
+  {
+   "a": 0,
+   "b": 1,
+   "rho": 1,
+   "sigma_mod8": 7,
+   "directions_by_support": 0,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 0,
+   "rho": 1,
+   "sigma_mod8": 1,
+   "directions_by_support": 0,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rho": 2,
+   "sigma_mod8": 6,
+   "directions_by_support": 1,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 1,
+     "vectors": 2
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 1,
+   "rho": 2,
+   "sigma_mod8": 0,
+   "directions_by_support": 0,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 0,
+   "rho": 2,
+   "sigma_mod8": 2,
+   "directions_by_support": 1,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 1,
+     "vectors": 2
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rho": 3,
+   "sigma_mod8": 5,
+   "directions_by_support": 1,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 1,
+     "vectors": 3
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 1,
+     "vectors": 3
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rho": 3,
+   "sigma_mod8": 7,
+   "directions_by_support": 1,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 2
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 1,
+     "vectors": 2
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 1,
+   "rho": 3,
+   "sigma_mod8": 1,
+   "directions_by_support": 1,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 2
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 1,
+     "vectors": 2
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 0,
+   "rho": 3,
+   "sigma_mod8": 3,
+   "directions_by_support": 1,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 1,
+     "vectors": 3
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 1,
+     "vectors": 3
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rho": 4,
+   "sigma_mod8": 4,
+   "directions_by_support": 1,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 1,
+     "vectors": 4
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 1,
+     "vectors": 6
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 1,
+     "vectors": 4
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rho": 4,
+   "sigma_mod8": 6,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 3
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 2
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 1,
+     "vectors": 3
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 6
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 2,
+   "rho": 4,
+   "sigma_mod8": 0,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 4
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 4
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 2
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 4
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 1,
+   "rho": 4,
+   "sigma_mod8": 2,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 3
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 6
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 1,
+     "vectors": 3
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 2
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 0,
+   "rho": 4,
+   "sigma_mod8": 4,
+   "directions_by_support": 1,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 1,
+     "vectors": 4
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 1,
+     "vectors": 6
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 1,
+     "vectors": 4
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rho": 5,
+   "sigma_mod8": 3,
+   "directions_by_support": 1,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 5
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 1,
+     "vectors": 10
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 1,
+     "vectors": 10
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 1,
+     "vectors": 5
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rho": 5,
+   "sigma_mod8": 5,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 5
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 5
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 10
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 10
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rho": 5,
+   "sigma_mod8": 7,
+   "directions_by_support": 3,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 9
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 6
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 6
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 9
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 2,
+   "rho": 5,
+   "sigma_mod8": 1,
+   "directions_by_support": 3,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 9
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 9
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 6
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 6
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 1,
+   "rho": 5,
+   "sigma_mod8": 3,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 5
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 10
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 10
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 5
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 0,
+   "rho": 5,
+   "sigma_mod8": 5,
+   "directions_by_support": 1,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 5
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 1,
+     "vectors": 5
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 1,
+     "vectors": 10
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 1,
+     "vectors": 10
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rho": 6,
+   "sigma_mod8": 2,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 15
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 1,
+     "vectors": 20
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 1,
+     "vectors": 15
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 12
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rho": 6,
+   "sigma_mod8": 4,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 10
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 16
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 20
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 16
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rho": 6,
+   "sigma_mod8": 6,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 15
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 12
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 15
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 20
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 3,
+   "rho": 6,
+   "sigma_mod8": 0,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 18
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 16
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 12
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 16
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 2,
+   "rho": 6,
+   "sigma_mod8": 2,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 15
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 20
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 15
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 12
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 1,
+   "rho": 6,
+   "sigma_mod8": 4,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 10
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 16
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 20
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 16
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 0,
+   "rho": 6,
+   "sigma_mod8": 6,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 15
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 12
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 1,
+     "vectors": 15
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 1,
+     "vectors": 20
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rho": 7,
+   "sigma_mod8": 1,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 35
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 1,
+     "vectors": 35
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 28
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 28
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rho": 7,
+   "sigma_mod8": 3,
+   "directions_by_support": 3,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 27
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 36
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 36
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 27
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rho": 7,
+   "sigma_mod8": 5,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 27
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 27
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 36
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 36
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rho": 7,
+   "sigma_mod8": 7,
+   "directions_by_support": 5,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 35
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 5,
+     "vectors": 28
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 28
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 35
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 3,
+   "rho": 7,
+   "sigma_mod8": 1,
+   "directions_by_support": 5,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 35
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 35
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 28
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 5,
+     "vectors": 28
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 2,
+   "rho": 7,
+   "sigma_mod8": 3,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 27
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 36
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 36
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 27
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 1,
+   "rho": 7,
+   "sigma_mod8": 5,
+   "directions_by_support": 3,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 27
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 27
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 36
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 36
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 0,
+   "rho": 7,
+   "sigma_mod8": 7,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 35
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 28
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 28
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 1,
+     "vectors": 35
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rho": 8,
+   "sigma_mod8": 0,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 70
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 64
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 56
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 64
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rho": 8,
+   "sigma_mod8": 2,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 63
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 72
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 63
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 56
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rho": 8,
+   "sigma_mod8": 4,
+   "directions_by_support": 5,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 54
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 5,
+     "vectors": 64
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 72
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 5,
+     "vectors": 64
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rho": 8,
+   "sigma_mod8": 6,
+   "directions_by_support": 6,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 5,
+     "vectors": 63
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 6,
+     "vectors": 56
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 63
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 6,
+     "vectors": 72
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 4,
+   "rho": 8,
+   "sigma_mod8": 0,
+   "directions_by_support": 6,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 5,
+     "vectors": 70
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 6,
+     "vectors": 64
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 6,
+     "vectors": 56
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 6,
+     "vectors": 64
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 3,
+   "rho": 8,
+   "sigma_mod8": 2,
+   "directions_by_support": 6,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 5,
+     "vectors": 63
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 6,
+     "vectors": 72
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 63
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 6,
+     "vectors": 56
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 2,
+   "rho": 8,
+   "sigma_mod8": 4,
+   "directions_by_support": 5,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 54
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 5,
+     "vectors": 64
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 72
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 5,
+     "vectors": 64
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 1,
+   "rho": 8,
+   "sigma_mod8": 6,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 63
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 56
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 63
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 72
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 0,
+   "rho": 8,
+   "sigma_mod8": 0,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 1,
+     "vectors": 70
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 64
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 56
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 64
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rho": 9,
+   "sigma_mod8": 7,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 135
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 120
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 120
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 135
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rho": 9,
+   "sigma_mod8": 1,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 135
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 135
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 120
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 120
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rho": 9,
+   "sigma_mod8": 3,
+   "directions_by_support": 6,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 5,
+     "vectors": 119
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 6,
+     "vectors": 136
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 6,
+     "vectors": 136
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 5,
+     "vectors": 119
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rho": 9,
+   "sigma_mod8": 5,
+   "directions_by_support": 7,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 6,
+     "vectors": 119
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 6,
+     "vectors": 119
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 7,
+     "vectors": 136
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 7,
+     "vectors": 136
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rho": 9,
+   "sigma_mod8": 7,
+   "directions_by_support": 7,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 7,
+     "vectors": 135
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 7,
+     "vectors": 120
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 7,
+     "vectors": 120
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 7,
+     "vectors": 135
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 4,
+   "rho": 9,
+   "sigma_mod8": 1,
+   "directions_by_support": 7,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 7,
+     "vectors": 135
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 7,
+     "vectors": 135
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 7,
+     "vectors": 120
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 7,
+     "vectors": 120
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 3,
+   "rho": 9,
+   "sigma_mod8": 3,
+   "directions_by_support": 7,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 6,
+     "vectors": 119
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 7,
+     "vectors": 136
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 7,
+     "vectors": 136
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 6,
+     "vectors": 119
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 2,
+   "rho": 9,
+   "sigma_mod8": 5,
+   "directions_by_support": 6,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 5,
+     "vectors": 119
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 5,
+     "vectors": 119
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 6,
+     "vectors": 136
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 6,
+     "vectors": 136
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 1,
+   "rho": 9,
+   "sigma_mod8": 7,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 135
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 120
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 120
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 135
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 9,
+   "b": 0,
+   "rho": 9,
+   "sigma_mod8": 1,
+   "directions_by_support": 2,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 135
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 135
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 120
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 120
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rho": 10,
+   "sigma_mod8": 6,
+   "directions_by_support": 3,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 240
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 255
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 272
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rho": 10,
+   "sigma_mod8": 0,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 270
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 5,
+     "vectors": 256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 240
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 5,
+     "vectors": 256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rho": 10,
+   "sigma_mod8": 2,
+   "directions_by_support": 7,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 6,
+     "vectors": 255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 7,
+     "vectors": 272
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 6,
+     "vectors": 255
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 6,
+     "vectors": 240
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rho": 10,
+   "sigma_mod8": 4,
+   "directions_by_support": 8,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 6,
+     "vectors": 238
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 8,
+     "vectors": 256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 8,
+     "vectors": 272
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 8,
+     "vectors": 256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rho": 10,
+   "sigma_mod8": 6,
+   "directions_by_support": 9,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 8,
+     "vectors": 255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 8,
+     "vectors": 240
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 8,
+     "vectors": 255
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 9,
+     "vectors": 272
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 5,
+   "rho": 10,
+   "sigma_mod8": 0,
+   "directions_by_support": 8,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 8,
+     "vectors": 270
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 9,
+     "vectors": 256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 8,
+     "vectors": 240
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 9,
+     "vectors": 256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 4,
+   "rho": 10,
+   "sigma_mod8": 2,
+   "directions_by_support": 9,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 8,
+     "vectors": 255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 9,
+     "vectors": 272
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 8,
+     "vectors": 255
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 8,
+     "vectors": 240
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 3,
+   "rho": 10,
+   "sigma_mod8": 4,
+   "directions_by_support": 8,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 6,
+     "vectors": 238
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 8,
+     "vectors": 256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 8,
+     "vectors": 272
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 8,
+     "vectors": 256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 2,
+   "rho": 10,
+   "sigma_mod8": 6,
+   "directions_by_support": 7,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 6,
+     "vectors": 255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 6,
+     "vectors": 240
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 6,
+     "vectors": 255
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 7,
+     "vectors": 272
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 9,
+   "b": 1,
+   "rho": 10,
+   "sigma_mod8": 0,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 270
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 5,
+     "vectors": 256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 240
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 5,
+     "vectors": 256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 10,
+   "b": 0,
+   "rho": 10,
+   "sigma_mod8": 2,
+   "directions_by_support": 3,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 272
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 2,
+     "vectors": 255
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 240
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rho": 11,
+   "sigma_mod8": 5,
+   "directions_by_support": 3,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 495
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 2,
+     "vectors": 495
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 528
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 528
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rho": 11,
+   "sigma_mod8": 7,
+   "directions_by_support": 5,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 5,
+     "vectors": 527
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 5,
+     "vectors": 496
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 496
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 5,
+     "vectors": 527
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rho": 11,
+   "sigma_mod8": 1,
+   "directions_by_support": 7,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 7,
+     "vectors": 527
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 7,
+     "vectors": 527
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 7,
+     "vectors": 496
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 7,
+     "vectors": 496
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rho": 11,
+   "sigma_mod8": 3,
+   "directions_by_support": 9,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 8,
+     "vectors": 495
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 9,
+     "vectors": 528
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 9,
+     "vectors": 528
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 8,
+     "vectors": 495
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rho": 11,
+   "sigma_mod8": 5,
+   "directions_by_support": 10,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 9,
+     "vectors": 495
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 9,
+     "vectors": 495
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 10,
+     "vectors": 528
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 10,
+     "vectors": 528
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rho": 11,
+   "sigma_mod8": 7,
+   "directions_by_support": 10,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 10,
+     "vectors": 527
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 10,
+     "vectors": 496
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 10,
+     "vectors": 496
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 10,
+     "vectors": 527
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 5,
+   "rho": 11,
+   "sigma_mod8": 1,
+   "directions_by_support": 10,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 10,
+     "vectors": 527
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 10,
+     "vectors": 527
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 10,
+     "vectors": 496
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 10,
+     "vectors": 496
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 4,
+   "rho": 11,
+   "sigma_mod8": 3,
+   "directions_by_support": 10,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 9,
+     "vectors": 495
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 10,
+     "vectors": 528
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 10,
+     "vectors": 528
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 9,
+     "vectors": 495
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 3,
+   "rho": 11,
+   "sigma_mod8": 5,
+   "directions_by_support": 9,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 8,
+     "vectors": 495
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 8,
+     "vectors": 495
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 9,
+     "vectors": 528
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 9,
+     "vectors": 528
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 9,
+   "b": 2,
+   "rho": 11,
+   "sigma_mod8": 7,
+   "directions_by_support": 7,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 7,
+     "vectors": 527
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 7,
+     "vectors": 496
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 7,
+     "vectors": 496
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 7,
+     "vectors": 527
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 10,
+   "b": 1,
+   "rho": 11,
+   "sigma_mod8": 1,
+   "directions_by_support": 5,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 5,
+     "vectors": 527
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 5,
+     "vectors": 527
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 496
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 5,
+     "vectors": 496
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 11,
+   "b": 0,
+   "rho": 11,
+   "sigma_mod8": 3,
+   "directions_by_support": 3,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 495
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 528
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 528
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 2,
+     "vectors": 495
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rho": 12,
+   "sigma_mod8": 4,
+   "directions_by_support": 3,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 990
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 1024
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 1056
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 1024
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rho": 12,
+   "sigma_mod8": 6,
+   "directions_by_support": 6,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 5,
+     "vectors": 1023
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 6,
+     "vectors": 992
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 1023
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 6,
+     "vectors": 1056
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rho": 12,
+   "sigma_mod8": 0,
+   "directions_by_support": 8,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 7,
+     "vectors": 1054
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 8,
+     "vectors": 1024
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 8,
+     "vectors": 992
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 8,
+     "vectors": 1024
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rho": 12,
+   "sigma_mod8": 2,
+   "directions_by_support": 10,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 9,
+     "vectors": 1023
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 10,
+     "vectors": 1056
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 9,
+     "vectors": 1023
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 10,
+     "vectors": 992
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rho": 12,
+   "sigma_mod8": 4,
+   "directions_by_support": 11,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 10,
+     "vectors": 990
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 11,
+     "vectors": 1024
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 11,
+     "vectors": 1056
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 11,
+     "vectors": 1024
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rho": 12,
+   "sigma_mod8": 6,
+   "directions_by_support": 12,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 11,
+     "vectors": 1023
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 12,
+     "vectors": 992
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 11,
+     "vectors": 1023
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 12,
+     "vectors": 1056
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 6,
+   "rho": 12,
+   "sigma_mod8": 0,
+   "directions_by_support": 12,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 11,
+     "vectors": 1054
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 12,
+     "vectors": 1024
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 12,
+     "vectors": 992
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 12,
+     "vectors": 1024
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 5,
+   "rho": 12,
+   "sigma_mod8": 2,
+   "directions_by_support": 12,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 11,
+     "vectors": 1023
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 12,
+     "vectors": 1056
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 11,
+     "vectors": 1023
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 12,
+     "vectors": 992
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 4,
+   "rho": 12,
+   "sigma_mod8": 4,
+   "directions_by_support": 11,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 10,
+     "vectors": 990
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 11,
+     "vectors": 1024
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 11,
+     "vectors": 1056
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 11,
+     "vectors": 1024
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 9,
+   "b": 3,
+   "rho": 12,
+   "sigma_mod8": 6,
+   "directions_by_support": 10,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 9,
+     "vectors": 1023
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 10,
+     "vectors": 992
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 9,
+     "vectors": 1023
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 10,
+     "vectors": 1056
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 10,
+   "b": 2,
+   "rho": 12,
+   "sigma_mod8": 0,
+   "directions_by_support": 8,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 7,
+     "vectors": 1054
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 8,
+     "vectors": 1024
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 8,
+     "vectors": 992
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 8,
+     "vectors": 1024
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 11,
+   "b": 1,
+   "rho": 12,
+   "sigma_mod8": 2,
+   "directions_by_support": 6,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 5,
+     "vectors": 1023
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 6,
+     "vectors": 1056
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 1023
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 6,
+     "vectors": 992
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 12,
+   "b": 0,
+   "rho": 12,
+   "sigma_mod8": 4,
+   "directions_by_support": 3,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 2,
+     "vectors": 990
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 1024
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 1056
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 1024
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rho": 13,
+   "sigma_mod8": 3,
+   "directions_by_support": 3,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 2015
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 2080
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 2080
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 2015
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rho": 13,
+   "sigma_mod8": 5,
+   "directions_by_support": 6,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 6,
+     "vectors": 2015
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 6,
+     "vectors": 2015
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 6,
+     "vectors": 2080
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 6,
+     "vectors": 2080
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rho": 13,
+   "sigma_mod8": 7,
+   "directions_by_support": 9,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 8,
+     "vectors": 2079
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 9,
+     "vectors": 2016
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 9,
+     "vectors": 2016
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 8,
+     "vectors": 2079
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rho": 13,
+   "sigma_mod8": 1,
+   "directions_by_support": 11,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 10,
+     "vectors": 2079
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 10,
+     "vectors": 2079
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 11,
+     "vectors": 2016
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 11,
+     "vectors": 2016
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rho": 13,
+   "sigma_mod8": 3,
+   "directions_by_support": 12,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 12,
+     "vectors": 2015
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 12,
+     "vectors": 2080
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 12,
+     "vectors": 2080
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 12,
+     "vectors": 2015
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rho": 13,
+   "sigma_mod8": 5,
+   "directions_by_support": 13,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 13,
+     "vectors": 2015
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 13,
+     "vectors": 2015
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 13,
+     "vectors": 2080
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 13,
+     "vectors": 2080
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rho": 13,
+   "sigma_mod8": 7,
+   "directions_by_support": 14,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 13,
+     "vectors": 2079
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 14,
+     "vectors": 2016
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 14,
+     "vectors": 2016
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 13,
+     "vectors": 2079
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 6,
+   "rho": 13,
+   "sigma_mod8": 1,
+   "directions_by_support": 14,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 13,
+     "vectors": 2079
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 13,
+     "vectors": 2079
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 14,
+     "vectors": 2016
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 14,
+     "vectors": 2016
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 5,
+   "rho": 13,
+   "sigma_mod8": 3,
+   "directions_by_support": 13,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 13,
+     "vectors": 2015
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 13,
+     "vectors": 2080
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 13,
+     "vectors": 2080
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 13,
+     "vectors": 2015
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 9,
+   "b": 4,
+   "rho": 13,
+   "sigma_mod8": 5,
+   "directions_by_support": 12,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 12,
+     "vectors": 2015
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 12,
+     "vectors": 2015
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 12,
+     "vectors": 2080
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 12,
+     "vectors": 2080
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 10,
+   "b": 3,
+   "rho": 13,
+   "sigma_mod8": 7,
+   "directions_by_support": 11,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 10,
+     "vectors": 2079
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 11,
+     "vectors": 2016
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 11,
+     "vectors": 2016
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 10,
+     "vectors": 2079
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 11,
+   "b": 2,
+   "rho": 13,
+   "sigma_mod8": 1,
+   "directions_by_support": 9,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 8,
+     "vectors": 2079
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 8,
+     "vectors": 2079
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 9,
+     "vectors": 2016
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 9,
+     "vectors": 2016
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 12,
+   "b": 1,
+   "rho": 13,
+   "sigma_mod8": 3,
+   "directions_by_support": 6,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 6,
+     "vectors": 2015
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 6,
+     "vectors": 2080
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 6,
+     "vectors": 2080
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 6,
+     "vectors": 2015
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 13,
+   "b": 0,
+   "rho": 13,
+   "sigma_mod8": 5,
+   "directions_by_support": 3,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 2015
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 2015
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 2080
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 2080
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rho": 14,
+   "sigma_mod8": 2,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 4160
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 4032
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rho": 14,
+   "sigma_mod8": 4,
+   "directions_by_support": 6,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 6,
+     "vectors": 4030
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 7,
+     "vectors": 4096
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 6,
+     "vectors": 4160
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 7,
+     "vectors": 4096
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rho": 14,
+   "sigma_mod8": 6,
+   "directions_by_support": 10,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 9,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 10,
+     "vectors": 4032
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 9,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 9,
+     "vectors": 4160
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rho": 14,
+   "sigma_mod8": 0,
+   "directions_by_support": 12,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 10,
+     "vectors": 4158
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 12,
+     "vectors": 4096
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 12,
+     "vectors": 4032
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 12,
+     "vectors": 4096
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rho": 14,
+   "sigma_mod8": 2,
+   "directions_by_support": 14,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 13,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 13,
+     "vectors": 4160
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 13,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 14,
+     "vectors": 4032
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rho": 14,
+   "sigma_mod8": 4,
+   "directions_by_support": 14,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 14,
+     "vectors": 4030
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 15,
+     "vectors": 4096
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 14,
+     "vectors": 4160
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 15,
+     "vectors": 4096
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rho": 14,
+   "sigma_mod8": 6,
+   "directions_by_support": 16,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 15,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 16,
+     "vectors": 4032
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 15,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 15,
+     "vectors": 4160
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 7,
+   "rho": 14,
+   "sigma_mod8": 0,
+   "directions_by_support": 16,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 14,
+     "vectors": 4158
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 16,
+     "vectors": 4096
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 16,
+     "vectors": 4032
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 16,
+     "vectors": 4096
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 6,
+   "rho": 14,
+   "sigma_mod8": 2,
+   "directions_by_support": 16,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 15,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 15,
+     "vectors": 4160
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 15,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 16,
+     "vectors": 4032
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 9,
+   "b": 5,
+   "rho": 14,
+   "sigma_mod8": 4,
+   "directions_by_support": 14,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 14,
+     "vectors": 4030
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 15,
+     "vectors": 4096
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 14,
+     "vectors": 4160
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 15,
+     "vectors": 4096
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 10,
+   "b": 4,
+   "rho": 14,
+   "sigma_mod8": 6,
+   "directions_by_support": 14,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 13,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 14,
+     "vectors": 4032
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 13,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 13,
+     "vectors": 4160
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 11,
+   "b": 3,
+   "rho": 14,
+   "sigma_mod8": 0,
+   "directions_by_support": 12,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 10,
+     "vectors": 4158
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 12,
+     "vectors": 4096
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 12,
+     "vectors": 4032
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 12,
+     "vectors": 4096
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 12,
+   "b": 2,
+   "rho": 14,
+   "sigma_mod8": 2,
+   "directions_by_support": 10,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 9,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 9,
+     "vectors": 4160
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 9,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 10,
+     "vectors": 4032
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 13,
+   "b": 1,
+   "rho": 14,
+   "sigma_mod8": 4,
+   "directions_by_support": 6,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 6,
+     "vectors": 4030
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 7,
+     "vectors": 4096
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 6,
+     "vectors": 4160
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 7,
+     "vectors": 4096
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 14,
+   "b": 0,
+   "rho": 14,
+   "sigma_mod8": 6,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 4032
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 3,
+     "vectors": 4095
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 4160
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rho": 15,
+   "sigma_mod8": 1,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 8255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 3,
+     "vectors": 8255
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 8128
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 8128
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rho": 15,
+   "sigma_mod8": 3,
+   "directions_by_support": 7,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 7,
+     "vectors": 8127
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 7,
+     "vectors": 8256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 7,
+     "vectors": 8256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 7,
+     "vectors": 8127
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rho": 15,
+   "sigma_mod8": 5,
+   "directions_by_support": 10,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 10,
+     "vectors": 8127
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 10,
+     "vectors": 8127
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 10,
+     "vectors": 8256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 10,
+     "vectors": 8256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rho": 15,
+   "sigma_mod8": 7,
+   "directions_by_support": 13,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 12,
+     "vectors": 8255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 13,
+     "vectors": 8128
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 13,
+     "vectors": 8128
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 12,
+     "vectors": 8255
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rho": 15,
+   "sigma_mod8": 1,
+   "directions_by_support": 15,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 14,
+     "vectors": 8255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 14,
+     "vectors": 8255
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 15,
+     "vectors": 8128
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 15,
+     "vectors": 8128
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rho": 15,
+   "sigma_mod8": 3,
+   "directions_by_support": 16,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 16,
+     "vectors": 8127
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 16,
+     "vectors": 8256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 16,
+     "vectors": 8256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 16,
+     "vectors": 8127
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rho": 15,
+   "sigma_mod8": 5,
+   "directions_by_support": 17,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 17,
+     "vectors": 8127
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 17,
+     "vectors": 8127
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 17,
+     "vectors": 8256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 17,
+     "vectors": 8256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rho": 15,
+   "sigma_mod8": 7,
+   "directions_by_support": 18,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 17,
+     "vectors": 8255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 18,
+     "vectors": 8128
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 18,
+     "vectors": 8128
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 17,
+     "vectors": 8255
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 7,
+   "rho": 15,
+   "sigma_mod8": 1,
+   "directions_by_support": 18,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 17,
+     "vectors": 8255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 17,
+     "vectors": 8255
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 18,
+     "vectors": 8128
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 18,
+     "vectors": 8128
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 9,
+   "b": 6,
+   "rho": 15,
+   "sigma_mod8": 3,
+   "directions_by_support": 17,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 17,
+     "vectors": 8127
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 17,
+     "vectors": 8256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 17,
+     "vectors": 8256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 17,
+     "vectors": 8127
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 10,
+   "b": 5,
+   "rho": 15,
+   "sigma_mod8": 5,
+   "directions_by_support": 16,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 16,
+     "vectors": 8127
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 16,
+     "vectors": 8127
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 16,
+     "vectors": 8256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 16,
+     "vectors": 8256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 11,
+   "b": 4,
+   "rho": 15,
+   "sigma_mod8": 7,
+   "directions_by_support": 15,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 14,
+     "vectors": 8255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 15,
+     "vectors": 8128
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 15,
+     "vectors": 8128
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 14,
+     "vectors": 8255
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 12,
+   "b": 3,
+   "rho": 15,
+   "sigma_mod8": 1,
+   "directions_by_support": 13,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 12,
+     "vectors": 8255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 12,
+     "vectors": 8255
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 13,
+     "vectors": 8128
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 13,
+     "vectors": 8128
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 13,
+   "b": 2,
+   "rho": 15,
+   "sigma_mod8": 3,
+   "directions_by_support": 10,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 10,
+     "vectors": 8127
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 10,
+     "vectors": 8256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 10,
+     "vectors": 8256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 10,
+     "vectors": 8127
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 14,
+   "b": 1,
+   "rho": 15,
+   "sigma_mod8": 5,
+   "directions_by_support": 7,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 7,
+     "vectors": 8127
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 7,
+     "vectors": 8127
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 7,
+     "vectors": 8256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 7,
+     "vectors": 8256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 15,
+   "b": 0,
+   "rho": 15,
+   "sigma_mod8": 7,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 8255
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 8128
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 8128
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 3,
+     "vectors": 8255
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rho": 16,
+   "sigma_mod8": 0,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 16510
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 16384
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 16256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 16384
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rho": 16,
+   "sigma_mod8": 2,
+   "directions_by_support": 8,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 7,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 8,
+     "vectors": 16512
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 7,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 8,
+     "vectors": 16256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rho": 16,
+   "sigma_mod8": 4,
+   "directions_by_support": 11,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 10,
+     "vectors": 16254
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 11,
+     "vectors": 16384
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 11,
+     "vectors": 16512
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 11,
+     "vectors": 16384
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rho": 16,
+   "sigma_mod8": 6,
+   "directions_by_support": 14,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 13,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 14,
+     "vectors": 16256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 13,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 14,
+     "vectors": 16512
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rho": 16,
+   "sigma_mod8": 0,
+   "directions_by_support": 16,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 15,
+     "vectors": 16510
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 16,
+     "vectors": 16384
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 16,
+     "vectors": 16256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 16,
+     "vectors": 16384
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rho": 16,
+   "sigma_mod8": 2,
+   "directions_by_support": 18,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 17,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 18,
+     "vectors": 16512
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 17,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 18,
+     "vectors": 16256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rho": 16,
+   "sigma_mod8": 4,
+   "directions_by_support": 19,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 18,
+     "vectors": 16254
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 19,
+     "vectors": 16384
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 19,
+     "vectors": 16512
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 19,
+     "vectors": 16384
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rho": 16,
+   "sigma_mod8": 6,
+   "directions_by_support": 20,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 19,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 20,
+     "vectors": 16256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 19,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 20,
+     "vectors": 16512
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 8,
+   "rho": 16,
+   "sigma_mod8": 0,
+   "directions_by_support": 20,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 19,
+     "vectors": 16510
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 20,
+     "vectors": 16384
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 20,
+     "vectors": 16256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 20,
+     "vectors": 16384
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 9,
+   "b": 7,
+   "rho": 16,
+   "sigma_mod8": 2,
+   "directions_by_support": 20,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 19,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 20,
+     "vectors": 16512
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 19,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 20,
+     "vectors": 16256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 10,
+   "b": 6,
+   "rho": 16,
+   "sigma_mod8": 4,
+   "directions_by_support": 19,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 18,
+     "vectors": 16254
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 19,
+     "vectors": 16384
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 19,
+     "vectors": 16512
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 19,
+     "vectors": 16384
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 11,
+   "b": 5,
+   "rho": 16,
+   "sigma_mod8": 6,
+   "directions_by_support": 18,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 17,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 18,
+     "vectors": 16256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 17,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 18,
+     "vectors": 16512
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 12,
+   "b": 4,
+   "rho": 16,
+   "sigma_mod8": 0,
+   "directions_by_support": 16,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 15,
+     "vectors": 16510
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 16,
+     "vectors": 16384
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 16,
+     "vectors": 16256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 16,
+     "vectors": 16384
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 13,
+   "b": 3,
+   "rho": 16,
+   "sigma_mod8": 2,
+   "directions_by_support": 14,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 13,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 14,
+     "vectors": 16512
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 13,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 14,
+     "vectors": 16256
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 14,
+   "b": 2,
+   "rho": 16,
+   "sigma_mod8": 4,
+   "directions_by_support": 11,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 10,
+     "vectors": 16254
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 11,
+     "vectors": 16384
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 11,
+     "vectors": 16512
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 11,
+     "vectors": 16384
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 15,
+   "b": 1,
+   "rho": 16,
+   "sigma_mod8": 6,
+   "directions_by_support": 8,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 7,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 8,
+     "vectors": 16256
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 7,
+     "vectors": 16383
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 8,
+     "vectors": 16512
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 16,
+   "b": 0,
+   "rho": 16,
+   "sigma_mod8": 0,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 3,
+     "vectors": 16510
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 16384
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 16256
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 16384
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rho": 17,
+   "sigma_mod8": 7,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 32895
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rho": 17,
+   "sigma_mod8": 1,
+   "directions_by_support": 8,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 8,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 8,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 8,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 8,
+     "vectors": 32640
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rho": 17,
+   "sigma_mod8": 3,
+   "directions_by_support": 12,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 11,
+     "vectors": 32639
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 12,
+     "vectors": 32896
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 12,
+     "vectors": 32896
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 11,
+     "vectors": 32639
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rho": 17,
+   "sigma_mod8": 5,
+   "directions_by_support": 15,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 14,
+     "vectors": 32639
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 14,
+     "vectors": 32639
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 15,
+     "vectors": 32896
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 15,
+     "vectors": 32896
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rho": 17,
+   "sigma_mod8": 7,
+   "directions_by_support": 17,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 17,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 17,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 17,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 17,
+     "vectors": 32895
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rho": 17,
+   "sigma_mod8": 1,
+   "directions_by_support": 19,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 19,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 19,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 19,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 19,
+     "vectors": 32640
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rho": 17,
+   "sigma_mod8": 3,
+   "directions_by_support": 21,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 20,
+     "vectors": 32639
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 21,
+     "vectors": 32896
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 21,
+     "vectors": 32896
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 20,
+     "vectors": 32639
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rho": 17,
+   "sigma_mod8": 5,
+   "directions_by_support": 22,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 21,
+     "vectors": 32639
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 21,
+     "vectors": 32639
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 22,
+     "vectors": 32896
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 22,
+     "vectors": 32896
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rho": 17,
+   "sigma_mod8": 7,
+   "directions_by_support": 22,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 22,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 22,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 22,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 22,
+     "vectors": 32895
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 9,
+   "b": 8,
+   "rho": 17,
+   "sigma_mod8": 1,
+   "directions_by_support": 22,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 22,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 22,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 22,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 22,
+     "vectors": 32640
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 10,
+   "b": 7,
+   "rho": 17,
+   "sigma_mod8": 3,
+   "directions_by_support": 22,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 21,
+     "vectors": 32639
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 22,
+     "vectors": 32896
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 22,
+     "vectors": 32896
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 21,
+     "vectors": 32639
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 11,
+   "b": 6,
+   "rho": 17,
+   "sigma_mod8": 5,
+   "directions_by_support": 21,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 20,
+     "vectors": 32639
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 20,
+     "vectors": 32639
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 21,
+     "vectors": 32896
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 21,
+     "vectors": 32896
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 12,
+   "b": 5,
+   "rho": 17,
+   "sigma_mod8": 7,
+   "directions_by_support": 19,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 19,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 19,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 19,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 19,
+     "vectors": 32895
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 13,
+   "b": 4,
+   "rho": 17,
+   "sigma_mod8": 1,
+   "directions_by_support": 17,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 17,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 17,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 17,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 17,
+     "vectors": 32640
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 14,
+   "b": 3,
+   "rho": 17,
+   "sigma_mod8": 3,
+   "directions_by_support": 15,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 14,
+     "vectors": 32639
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 15,
+     "vectors": 32896
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 15,
+     "vectors": 32896
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 14,
+     "vectors": 32639
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 15,
+   "b": 2,
+   "rho": 17,
+   "sigma_mod8": 5,
+   "directions_by_support": 12,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 11,
+     "vectors": 32639
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 11,
+     "vectors": 32639
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 12,
+     "vectors": 32896
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 12,
+     "vectors": 32896
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 16,
+   "b": 1,
+   "rho": 17,
+   "sigma_mod8": 7,
+   "directions_by_support": 8,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 8,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 8,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 8,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 8,
+     "vectors": 32895
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 17,
+   "b": 0,
+   "rho": 17,
+   "sigma_mod8": 1,
+   "directions_by_support": 4,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 32895
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 32640
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 32640
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rho": 18,
+   "sigma_mod8": 6,
+   "directions_by_support": 5,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 65280
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 5,
+     "vectors": 65792
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rho": 18,
+   "sigma_mod8": 0,
+   "directions_by_support": 8,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 8,
+     "vectors": 65790
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 9,
+     "vectors": 65536
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 8,
+     "vectors": 65280
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 9,
+     "vectors": 65536
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rho": 18,
+   "sigma_mod8": 2,
+   "directions_by_support": 13,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 12,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 13,
+     "vectors": 65792
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 12,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 12,
+     "vectors": 65280
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rho": 18,
+   "sigma_mod8": 4,
+   "directions_by_support": 16,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 14,
+     "vectors": 65278
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 16,
+     "vectors": 65536
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 16,
+     "vectors": 65792
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 16,
+     "vectors": 65536
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rho": 18,
+   "sigma_mod8": 6,
+   "directions_by_support": 19,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 18,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 18,
+     "vectors": 65280
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 18,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 19,
+     "vectors": 65792
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rho": 18,
+   "sigma_mod8": 0,
+   "directions_by_support": 20,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 20,
+     "vectors": 65790
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 21,
+     "vectors": 65536
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 20,
+     "vectors": 65280
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 21,
+     "vectors": 65536
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rho": 18,
+   "sigma_mod8": 2,
+   "directions_by_support": 23,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 22,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 23,
+     "vectors": 65792
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 22,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 22,
+     "vectors": 65280
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rho": 18,
+   "sigma_mod8": 4,
+   "directions_by_support": 24,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 22,
+     "vectors": 65278
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 24,
+     "vectors": 65536
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 24,
+     "vectors": 65792
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 24,
+     "vectors": 65536
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rho": 18,
+   "sigma_mod8": 6,
+   "directions_by_support": 25,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 24,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 24,
+     "vectors": 65280
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 24,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 25,
+     "vectors": 65792
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 9,
+   "b": 9,
+   "rho": 18,
+   "sigma_mod8": 0,
+   "directions_by_support": 24,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 24,
+     "vectors": 65790
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 25,
+     "vectors": 65536
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 24,
+     "vectors": 65280
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 25,
+     "vectors": 65536
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 10,
+   "b": 8,
+   "rho": 18,
+   "sigma_mod8": 2,
+   "directions_by_support": 25,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 24,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 25,
+     "vectors": 65792
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 24,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 24,
+     "vectors": 65280
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 11,
+   "b": 7,
+   "rho": 18,
+   "sigma_mod8": 4,
+   "directions_by_support": 24,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 22,
+     "vectors": 65278
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 24,
+     "vectors": 65536
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 24,
+     "vectors": 65792
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 24,
+     "vectors": 65536
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 12,
+   "b": 6,
+   "rho": 18,
+   "sigma_mod8": 6,
+   "directions_by_support": 23,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 22,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 22,
+     "vectors": 65280
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 22,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 23,
+     "vectors": 65792
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 13,
+   "b": 5,
+   "rho": 18,
+   "sigma_mod8": 0,
+   "directions_by_support": 20,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 20,
+     "vectors": 65790
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 21,
+     "vectors": 65536
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 20,
+     "vectors": 65280
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 21,
+     "vectors": 65536
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 14,
+   "b": 4,
+   "rho": 18,
+   "sigma_mod8": 2,
+   "directions_by_support": 19,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 18,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 19,
+     "vectors": 65792
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 18,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 18,
+     "vectors": 65280
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 15,
+   "b": 3,
+   "rho": 18,
+   "sigma_mod8": 4,
+   "directions_by_support": 16,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 14,
+     "vectors": 65278
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 16,
+     "vectors": 65536
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 16,
+     "vectors": 65792
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 16,
+     "vectors": 65536
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 16,
+   "b": 2,
+   "rho": 18,
+   "sigma_mod8": 6,
+   "directions_by_support": 13,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 12,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 12,
+     "vectors": 65280
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 12,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 13,
+     "vectors": 65792
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 17,
+   "b": 1,
+   "rho": 18,
+   "sigma_mod8": 0,
+   "directions_by_support": 8,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 8,
+     "vectors": 65790
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 9,
+     "vectors": 65536
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 8,
+     "vectors": 65280
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 9,
+     "vectors": 65536
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 18,
+   "b": 0,
+   "rho": 18,
+   "sigma_mod8": 2,
+   "directions_by_support": 5,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 5,
+     "vectors": 65792
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 4,
+     "vectors": 65535
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 65280
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rho": 19,
+   "sigma_mod8": 5,
+   "directions_by_support": 5,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 4,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 5,
+     "vectors": 131328
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rho": 19,
+   "sigma_mod8": 7,
+   "directions_by_support": 9,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 9,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 9,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 9,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 9,
+     "vectors": 131327
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rho": 19,
+   "sigma_mod8": 1,
+   "directions_by_support": 13,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 13,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 13,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 13,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 13,
+     "vectors": 130816
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rho": 19,
+   "sigma_mod8": 3,
+   "directions_by_support": 17,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 16,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 17,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 17,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 16,
+     "vectors": 130815
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rho": 19,
+   "sigma_mod8": 5,
+   "directions_by_support": 20,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 19,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 19,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 20,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 20,
+     "vectors": 131328
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rho": 19,
+   "sigma_mod8": 7,
+   "directions_by_support": 22,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 22,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 22,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 22,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 22,
+     "vectors": 131327
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rho": 19,
+   "sigma_mod8": 1,
+   "directions_by_support": 24,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 24,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 24,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 24,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 24,
+     "vectors": 130816
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rho": 19,
+   "sigma_mod8": 3,
+   "directions_by_support": 26,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 25,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 26,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 26,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 25,
+     "vectors": 130815
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rho": 19,
+   "sigma_mod8": 5,
+   "directions_by_support": 27,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 26,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 26,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 27,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 27,
+     "vectors": 131328
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rho": 19,
+   "sigma_mod8": 7,
+   "directions_by_support": 27,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 27,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 27,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 27,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 27,
+     "vectors": 131327
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 10,
+   "b": 9,
+   "rho": 19,
+   "sigma_mod8": 1,
+   "directions_by_support": 27,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 27,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 27,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 27,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 27,
+     "vectors": 130816
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 11,
+   "b": 8,
+   "rho": 19,
+   "sigma_mod8": 3,
+   "directions_by_support": 27,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 26,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 27,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 27,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 26,
+     "vectors": 130815
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 12,
+   "b": 7,
+   "rho": 19,
+   "sigma_mod8": 5,
+   "directions_by_support": 26,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 25,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 25,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 26,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 26,
+     "vectors": 131328
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 13,
+   "b": 6,
+   "rho": 19,
+   "sigma_mod8": 7,
+   "directions_by_support": 24,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 24,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 24,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 24,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 24,
+     "vectors": 131327
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 14,
+   "b": 5,
+   "rho": 19,
+   "sigma_mod8": 1,
+   "directions_by_support": 22,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 22,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 22,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 22,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 22,
+     "vectors": 130816
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 15,
+   "b": 4,
+   "rho": 19,
+   "sigma_mod8": 3,
+   "directions_by_support": 20,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 19,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 20,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 20,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 19,
+     "vectors": 130815
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 16,
+   "b": 3,
+   "rho": 19,
+   "sigma_mod8": 5,
+   "directions_by_support": 17,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 16,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 16,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 17,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 17,
+     "vectors": 131328
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 17,
+   "b": 2,
+   "rho": 19,
+   "sigma_mod8": 7,
+   "directions_by_support": 13,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 13,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 13,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 13,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 13,
+     "vectors": 131327
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 18,
+   "b": 1,
+   "rho": 19,
+   "sigma_mod8": 1,
+   "directions_by_support": 9,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 9,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 9,
+     "vectors": 131327
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 9,
+     "vectors": 130816
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 9,
+     "vectors": 130816
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 19,
+   "b": 0,
+   "rho": 19,
+   "sigma_mod8": 3,
+   "directions_by_support": 5,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 130815
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 5,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 131328
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 4,
+     "vectors": 130815
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rho": 20,
+   "sigma_mod8": 4,
+   "directions_by_support": 5,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 261630
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 5,
+     "vectors": 262144
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 262656
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 5,
+     "vectors": 262144
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rho": 20,
+   "sigma_mod8": 6,
+   "directions_by_support": 10,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 9,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 10,
+     "vectors": 261632
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 9,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 10,
+     "vectors": 262656
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rho": 20,
+   "sigma_mod8": 0,
+   "directions_by_support": 14,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 13,
+     "vectors": 262654
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 14,
+     "vectors": 262144
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 14,
+     "vectors": 261632
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 14,
+     "vectors": 262144
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rho": 20,
+   "sigma_mod8": 2,
+   "directions_by_support": 18,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 17,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 18,
+     "vectors": 262656
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 17,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 18,
+     "vectors": 261632
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rho": 20,
+   "sigma_mod8": 4,
+   "directions_by_support": 21,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 20,
+     "vectors": 261630
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 21,
+     "vectors": 262144
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 21,
+     "vectors": 262656
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 21,
+     "vectors": 262144
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rho": 20,
+   "sigma_mod8": 6,
+   "directions_by_support": 24,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 23,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 24,
+     "vectors": 261632
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 23,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 24,
+     "vectors": 262656
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rho": 20,
+   "sigma_mod8": 0,
+   "directions_by_support": 26,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 25,
+     "vectors": 262654
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 26,
+     "vectors": 262144
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 26,
+     "vectors": 261632
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 26,
+     "vectors": 262144
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rho": 20,
+   "sigma_mod8": 2,
+   "directions_by_support": 28,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 27,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 28,
+     "vectors": 262656
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 27,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 28,
+     "vectors": 261632
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rho": 20,
+   "sigma_mod8": 4,
+   "directions_by_support": 29,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 28,
+     "vectors": 261630
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 29,
+     "vectors": 262144
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 29,
+     "vectors": 262656
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 29,
+     "vectors": 262144
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rho": 20,
+   "sigma_mod8": 6,
+   "directions_by_support": 30,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 29,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 30,
+     "vectors": 261632
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 29,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 30,
+     "vectors": 262656
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 10,
+   "b": 10,
+   "rho": 20,
+   "sigma_mod8": 0,
+   "directions_by_support": 30,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 29,
+     "vectors": 262654
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 30,
+     "vectors": 262144
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 30,
+     "vectors": 261632
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 30,
+     "vectors": 262144
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 11,
+   "b": 9,
+   "rho": 20,
+   "sigma_mod8": 2,
+   "directions_by_support": 30,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 29,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 30,
+     "vectors": 262656
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 29,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 30,
+     "vectors": 261632
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 12,
+   "b": 8,
+   "rho": 20,
+   "sigma_mod8": 4,
+   "directions_by_support": 29,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 28,
+     "vectors": 261630
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 29,
+     "vectors": 262144
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 29,
+     "vectors": 262656
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 29,
+     "vectors": 262144
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 13,
+   "b": 7,
+   "rho": 20,
+   "sigma_mod8": 6,
+   "directions_by_support": 28,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 27,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 28,
+     "vectors": 261632
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 27,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 28,
+     "vectors": 262656
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 14,
+   "b": 6,
+   "rho": 20,
+   "sigma_mod8": 0,
+   "directions_by_support": 26,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 25,
+     "vectors": 262654
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 26,
+     "vectors": 262144
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 26,
+     "vectors": 261632
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 26,
+     "vectors": 262144
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 15,
+   "b": 5,
+   "rho": 20,
+   "sigma_mod8": 2,
+   "directions_by_support": 24,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 23,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 24,
+     "vectors": 262656
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 23,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 24,
+     "vectors": 261632
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 16,
+   "b": 4,
+   "rho": 20,
+   "sigma_mod8": 4,
+   "directions_by_support": 21,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 20,
+     "vectors": 261630
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 21,
+     "vectors": 262144
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 21,
+     "vectors": 262656
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 21,
+     "vectors": 262144
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 17,
+   "b": 3,
+   "rho": 20,
+   "sigma_mod8": 6,
+   "directions_by_support": 18,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 17,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 18,
+     "vectors": 261632
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 17,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 18,
+     "vectors": 262656
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 18,
+   "b": 2,
+   "rho": 20,
+   "sigma_mod8": 0,
+   "directions_by_support": 14,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 13,
+     "vectors": 262654
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 14,
+     "vectors": 262144
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 14,
+     "vectors": 261632
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 14,
+     "vectors": 262144
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 19,
+   "b": 1,
+   "rho": 20,
+   "sigma_mod8": 2,
+   "directions_by_support": 10,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 9,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 10,
+     "vectors": 262656
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 9,
+     "vectors": 262143
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 10,
+     "vectors": 261632
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  },
+  {
+   "a": 20,
+   "b": 0,
+   "rho": 20,
+   "sigma_mod8": 4,
+   "directions_by_support": 5,
+   "orbits": [
+    {
+     "label": "characteristic",
+     "support_patterns": 1,
+     "vectors": 1
+    },
+    {
+     "label": "norm:0",
+     "support_patterns": 4,
+     "vectors": 261630
+    },
+    {
+     "label": "norm:1",
+     "support_patterns": 5,
+     "vectors": 262144
+    },
+    {
+     "label": "norm:2",
+     "support_patterns": 5,
+     "vectors": 262656
+    },
+    {
+     "label": "norm:3",
+     "support_patterns": 5,
+     "vectors": 262144
+    },
+    {
+     "label": "zero",
+     "support_patterns": 1,
+     "vectors": 1
+    }
+   ]
+  }
+ ]
+}

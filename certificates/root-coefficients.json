@@ -1,0 +1,53 @@
+{
+ "certificate": "Closed formulas for the inclusion-exclusion coefficients over Z[i]",
+ "statement": "c(A_n) = (-1)^n n!, c(D_n) = (-1)^n (n-1)! (2^(n-1) - 1), c(G_m) = (-1)^m 2^(m-1) (m-1)! agree with all 12,934 terms of gaussian-rootless-mass.json.",
+ "computations": [
+  "C20"
+ ],
+ "scope": "Comparison of the closed formulas with the term table; the classes with g^2 = -1 in W(F_4) and W(E_8) are checked separately with character tables.",
+ "irreducible_list_matches": true,
+ "coefficient_mismatches": {},
+ "counts_by_rank": [
+  1,
+  1,
+  3,
+  5,
+  12,
+  19,
+  38,
+  62,
+  113,
+  181,
+  309,
+  489,
+  802,
+  1245,
+  1973,
+  3018,
+  4663
+ ],
+ "total_types": 12934,
+ "term_mismatches": [],
+ "terms": 12934,
+ "terms_with_nonzero_average": 10989,
+ "nonzero_by_rank": [
+  1,
+  1,
+  3,
+  5,
+  12,
+  19,
+  38,
+  62,
+  113,
+  181,
+  309,
+  489,
+  802,
+  1245,
+  1973,
+  3018,
+  2718
+ ],
+ "sum_matches_recorded": true
+}

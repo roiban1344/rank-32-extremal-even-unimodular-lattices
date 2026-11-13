@@ -1,0 +1,2013 @@
+{
+ "description": "The 99 extremal even unimodular lattices of rank 32 with the largest automorphism groups (P2, Table A1), in the order of the table.",
+ "source": "the profiles of computation A2 of the second paper; the full profiles are in data/largest-groups.jsonl.gz",
+ "fields": [
+  "label",
+  "id",
+  "aut",
+  "aut_factor",
+  "fstar",
+  "g_mod_fstar",
+  "chief",
+  "presentation",
+  "origin"
+ ],
+ "lattices": [
+  {
+   "label": "32.512.1",
+   "id": "16-16-s16d0b:37",
+   "aut": 512,
+   "aut_factor": "2^9",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 64, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2* 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.512.2",
+   "id": "12-20-c50:50",
+   "aut": 512,
+   "aut_factor": "2^9",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 8, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2 2 2* 2 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.512.3",
+   "id": "8-24:53",
+   "aut": 512,
+   "aut_factor": "2^9",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 32, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2* 2 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.512.4",
+   "id": "8-24:4577",
+   "aut": 512,
+   "aut_factor": "2^9",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 32, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2* 2 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.512.5",
+   "id": "16-16-s16d0a:285",
+   "aut": 512,
+   "aut_factor": "2^9",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 2, Φ 64, class 5)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2* 2* 2* 2 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.512.6",
+   "id": "12-20-c50:68",
+   "aut": 512,
+   "aut_factor": "2^9",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 8, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2 2 2 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.512.7",
+   "id": "16-16-s14d0:628",
+   "aut": 512,
+   "aut_factor": "2^9",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 16, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2* 2 2 2* 2 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.512.8",
+   "id": "16-16-s14d0:503",
+   "aut": 512,
+   "aut_factor": "2^9",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 32, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2* 2* 2 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.512.9",
+   "id": "16-16-s16d0a:261",
+   "aut": 512,
+   "aut_factor": "2^9",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 16, Φ 32, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2* 2 2* 2* 2* 2 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.512.10",
+   "id": "8-24:14453",
+   "aut": 512,
+   "aut_factor": "2^9",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 64, class 5)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2* 2 2 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.512.11",
+   "id": "16-16d8:69503",
+   "aut": 512,
+   "aut_factor": "2^9",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 16, Φ 16, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2* 2 2* 2 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.512.12",
+   "id": "12-20-c37:49",
+   "aut": 512,
+   "aut_factor": "2^9",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 16, Φ 32, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2* 2* 2* 2* 2 2 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1024.1",
+   "id": "8-24:665",
+   "aut": 1024,
+   "aut_factor": "2^10",
+   "fstar": [
+    [
+     "math",
+     "2^10"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 64, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2 2* 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1024.2",
+   "id": "16-16-s14d0:301",
+   "aut": 1024,
+   "aut_factor": "2^10",
+   "fstar": [
+    [
+     "math",
+     "2^10"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 32, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2 2* 2* 2* 2* 2 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1024.3",
+   "id": "16-16-s14d0:601",
+   "aut": 1024,
+   "aut_factor": "2^10",
+   "fstar": [
+    [
+     "math",
+     "2^10"
+    ],
+    [
+     "text",
+     "(centre 2, Φ 128, class 5)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2* 2* 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1024.4",
+   "id": "16-16d8:221705",
+   "aut": 1024,
+   "aut_factor": "2^10",
+   "fstar": [
+    [
+     "math",
+     "2^10"
+    ],
+    [
+     "text",
+     "(centre 2, Φ 64, class 6)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2* 2 2* 2 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1024.5",
+   "id": "12-20-c50:40",
+   "aut": 1024,
+   "aut_factor": "2^10",
+   "fstar": [
+    [
+     "math",
+     "2^10"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 64, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2 2* 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1024.6",
+   "id": "8-24:14202",
+   "aut": 1024,
+   "aut_factor": "2^10",
+   "fstar": [
+    [
+     "math",
+     "2^10"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 128, class 5)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2* 2 2* 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1024.7",
+   "id": "16-16-s14d0:840",
+   "aut": 1024,
+   "aut_factor": "2^10",
+   "fstar": [
+    [
+     "math",
+     "2^10"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 64, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2* 2* 2* 2 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1536.1",
+   "id": "16-16s14:5363",
+   "aut": 1536,
+   "aut_factor": "2^9 3",
+   "fstar": [
+    [
+     "math",
+     "2^8"
+    ],
+    [
+     "text",
+     "(centre 32, Φ 8, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2^2 2* 2* 2^2* 2^2",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1536.2",
+   "id": "16-16d8:47369",
+   "aut": 1536,
+   "aut_factor": "2^9 3",
+   "fstar": [
+    [
+     "math",
+     "2^8"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 8, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2^2 2 2* 2^2 2^2*",
+   "presentation": "2.1",
+   "origin": "gluing"
+  },
+  {
+   "label": "32.1536.3",
+   "id": "8-24:680",
+   "aut": 1536,
+   "aut_factor": "2^9 3",
+   "fstar": [
+    [
+     "math",
+     "2^8"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 16, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2 2^2 2 2^2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1536.4",
+   "id": "8-24:609",
+   "aut": 1536,
+   "aut_factor": "2^9 3",
+   "fstar": [
+    [
+     "math",
+     "2^8"
+    ],
+    [
+     "text",
+     "(centre 16, Φ 2, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2 2^2 2 2* 2^2 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1536.5",
+   "id": "16-16-s14d0:231",
+   "aut": 1536,
+   "aut_factor": "2^9 3",
+   "fstar": [
+    [
+     "math",
+     "2^8"
+    ],
+    [
+     "text",
+     "(centre 2, Φ 64, class 5)"
+    ],
+    [
+     "math",
+     "times 3"
+    ]
+   ],
+   "g_mod_fstar": 2,
+   "chief": "2 2 2 2* 2* 3 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1536.6",
+   "id": "16-16-s14d0:233",
+   "aut": 1536,
+   "aut_factor": "2^9 3",
+   "fstar": [
+    [
+     "math",
+     "2^8"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 16, class 3)"
+    ],
+    [
+     "math",
+     "times 3"
+    ]
+   ],
+   "g_mod_fstar": 2,
+   "chief": "2 2 2 2 2 2* 2* 2* 2* 3",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.2016.1",
+   "id": "8-16-8:5-0/19",
+   "aut": 2016,
+   "aut_factor": "2^5 3^2 7",
+   "fstar": [
+    [
+     "math",
+     "2 times 3 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 336)"
+    ]
+   ],
+   "g_mod_fstar": 2,
+   "chief": "L_2(7) 2 2* 3",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.2048.1",
+   "id": "12-20-c51:11",
+   "aut": 2048,
+   "aut_factor": "2^11",
+   "fstar": [
+    [
+     "math",
+     "2^11"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 128, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2* 2 2 2* 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.2048.2",
+   "id": "16-16s14:5508",
+   "aut": 2048,
+   "aut_factor": "2^11",
+   "fstar": [
+    [
+     "math",
+     "2^11"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 128, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2* 2 2* 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.2048.3",
+   "id": "16-16-s12d1:44",
+   "aut": 2048,
+   "aut_factor": "2^11",
+   "fstar": [
+    [
+     "math",
+     "2^11"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 256, class 5)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2* 2* 2* 2 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.2048.4",
+   "id": "16-16-s14d0:341",
+   "aut": 2048,
+   "aut_factor": "2^11",
+   "fstar": [
+    [
+     "math",
+     "2^11"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 64, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2* 2 2* 2 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.2048.5",
+   "id": "12-20-c51:4",
+   "aut": 2048,
+   "aut_factor": "2^11",
+   "fstar": [
+    [
+     "math",
+     "2^11"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 128, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2 2* 2* 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.2304.1",
+   "id": "8-16-8:3-0/4",
+   "aut": 2304,
+   "aut_factor": "2^8 3^2",
+   "fstar": [
+    [
+     "math",
+     "2^6"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 2, class 2)"
+    ],
+    [
+     "math",
+     "times 3"
+    ]
+   ],
+   "g_mod_fstar": 12,
+   "chief": "2 3 2 3 2^2 2^2 2 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.2304.2",
+   "id": "14-18e:601",
+   "aut": 2304,
+   "aut_factor": "2^8 3^2",
+   "fstar": [
+    [
+     "math",
+     "2^6"
+    ],
+    [
+     "text",
+     "(abelian)"
+    ]
+   ],
+   "g_mod_fstar": 36,
+   "chief": "2 2 3 3 2* 2^4 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.2592.1",
+   "id": "9-14-9:0-0/131",
+   "aut": 2592,
+   "aut_factor": "2^5 3^4",
+   "fstar": [
+    [
+     "math",
+     "2 times 3 times 3 times 3"
+    ]
+   ],
+   "g_mod_fstar": 48,
+   "chief": "2 3 2^2 2* 2 3^2 3",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.2880.1",
+   "id": "16-16d8:68772",
+   "aut": 2880,
+   "aut_factor": "2^6 3^2 5",
+   "fstar": [
+    [
+     "math",
+     "2 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 360)"
+    ]
+   ],
+   "g_mod_fstar": 4,
+   "chief": "2 2 A_6 2*",
+   "presentation": "2.3",
+   "origin": "gluing"
+  },
+  {
+   "label": "32.3072.1",
+   "id": "16-16-s16d0c:221",
+   "aut": 3072,
+   "aut_factor": "2^10 3",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 16, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2 2^2 2^2* 2* 2^2 2*",
+   "presentation": "2.1",
+   "origin": "gluing"
+  },
+  {
+   "label": "32.3072.2",
+   "id": "16-16-s16d0c:472",
+   "aut": 3072,
+   "aut_factor": "2^10 3",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 16, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2 2 2 2^2 2^2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.3072.3",
+   "id": "8-24:10",
+   "aut": 3072,
+   "aut_factor": "2^10 3",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 32, Φ 2, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2 2^2 2^2 2* 2^2 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.3072.4",
+   "id": "16-16d8:94116",
+   "aut": 3072,
+   "aut_factor": "2^10 3",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 64, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2^2 2 2^2* 2* 2^2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.3072.5",
+   "id": "8-24:1261",
+   "aut": 3072,
+   "aut_factor": "2^10 3",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 32, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2 2^2 2* 2^2* 2 2^2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.4032.1",
+   "id": "8-24:1205",
+   "aut": 4032,
+   "aut_factor": "2^6 3^2 7",
+   "fstar": [
+    [
+     "math",
+     "2 times 3 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 168)"
+    ]
+   ],
+   "g_mod_fstar": 4,
+   "chief": "2 L_2(7) 2 2 3",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.4096.1",
+   "id": "16-16-s16d0a:678",
+   "aut": 4096,
+   "aut_factor": "2^12",
+   "fstar": [
+    [
+     "math",
+     "2^12"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 256, class 5)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2* 2 2* 2* 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.4608.1",
+   "id": "16-16s14:5423",
+   "aut": 4608,
+   "aut_factor": "2^9 3^2",
+   "fstar": [
+    [
+     "math",
+     "2^6"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 2, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 72,
+   "chief": "2 2 2* 3^2 2* 2^4 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.4608.2",
+   "id": "8-24:681",
+   "aut": 4608,
+   "aut_factor": "2^9 3^2",
+   "fstar": [
+    [
+     "math",
+     "2^7"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 4, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 36,
+   "chief": "2 3 2 3 2 2* 2^4 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.4896.1",
+   "id": "known:zeta17:s1-1",
+   "aut": 4896,
+   "aut_factor": "2^5 3^2 17",
+   "fstar": [
+    [
+     "math",
+     "2 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 4,896)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "L_2(17) 2*",
+   "presentation": "2.3",
+   "origin": "gluing"
+  },
+  {
+   "label": "32.5184.1",
+   "id": "known:eis:s1-60",
+   "aut": 5184,
+   "aut_factor": "2^6 3^4",
+   "fstar": [
+    [
+     "math",
+     "4 times 3^4"
+    ],
+    [
+     "text",
+     "(centre 9, Φ 3, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 16,
+   "chief": "2 2 2 2* 2* 2* 3^2 3 3*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.5760.1",
+   "id": "12-20-c61:21",
+   "aut": 5760,
+   "aut_factor": "2^7 3^2 5",
+   "fstar": [
+    [
+     "math",
+     "2 times 2 times 2 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 60)"
+    ]
+   ],
+   "g_mod_fstar": 12,
+   "chief": "2 A_5 2 3 2* 2^2",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.5760.2",
+   "id": "12-20-c62:148",
+   "aut": 5760,
+   "aut_factor": "2^7 3^2 5",
+   "fstar": [
+    [
+     "math",
+     "2 times 2 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 360)"
+    ]
+   ],
+   "g_mod_fstar": 4,
+   "chief": "2 2 A_6 2* 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.6144.1",
+   "id": "16-16d8:196009",
+   "aut": 6144,
+   "aut_factor": "2^11 3",
+   "fstar": [
+    [
+     "math",
+     "2^10"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 64, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2 2^2 2 2^2* 2* 2* 2^2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.6144.2",
+   "id": "8-24:82",
+   "aut": 6144,
+   "aut_factor": "2^11 3",
+   "fstar": [
+    [
+     "math",
+     "2^10"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 32, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2 2 2 2^2 2^2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.7680.1",
+   "id": "16-16d8:98086",
+   "aut": 7680,
+   "aut_factor": "2^9 3 5",
+   "fstar": [
+    [
+     "math",
+     "2^6"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 2, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 120,
+   "chief": "2 A_5 2^4 2* 2*",
+   "presentation": "2.3",
+   "origin": "gluing"
+  },
+  {
+   "label": "32.7680.2",
+   "id": "14-18e:602",
+   "aut": 7680,
+   "aut_factor": "2^9 3 5",
+   "fstar": [
+    [
+     "math",
+     "2^6"
+    ],
+    [
+     "text",
+     "(abelian)"
+    ]
+   ],
+   "g_mod_fstar": 120,
+   "chief": "2 A_5 2 2* 2^4",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.8192.1",
+   "id": "16-16d8:212783",
+   "aut": 8192,
+   "aut_factor": "2^13",
+   "fstar": [
+    [
+     "math",
+     "2^13"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 512, class 6)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2* 2 2* 2* 2* 2 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.9216.1",
+   "id": "16-16-s12d1:19",
+   "aut": 9216,
+   "aut_factor": "2^10 3^2",
+   "fstar": [
+    [
+     "math",
+     "2^8"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 2, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 36,
+   "chief": "2 3 2 3 2^2 2 2^4 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.9216.2",
+   "id": "known:eis:s1-140",
+   "aut": 9216,
+   "aut_factor": "2^10 3^2",
+   "fstar": [
+    [
+     "math",
+     "2^8"
+    ],
+    [
+     "text",
+     "(centre 2, Φ 64, class 4)"
+    ],
+    [
+     "math",
+     "times 3"
+    ]
+   ],
+   "g_mod_fstar": 12,
+   "chief": "2 2 3 3 2^2 2^2* 2* 2^2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.9216.3",
+   "id": "16-16-s12d0:6",
+   "aut": 9216,
+   "aut_factor": "2^10 3^2",
+   "fstar": [
+    [
+     "math",
+     "2^8"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 4, class 2)"
+    ],
+    [
+     "math",
+     "times 3"
+    ]
+   ],
+   "g_mod_fstar": 12,
+   "chief": "2 3 2 2^2 2^2 2^2 2* 2* 3",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.10240.1",
+   "id": "16-16d8:222190",
+   "aut": 10240,
+   "aut_factor": "2^11 5",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 2, Φ 32, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 20,
+   "chief": "2 2* 5 2^4 2^4* 2*",
+   "presentation": "2.1",
+   "origin": "gluing"
+  },
+  {
+   "label": "32.10368.1",
+   "id": "12-8-8:0-49/3",
+   "aut": 10368,
+   "aut_factor": "2^7 3^4",
+   "fstar": [
+    [
+     "math",
+     "2^(1+2)_- times 3^(1+2)"
+    ],
+    [
+     "text",
+     "(exponent 3)"
+    ]
+   ],
+   "g_mod_fstar": 48,
+   "chief": "2 2 2 2* 3 3^2 3* 2^2 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.11520.1",
+   "id": "known:eis:s1-440",
+   "aut": 11520,
+   "aut_factor": "2^8 3^2 5",
+   "fstar": [
+    [
+     "math",
+     "2^(1+4)_+ times 3 times 5"
+    ]
+   ],
+   "g_mod_fstar": 24,
+   "chief": "2 2 2 3 3 5 2^2 2^2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.12288.1",
+   "id": "known:kmax24:3",
+   "aut": 12288,
+   "aut_factor": "2^12 3",
+   "fstar": [
+    [
+     "math",
+     "2^11"
+    ],
+    [
+     "text",
+     "(centre 16, Φ 64, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2 2* 2* 2 2^2 2* 2^2* 2^2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.15360.1",
+   "id": "8-24:1215",
+   "aut": 15360,
+   "aut_factor": "2^10 3 5",
+   "fstar": [
+    [
+     "math",
+     "2^8"
+    ],
+    [
+     "text",
+     "(centre 2, Φ 64, class 4)"
+    ],
+    [
+     "math",
+     "times 5"
+    ]
+   ],
+   "g_mod_fstar": 12,
+   "chief": "2 3 2* 2^2 2^2* 5 2* 2^2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.16128.1",
+   "id": "known:eis:s1-100",
+   "aut": 16128,
+   "aut_factor": "2^8 3^2 7",
+   "fstar": [
+    [
+     "math",
+     "2^(1+2)_- times 3 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 168)"
+    ]
+   ],
+   "g_mod_fstar": 4,
+   "chief": "2 L_2(7) 2 2 2* 2* 3",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.16384.1",
+   "id": "known:kmax24:1",
+   "aut": 16384,
+   "aut_factor": "2^14",
+   "fstar": [
+    [
+     "math",
+     "2^14"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 512, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2* 2* 2 2* 2* 2* 2 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.17280.1",
+   "id": "6-20-6:5cbb7125e7f8/0",
+   "aut": 17280,
+   "aut_factor": "2^7 3^3 5",
+   "fstar": [
+    [
+     "math",
+     "2 times 3 times 3 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 60)"
+    ]
+   ],
+   "g_mod_fstar": 16,
+   "chief": "2 A_5 2 2 2* 2* 3^2",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.18432.1",
+   "id": "8-24:8",
+   "aut": 18432,
+   "aut_factor": "2^11 3^2",
+   "fstar": [
+    [
+     "math",
+     "2^9"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 4, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 36,
+   "chief": "2 3 2 3 2 2^2 2^2* 2* 2^2 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.19584.1",
+   "id": "known:zeta17:s1-10",
+   "aut": 19584,
+   "aut_factor": "2^7 3^2 17",
+   "fstar": [
+    [
+     "math",
+     "4 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 2,448)"
+    ]
+   ],
+   "g_mod_fstar": 2,
+   "chief": "2 L_2(17) 2 2*",
+   "presentation": "2.3",
+   "origin": "gluing"
+  },
+  {
+   "label": "32.20736.1",
+   "id": "known:eis:s1-880",
+   "aut": 20736,
+   "aut_factor": "2^8 3^4",
+   "fstar": [
+    [
+     "math",
+     "2^4"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 2, class 2)"
+    ],
+    [
+     "math",
+     "times 3 times 3 times 3"
+    ]
+   ],
+   "g_mod_fstar": 48,
+   "chief": "2 2 2 2* 3 2* 3 3^2 2^2 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.23328.1",
+   "id": "9-14-7:0-0/0",
+   "aut": 23328,
+   "aut_factor": "2^5 3^6",
+   "fstar": [
+    [
+     "math",
+     "2 times 3^(1+4)"
+    ],
+    [
+     "text",
+     "(exponent 9)"
+    ]
+   ],
+   "g_mod_fstar": 48,
+   "chief": "2 3 2^2 2* 2 3^2 3 3 3*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.24000.1",
+   "id": "5-5-12-5:1",
+   "aut": 24000,
+   "aut_factor": "2^6 3 5^3",
+   "fstar": [
+    [
+     "math",
+     "2 times 5 times 5"
+    ]
+   ],
+   "g_mod_fstar": 480,
+   "chief": "2 A_5 2* 2* 2 5^2",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.27648.1",
+   "id": "8-24:83",
+   "aut": 27648,
+   "aut_factor": "2^10 3^3",
+   "fstar": [
+    [
+     "math",
+     "2^7"
+    ],
+    [
+     "text",
+     "(centre 8, Φ 2, class 2)"
+    ],
+    [
+     "math",
+     "times 3"
+    ]
+   ],
+   "g_mod_fstar": 72,
+   "chief": "2 2 2* 3^2 2 2* 3* 2^4 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.27648.2",
+   "id": "16-16-s12d0:0",
+   "aut": 27648,
+   "aut_factor": "2^10 3^3",
+   "fstar": [
+    [
+     "math",
+     "2^6"
+    ],
+    [
+     "text",
+     "(abelian)"
+    ],
+    [
+     "math",
+     "times 3"
+    ]
+   ],
+   "g_mod_fstar": 144,
+   "chief": "2 2 2 2* 3^2 3 2 2* 2^4",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.51840.1",
+   "id": "12-8-8:0-49/5",
+   "aut": 51840,
+   "aut_factor": "2^7 3^4 5",
+   "fstar": [
+    [
+     "math",
+     "2 times 3^(1+2)"
+    ],
+    [
+     "text",
+     "(exponent 3)"
+    ],
+    [
+     "math",
+     "compose E"
+    ],
+    [
+     "text",
+     "(|E| = 120)"
+    ]
+   ],
+   "g_mod_fstar": 16,
+   "chief": "2 A_5 2 2* 2* 2* 3^2 3*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.58752.1",
+   "id": "known:zeta17:s1-14",
+   "aut": 58752,
+   "aut_factor": "2^7 3^3 17",
+   "fstar": [
+    [
+     "math",
+     "2 times 3 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 4,896)"
+    ]
+   ],
+   "g_mod_fstar": 4,
+   "chief": "2 L_2(17) 2 3 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.62208.1",
+   "id": "10-12-10:0-1/358",
+   "aut": 62208,
+   "aut_factor": "2^8 3^5",
+   "fstar": [
+    [
+     "math",
+     "2 times 3 times 3 times 3 times 3"
+    ]
+   ],
+   "g_mod_fstar": 384,
+   "chief": "2 2 3 2^2 2^2* 2* 2* 3^4",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.65536.1",
+   "id": "16-16s14:4818",
+   "aut": 65536,
+   "aut_factor": "2^16",
+   "fstar": [
+    [
+     "math",
+     "2^16"
+    ],
+    [
+     "text",
+     "(centre 2, Φ 8,192, class 9)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2* 2 2* 2* 2* 2* 2* 2* 2* 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.196608.1",
+   "id": "16-16s14:3202",
+   "aut": 196608,
+   "aut_factor": "2^16 3",
+   "fstar": [
+    [
+     "math",
+     "2^15"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 2,048, class 6)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2^2 2 2^2* 2* 2* 2^2* 2* 2* 2* 2^2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.196608.2",
+   "id": "known:kmax24:2",
+   "aut": 196608,
+   "aut_factor": "2^16 3",
+   "fstar": [
+    [
+     "math",
+     "2^15"
+    ],
+    [
+     "text",
+     "(centre 16, Φ 128, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2 2 2^2 2* 2* 2* 2 2* 2* 2^2 2^2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.207360.1",
+   "id": "16-16-s12d1:69",
+   "aut": 207360,
+   "aut_factor": "2^9 3^4 5",
+   "fstar": [
+    [
+     "math",
+     "4 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 25,920)"
+    ]
+   ],
+   "g_mod_fstar": 2,
+   "chief": "2 U_4(2) 2 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.245760.1",
+   "id": "known:kmax24:6",
+   "aut": 245760,
+   "aut_factor": "2^14 3 5",
+   "fstar": [
+    [
+     "math",
+     "2^11"
+    ],
+    [
+     "text",
+     "(centre 128, Φ 8, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 120,
+   "chief": "2 A_5 2 2* 2 2* 2^4* 2* 2* 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.262144.1",
+   "id": "known:kmax24:0",
+   "aut": 262144,
+   "aut_factor": "2^18",
+   "fstar": [
+    [
+     "math",
+     "2^18"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 16,384, class 8)"
+    ]
+   ],
+   "g_mod_fstar": 1,
+   "chief": "2 2 2 2* 2* 2 2* 2* 2* 2* 2* 2* 2* 2* 2* 2* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.294912.1",
+   "id": "known:kmax24:5",
+   "aut": 294912,
+   "aut_factor": "2^15 3^2",
+   "fstar": [
+    [
+     "math",
+     "2^13"
+    ],
+    [
+     "text",
+     "(centre 32, Φ 32, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 36,
+   "chief": "2 3 2 3 2^4 2* 2^4 2* 2* 2^2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.322560.1",
+   "id": "12-20-c63:236",
+   "aut": 322560,
+   "aut_factor": "2^10 3^2 5 7",
+   "fstar": [
+    [
+     "math",
+     "4 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 80,640)"
+    ]
+   ],
+   "g_mod_fstar": 4,
+   "chief": "2 2 L_3(4) 2* 2*",
+   "presentation": "2.3, 2.4",
+   "origin": "comp."
+  },
+  {
+   "label": "32.368640.1",
+   "id": "16-16d8:222101",
+   "aut": 368640,
+   "aut_factor": "2^13 3^2 5",
+   "fstar": [
+    [
+     "math",
+     "2^(1+8)_+"
+    ]
+   ],
+   "g_mod_fstar": 720,
+   "chief": "2 A_5 2 3 2^8 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.393216.1",
+   "id": "known:kmax24:4",
+   "aut": 393216,
+   "aut_factor": "2^17 3",
+   "fstar": [
+    [
+     "math",
+     "2^16"
+    ],
+    [
+     "text",
+     "(centre 16, Φ 128, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 6,
+   "chief": "2 3 2 2^2 2^2 2* 2 2^2* 2* 2^2 2* 2^2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.589824.1",
+   "id": "known:kmax24:11",
+   "aut": 589824,
+   "aut_factor": "2^16 3^2",
+   "fstar": [
+    [
+     "math",
+     "2^14"
+    ],
+    [
+     "text",
+     "(centre 16, Φ 1,024, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 36,
+   "chief": "2 3 2 3 2^2 2* 2^2 2^4* 2^2* 2^2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.839808.1",
+   "id": "12-8-8:0-50/2",
+   "aut": 839808,
+   "aut_factor": "2^7 3^8",
+   "fstar": [
+    [
+     "math",
+     "2 times 3^7"
+    ],
+    [
+     "text",
+     "(centre 27, Φ 27, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 192,
+   "chief": "2 3 2^2 2^2 2* 2* 3^4 3^3*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1179648.1",
+   "id": "16-16-s12d0:34",
+   "aut": 1179648,
+   "aut_factor": "2^17 3^2",
+   "fstar": [
+    [
+     "math",
+     "2^14"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 1,024, class 4)"
+    ]
+   ],
+   "g_mod_fstar": 72,
+   "chief": "2 2 2* 3^2 2^4 2^4* 2^4* 2* 2*",
+   "presentation": "2.1",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1548288.1",
+   "id": "known:seven:s1-4",
+   "aut": 1548288,
+   "aut_factor": "2^13 3^3 7",
+   "fstar": [
+    [
+     "math",
+     "2^(1+6)_+ times 3 times 3"
+    ]
+   ],
+   "g_mod_fstar": 1344,
+   "chief": "2 L_2(7) 2 2* 3^2 2^6 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.2073600.1",
+   "id": "5-8-0-0:8",
+   "aut": 2073600,
+   "aut_factor": "2^10 3^4 5^2",
+   "fstar": [
+    [
+     "math",
+     "2 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 259,200)"
+    ]
+   ],
+   "g_mod_fstar": 8,
+   "chief": "2 2 2 A_6^2 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.26542080.1",
+   "id": "known:kmax24:8",
+   "aut": 26542080,
+   "aut_factor": "2^16 3^4 5",
+   "fstar": [
+    [
+     "math",
+     "2^10"
+    ],
+    [
+     "text",
+     "(centre 64, Φ 2, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 25920,
+   "chief": "2 A_6 2 3 2 3 2^4 2^4* 2* 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.44040192.1",
+   "id": "known:kmax24:7",
+   "aut": 44040192,
+   "aut_factor": "2^21 3 7",
+   "fstar": [
+    [
+     "math",
+     "2^17"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 512, class 3)"
+    ]
+   ],
+   "g_mod_fstar": 336,
+   "chief": "2 L_2(7) 2^6 2* 2 2* 2^6* 2* 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.53084160.1",
+   "id": "16-16-s10d1:0",
+   "aut": 53084160,
+   "aut_factor": "2^17 3^4 5",
+   "fstar": [
+    [
+     "math",
+     "2^10"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 2, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 51840,
+   "chief": "2 U_4(2) 2^8 2* 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.74317824.1",
+   "id": "known:hurwitz:s1-22",
+   "aut": 74317824,
+   "aut_factor": "2^17 3^4 7",
+   "fstar": [
+    [
+     "math",
+     "2^10"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 2, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 72576,
+   "chief": "2 U_3(3) 2 3 2^6* 2^2 2* 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.975175680.1",
+   "id": "known:code:cyc0",
+   "aut": 975175680,
+   "aut_factor": "2^21 3 5 31",
+   "fstar": [
+    [
+     "math",
+     "2^16"
+    ],
+    [
+     "text",
+     "(abelian)"
+    ]
+   ],
+   "g_mod_fstar": 14880,
+   "chief": "L_2(31) 2^15 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1244160000.1",
+   "id": "known:hurwitz:s1-21",
+   "aut": 1244160000,
+   "aut_factor": "2^13 3^5 5^4",
+   "fstar": [
+    [
+     "math",
+     "2 compose E"
+    ],
+    [
+     "text",
+     "(|E| = 25,920,000)"
+    ]
+   ],
+   "g_mod_fstar": 48,
+   "chief": "2 2 3 2^2 A_5^4 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.1509949440.1",
+   "id": "known:kmax24:9",
+   "aut": 1509949440,
+   "aut_factor": "2^25 3^2 5",
+   "fstar": [
+    [
+     "math",
+     "2^21"
+    ],
+    [
+     "text",
+     "(centre 2, Φ 32,768, class 5)"
+    ]
+   ],
+   "g_mod_fstar": 720,
+   "chief": "2 A_6 2^4 2 2^4* 2* 2^4* 2* 2* 2^4* 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.16911433728.1",
+   "id": "known:kmax24:10",
+   "aut": 16911433728,
+   "aut_factor": "2^28 3^2 7",
+   "fstar": [
+    [
+     "math",
+     "2^23"
+    ],
+    [
+     "text",
+     "(centre 128, Φ 128, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 2016,
+   "chief": "2 L_2(7) 2 3 2^16 2^6* 2*",
+   "presentation": "2.3",
+   "origin": "comp."
+  },
+  {
+   "label": "32.91321742131200.1",
+   "id": "known:code:walk908",
+   "aut": 91321742131200,
+   "aut_factor": "2^31 3^5 5^2 7",
+   "fstar": [
+    [
+     "math",
+     "2^18"
+    ],
+    [
+     "text",
+     "(centre 4, Φ 4, class 2)"
+    ]
+   ],
+   "g_mod_fstar": 348364800,
+   "chief": "2 Omega_8^+(2) 2^16? 2? 2?",
+   "presentation": "2.3, 2.4",
+   "origin": "comp."
+  },
+  {
+   "label": "32.48126558103142400.1",
+   "id": "known:code:r32",
+   "aut": 48126558103142400,
+   "aut_factor": "2^31 3^5 5^2 7 17 31",
+   "fstar": [
+    [
+     "math",
+     "2^(1+10)_+"
+    ]
+   ],
+   "g_mod_fstar": 23499295948800,
+   "chief": "Omega_10^+(2) 2^10? 2?",
+   "presentation": "2.3, 2.4",
+   "origin": "comp."
+  }
+ ]
+}
