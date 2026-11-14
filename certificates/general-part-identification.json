@@ -1,5 +1,5 @@
 {
-"certificate":"Identification of the 12,546 lattices of S_gen",
+"certificate":"Identification of the 12546 lattices of S_gen",
 "statement":"Every constructed lattice of S_gen belongs to exactly one class below; classes are joined by shared exact identifiers, inverse gluing identifiers and the explicit integer isometries listed here (\u00a76.3).",
 "computations":[
 "C1",

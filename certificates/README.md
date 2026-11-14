@@ -14,13 +14,13 @@ matrices (isometries and Gram matrices, as in `quaternion-triples.json`) or the 
 
 | File | Certificate | Computations |
 |---|---|---|
-| `c2xc2-part.json` | The 67,284 lattices of S_(C_2^2) | C26, C28 |
+| `c2xc2-part.json` | The 67284 lattices of S_(C_2^2) | C26, C28 |
 | `exceptional-full-groups.json` | Full automorphism groups of the two known lattices with the largest groups | C22 |
 | `exponent-9-reduction.json` | The two Z/9 blocks of the 9-torsion reduction | — |
-| `gaussian-list-weights.json` | Weights of the 76,742 rootless Hermitian Z[i]-lattices of rank 16 | C12 |
+| `gaussian-list-weights.json` | Weights of the 76742 rootless Hermitian Z[i]-lattices of rank 16 | C12 |
 | `gaussian-rootless-mass.json` | The rootless mass M_2 of Hermitian Z[i]-lattices of rank 16 | C11, C19 |
-| `general-part-distinctness.json` | Distinctness of the 12,546 lattices of S_gen | C24, C25 |
-| `general-part-identification.json` | Identification of the 12,546 lattices of S_gen | C1, C23, C24 |
+| `general-part-distinctness.json` | Distinctness of the 12546 lattices of S_gen | C24, C25 |
+| `general-part-identification.json` | Identification of the 12546 lattices of S_gen | C1, C23, C24 |
 | `general-part-witnesses.json` | Row-level witnesses for Lemmas 6.3 and 6.6 | C24, C25, C29 |
 | `involution-gluing-masses.json` | Gluing classes of the involution types (15, 17), (14, 18), (12, 20) and (16, 16) | C4, C5, C7 |
 | `king-rootless-mass.json` | King's rootless mass in rank 32 | C14, C15 |
@@ -29,7 +29,7 @@ matrices (isometries and Gram matrices, as in `quaternion-triples.json`) or the 
 | `quaternion-triples.json` | The quaternion lattices of S_CQ | C27, C28 |
 | `root-coefficients.json` | Closed formulas for the inclusion-exclusion coefficients over Z[i] | C20 |
 | `subtraction-records.json` | Records used by the subtraction Lemma 6.6 | C29 |
-| `type-8-24-masses.json` | The 14,482 lattices K of the involution type (8, 24) | C6 |
+| `type-8-24-masses.json` | The 14482 lattices K of the involution type (8, 24) | C6 |
 | `type-exclusion-lp.json` | Rational infeasibility certificates for six types of odd prime order | C3 |
 
 ## Identifiers
@@ -86,7 +86,7 @@ Proposition 4.6: sum over the list of f/|U| equals M_2 of Theorem 4.5, where f =
 
 M_2 = sum over root types T of c(T) A_16(T) / |U(T)| (C.2), with the coefficients c of Proposition C.3 and the embedding averages A_16(T) of Theorem C.4.
 
-*Scope.* All 12,934 terms with their coefficients, group orders and embedding averages, and the local 2-adic statistics they use. The local statistics are inputs here; their computation is the finite transition of Appendix C.6.
+*Scope.* All 12934 terms with their coefficients, group orders and embedding averages, and the local 2-adic statistics they use. The local statistics are inputs here; their computation is the finite transition of Appendix C.6.
 
 ## general-part-distinctness.json
 
@@ -102,9 +102,9 @@ Every constructed lattice of S_gen belongs to exactly one class below; classes a
 
 ## general-part-witnesses.json
 
-Lemma 6.3: the saved full-group records of S_gen, their exact identifiers, the inverse identifiers and the integer isometries join into 12,546 classes, one per lattice of the general part; 12,519 classes carry a row of an exact type with an identifier (the witness below) and the other 27 are the classes with saved profiles. Lemma 6.6: the extremal involution entries with |Stab| = 4 (and the entries of type (8, 24) with |Aut K| = 2), minus the self-inverse entries and the entries met by S_gen, are exactly the oriented entries of S_(C_2^2); the Gaussian keys of Proposition 4.6 minus those met by S_gen are exactly the keys of the lattices of S_CQ.
+Lemma 6.3: the saved full-group records of S_gen, their exact identifiers, the inverse identifiers and the integer isometries join into 12546 classes, one per lattice of the general part; 12519 classes carry a row of an exact type with an identifier (the witness below) and the other 27 are the classes with saved profiles. Lemma 6.6: the extremal involution entries with |Stab| = 4 (and the entries of type (8, 24) with |Aut K| = 2), minus the self-inverse entries and the entries met by S_gen, are exactly the oriented entries of S_(C_2^2); the Gaussian keys of Proposition 4.6 minus those met by S_gen are exactly the keys of the lattices of S_CQ.
 
-*Scope.* For each successful full-group record of S_gen (record:<i> names the i-th record where the lattice is not a list entry): its list entry, |Aut L|, the rows of its entries (§6.1) as [row, kind, type, identifier or null, centralizer order, self-conjugate]: one row for each involution entry {[sigma], [-sigma]} with sigma != +-1 (self-conjugate: sigma is conjugate to -sigma, so that the entry is one class) and one for each conjugacy class of elements of odd prime order; and its Hermitian rows of order 4 as [row, key, |U|, f]. Further the inverse edges [phi] -- [phi^-1] (the 8,716 inverse identifiers of general-part-identification.json and the reverses of 6 of them, 5,005 unordered pairs), the isometry edges of general-part-identification.json, the database source of each lattice of the general part, the witness row of each class, the rows completed by high-shell keys, the self-inverse entries and, for each lattice of S_CQ, its Gaussian keys. verify/verify.py replays the bookkeeping from these rows and the other certificates, including the identity of Lemma 6.3(ii): for each list, the rows of the lattices of S_gen, one record each, weighted 1/|C| (2/|C| for an involution entry of a list with F = K that is not self-conjugate), add up to the extremal mass of the list less its trivial classes assigned to S_(C_2^2). Conditional on full groups, complete conjugacy-class rows, correct identifiers and keys, correct self-inverse and inverse identifiers and the positive isometries (Table 10); none of these is recomputed here.
+*Scope.* For each successful full-group record of S_gen (record:<i> names the i-th record where the lattice is not a list entry): its list entry, |Aut L|, the rows of its entries (§6.1) as [row, kind, type, identifier or null, centralizer order, self-conjugate]: one row for each involution entry {[sigma], [-sigma]} with sigma != +-1 (self-conjugate: sigma is conjugate to -sigma, so that the entry is one class) and one for each conjugacy class of elements of odd prime order; and its Hermitian rows of order 4 as [row, key, |U|, f]. Further the inverse edges [phi] -- [phi^-1] (the 8716 inverse identifiers of general-part-identification.json and the reverses of 6 of them, 5005 unordered pairs), the isometry edges of general-part-identification.json, the database source of each lattice of the general part, the witness row of each class, the rows completed by high-shell keys, the self-inverse entries and, for each lattice of S_CQ, its Gaussian keys. verify/verify.py replays the bookkeeping from these rows and the other certificates, including the identity of Lemma 6.3(ii): for each list, the rows of the lattices of S_gen, one record each, weighted 1/|C| (2/|C| for an involution entry of a list with F = K that is not self-conjugate), add up to the extremal mass of the list less its trivial classes assigned to S_(C_2^2). Conditional on full groups, complete conjugacy-class rows, correct identifiers and keys, correct self-inverse and inverse identifiers and the positive isometries (Table 10); none of these is recomputed here.
 
 ## involution-gluing-masses.json
 
@@ -132,13 +132,13 @@ For every diagonal elementary quadratic form over F_2 of dimension 1 to 20, the 
 
 ## quaternion-triples.json
 
-The 2,547 Gaussian classes with g ~ -g not met by S_gen fall into 849 triples, each one lattice (Proposition 6.5(ii), Lemma 6.6(iii)).
+The 2547 Gaussian classes with g ~ -g not met by S_gen fall into 849 triples, each one lattice (Proposition 6.5(ii), Lemma 6.6(iii)).
 
-*Scope.* For each of the 2,547 Gaussian classes: its key, |U|, f, a Gram matrix G of the underlying lattice of rank 32 and the matrix W of multiplication by i on row vectors (W G W^T = G, W^2 = -1); for each of the 849 lattices: its database label, its three keys and two integer isometries T (T^T G_first T = G_second, det T = +-1) joining them. These are the Gram matrices against which the isometries were found; for 64 keys they are other bases than those of the release asset of Gaussian classes. That the keys and |U| belong to (G, W) and that the Gaussian list is complete and distinct are inputs (Table 10); given these, different triples are different lattices by Proposition 6.5.
+*Scope.* For each of the 2547 Gaussian classes: its key, |U|, f, a Gram matrix G of the underlying lattice of rank 32 and the matrix W of multiplication by i on row vectors (W G W^T = G, W^2 = -1); for each of the 849 lattices: its database label, its three keys and two integer isometries T (T^T G_first T = G_second, det T = +-1) joining them. These are the Gram matrices against which the isometries were found; for 64 keys they are other bases than those of the release asset of Gaussian classes. That the keys and |U| belong to (G, W) and that the Gaussian list is complete and distinct are inputs (Table 10); given these, different triples are different lattices by Proposition 6.5.
 
 ## root-coefficients.json
 
-c(A_n) = (-1)^n n!, c(D_n) = (-1)^n (n-1)! (2^(n-1) - 1), c(G_m) = (-1)^m 2^(m-1) (m-1)! agree with all 12,934 terms of gaussian-rootless-mass.json.
+c(A_n) = (-1)^n n!, c(D_n) = (-1)^n (n-1)! (2^(n-1) - 1), c(G_m) = (-1)^m 2^(m-1) (m-1)! agree with all 12934 terms of gaussian-rootless-mass.json.
 
 *Scope.* Comparison of the closed formulas with the term table; the classes with g^2 = -1 in W(F_4) and W(E_8) are checked separately with character tables.
 
@@ -150,9 +150,9 @@ In the full-group records of S_gen every trivial involution entry has an exact p
 
 ## type-8-24-masses.json
 
-Identity (B.1): for P = Leech, A_1^24 and A_2^12, sum over Aut P-orbits of good subspaces W of 1/|Stab(W)| = sum over the 14,482 lattices K of a(K, P)/|Aut K| (Appendix B.3, Theorem B.3).
+Identity (B.1): for P = Leech, A_1^24 and A_2^12, sum over Aut P-orbits of good subspaces W of 1/|Stab(W)| = sum over the 14482 lattices K of a(K, P)/|Aut K| (Appendix B.3, Theorem B.3).
 
-*Scope.* For each K, in list order (list entry 8-24:<i>), |Aut K|, how K was separated from the others and |Aut K| obtained (aut_from: graph, the 720 vectors of norm 2 of K^# generate it and the canonical form of their graph is a complete invariant; orbit, the orbit of N/N' completes that form; qfauto, four lattices whose |Aut K|, computed with qfauto, is the order of no other K, which separates them), and the number of the 270 maximal totally singular subspaces T' for which K + T' has a given number of roots (the root numbers 0, 48 and 72 determine the Niemeier lattice: Leech, A_1^24, A_2^12; the others are shared by several). For the Leech lattice and A_1^24 the stabilizer orders of all orbits of good subspaces; for A_2^12, for each of the 106,624 orbits of good 3-dimensional subspaces W_3, the pair [|Stab(W_3)|, g(W_3)] with g(W_3) the number of good W containing W_3, so that the left side is (1/15) sum g/|Stab| (Appendix B.3), and that value. The group orders and the numbers g are inputs (Table 10).
+*Scope.* For each K, in list order (list entry 8-24:<i>), |Aut K|, how K was separated from the others and |Aut K| obtained (aut_from: graph, the 720 vectors of norm 2 of K^# generate it and the canonical form of their graph is a complete invariant; orbit, the orbit of N/N' completes that form; qfauto, four lattices whose |Aut K|, computed with qfauto, is the order of no other K, which separates them), and the number of the 270 maximal totally singular subspaces T' for which K + T' has a given number of roots (the root numbers 0, 48 and 72 determine the Niemeier lattice: Leech, A_1^24, A_2^12; the others are shared by several). For the Leech lattice and A_1^24 the stabilizer orders of all orbits of good subspaces; for A_2^12, for each of the 106624 orbits of good 3-dimensional subspaces W_3, the pair [|Stab(W_3)|, g(W_3)] with g(W_3) the number of good W containing W_3, so that the left side is (1/15) sum g/|Stab| (Appendix B.3), and that value. The group orders and the numbers g are inputs (Table 10).
 
 ## type-exclusion-lp.json
 

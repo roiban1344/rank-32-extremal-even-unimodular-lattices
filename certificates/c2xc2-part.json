@@ -1,5 +1,5 @@
 {
-"certificate":"The 67,284 lattices of S_(C_2^2)",
+"certificate":"The 67284 lattices of S_(C_2^2)",
 "statement":"Trivial involution entries not met by S_gen, with [phi] and [phi^-1] identified for F = K (Lemma 6.6(i)); each gives one lattice with Aut L = {+-1, +-sigma}.",
 "computations":[
 "C26",

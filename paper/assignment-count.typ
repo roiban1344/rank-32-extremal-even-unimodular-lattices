@@ -3,7 +3,7 @@
 #show: paper.with(
   lang: "en", title: [An element-assignment computation of the number of extremal even unimodular lattices of rank 32],
   subtitle: [Auxiliary note to “The extremal even unimodular lattices of rank 32”],
-  authors: [roiban1344], date: [Version 2026-11-14.1],
+  authors: [roiban1344], date: [Version 2026-11-14.2],
 )
 
 #show figure.where(kind: table): set block(breakable: true)
@@ -75,7 +75,7 @@ For types $(15, 17)$ and $(17, 15)$ both ranks are odd, so $e = 1$ and the contr
 
 *The numbers $e(h)$.* An element $g$ is assigned to $h$ when the smallest odd prime dividing its order $n$ is $p$ and $g^(n slash p) = h$; then $g in C(h)$. If $p^2 divides.not |C(h)|$, the Sylow $p$-subgroup $chevron.l h chevron.r$ is central in $C(h)$, so $C(h) = chevron.l h chevron.r times H$ by the Schur–Zassenhaus theorem, and writing $g = h^a t$ with $t in H$ of order $m$ one finds that $g$ is assigned to $h$ if and only if $m$ has no odd prime factor smaller than $p$ and $a m equiv 1 med (mod p)$. Hence
 $ e(h) = \#{t in H : "the order of" t "has no odd prime factor" < p}, $
-and, under the same hypothesis $p^2 divides.not |C(h)|$, $e(h) = |C(h)| slash 3$ for $p = 3$. In general $e(h)$ was counted in $C(h)$, built from generators of $"Stab"(phi)$ lifted to $L_phi$ and checked in integers, by conjugacy classes in GAP #calc("C8", "C9")\; in all $"1,234" + 204$ cases where the group was built, its order equals $|"Stab"(phi)|$.
+and, under the same hypothesis $p^2 divides.not |C(h)|$, $e(h) = |C(h)| slash 3$ for $p = 3$. In general $e(h)$ was counted in $C(h)$, built from generators of $"Stab"(phi)$ lifted to $L_phi$ and checked in integers, by conjugacy classes in GAP #calc("C8", "C9")\; in all $1234 + 204$ cases where the group was built, its order equals $|"Stab"(phi)|$.
 
 
 
@@ -83,27 +83,27 @@ and, under the same hypothesis $p^2 divides.not |C(h)|$, $e(h) = |C(h)| slash 3$
   columns: 3, align: (left, right, right),
   caption: [Table 5. Elements of odd prime order: the contribution $E = sum e(h) slash |C(h)|$ of each type (exact) #calc("C8", "C9").],
   table.header([type], [$E$], [approx.]),
-  [$3 - (9, 14) - 7$], [$"3,302" slash "6,561"$], [$0.503$],
+  [$3 - (9, 14) - 7$], [$3302 slash 6561$], [$0.503$],
   [$3 - (10, 12) - 6$], [$10 slash 81$], [$0.123$],
   [$3 - (10, 12) - 8$], [$7 slash 3$], [$2.333$],
-  [$3 - (8, 16) - 8$], [$"1,438" slash 81$], [$17.753$],
-  [$3 - (12, 8) - 8$], [$"4,187,858" slash "2,187"$], [$"1,914.887"$],
-  [$3 - (9, 14) - 9$], [$"28,961" slash 729$], [$39.727$],
-  [$3 - (10, 12) - 10$], [$"9,640" slash 81$], [$119.012$],
-  [$3 - (13, 6) - 5$], [$"3,676" slash 243$], [$15.128$],
-  [$3 - (6, 20) - 6$], [$"10,048" slash "2,187"$], [$4.594$],
+  [$3 - (8, 16) - 8$], [$1438 slash 81$], [$17.753$],
+  [$3 - (12, 8) - 8$], [$4187858 slash 2187$], [$1914.887$],
+  [$3 - (9, 14) - 9$], [$28961 slash 729$], [$39.727$],
+  [$3 - (10, 12) - 10$], [$9640 slash 81$], [$119.012$],
+  [$3 - (13, 6) - 5$], [$3676 slash 243$], [$15.128$],
+  [$3 - (6, 20) - 6$], [$10048 slash 2187$], [$4.594$],
   [$3 - (16, 0) - 0$], [$413 slash 243$], [$1.700$],
-  [*order 3*], [*$"13,881,509" slash "6,561"$*], [*$"2,115.761"$*],
-  [$5 - (4, 16) - 4$], [$38 slash "1,875"$], [$0.020$],
+  [*order 3*], [*$13881509 slash 6561$*], [*$2115.761$*],
+  [$5 - (4, 16) - 4$], [$38 slash 1875$], [$0.020$],
   [$5 - (5, 12) - 5$], [$214 slash 625$], [$0.342$],
   [$5 - (6, 8) - 4$], [$296 slash 625$], [$0.474$],
   [$5 - (6, 8) - 6$], [$442 slash 15$], [$29.467$],
   [$5 - (7, 4) - 3$], [$836 slash 625$], [$1.338$],
-  [$5 - (8, 0) - 0$], [$"8,192" slash "16,875"$], [$0.485$],
+  [$5 - (8, 0) - 0$], [$8192 slash 16875$], [$0.485$],
   [$7 - (4, 8) - 4$], [$134 slash 63$], [$2.127$],
   [$17 - (2, 0) - 0$], [$13 slash 51$], [$0.255$],
   [$31 - (1, 2) - 1$], [$8 slash 31$], [$0.258$],
-  [*orders 5, 7, 17, 31*], [*$"2,164,244,689" slash "62,251,875"$*], [*$34.766$*],
+  [*orders 5, 7, 17, 31*], [*$2164244689 slash 62251875$*], [*$34.766$*],
 )
 
 
@@ -114,9 +114,9 @@ The enumeration also confirms Theorem 4.6. Its sum is a lower bound for $M_2$ wh
   columns: 4, align: (left, right, right, left),
   caption: [Table 6. Rootless Hermitian masses $M_a$.],
   table.header([$a$ (rank)], [$M_a$], [approx.], [confirmed by]),
-  [2 (16)], [$"4,128,748,922,231,417" slash "120,324,096,000"$], [$"34,313.567"$], [enumeration of $"76,742"$ classes, exact #calc("C12")],
-  [3 (8)], [$"1,373,459,063" slash "7,741,440"$], [$177.416$], [no independent check at rank 8; the same formula agrees at ranks 2, 4, 6, and at rank 6 the rootless value $1 slash "48,384"$ agrees with a centralizer order in $2."Co"_1$ #calc("C35")],
-  [4 (4)], [$"6,983" slash 640$], [$10.911$], [list of 514 classes #calc("C35")],
+  [2 (16)], [$4128748922231417 slash 120324096000$], [$34313.567$], [enumeration of $76742$ classes, exact #calc("C12")],
+  [3 (8)], [$1373459063 slash 7741440$], [$177.416$], [no independent check at rank 8; the same formula agrees at ranks 2, 4, 6, and at rank 6 the rootless value $1 slash 48384$ agrees with a centralizer order in $2."Co"_1$ #calc("C35")],
+  [4 (4)], [$6983 slash 640$], [$10.911$], [list of 514 classes #calc("C35")],
   [5 (2)], [$31 slash 24$], [$1.292$], [explicit count of the 16 types of rank 2 (Table C8)],
 )
 
@@ -128,20 +128,20 @@ The enumeration also confirms Theorem 4.6. Its sum is a lower bound for $M_2$ wh
   columns: 4, align: (left, right, right, left),
   caption: [Table 7. The thirteen terms of (3.3) #calc("C36"). The term $2 m$ is twice (2.1).],
   table.header([term], [exact value], [approx.], [§]),
-  [$2 m$], [$"1,310,037,331,282,023,326,658,917" slash "119,431,715,880,960,000"$], [$"10,968,923.302"$], [2.2],
-  [$M_2$], [$"4,128,748,922,231,417" slash "120,324,096,000"$], [$"34,313.567"$], [4.3],
-  [$(16, 16)$, $s = 16$, $delta = 1$], [$"2,880,305,926,221" slash "293,601,280"$], [$"9,810.264"$], [4.1],
-  [$(15, 17)$], [$"20,874,607" slash "2,160"$], [$"9,664.170"$], [4.1],
-  [$(14, 18)$], [$"491,776,351,403" slash "70,778,880"$], [$"6,948.066"$], [4.1],
-  [$(8, 24)$], [$"4,903,343,345,383,327" slash "792,723,456,000"$], [$"6,185.440"$], [4.1],
-  [$(12, 20)$], [$"24,698,881,091,413" slash "4,246,732,800"$], [$"5,815.972"$], [4.1],
-  [order 3], [$"13,881,509" slash "6,561"$], [$"2,115.761"$], [4.2],
-  [$(16, 16)$, other 10 pairs], [$"1,524,348,533,472,859" slash "5,707,608,883,200"$], [$267.073$], [4.1],
-  [$M_3$], [$"1,373,459,063" slash "7,741,440"$], [$177.416$], [C.8],
-  [orders 5, 7, 17, 31], [$"2,164,244,689" slash "62,251,875"$], [$34.766$], [4.2],
-  [$M_4$], [$"6,983" slash 640$], [$10.911$], [C.8],
+  [$2 m$], [$1310037331282023326658917 slash 119431715880960000$], [$10968923.302$], [2.2],
+  [$M_2$], [$4128748922231417 slash 120324096000$], [$34313.567$], [4.3],
+  [$(16, 16)$, $s = 16$, $delta = 1$], [$2880305926221 slash 293601280$], [$9810.264$], [4.1],
+  [$(15, 17)$], [$20874607 slash 2160$], [$9664.170$], [4.1],
+  [$(14, 18)$], [$491776351403 slash 70778880$], [$6948.066$], [4.1],
+  [$(8, 24)$], [$4903343345383327 slash 792723456000$], [$6185.440$], [4.1],
+  [$(12, 20)$], [$24698881091413 slash 4246732800$], [$5815.972$], [4.1],
+  [order 3], [$13881509 slash 6561$], [$2115.761$], [4.2],
+  [$(16, 16)$, other 10 pairs], [$1524348533472859 slash 5707608883200$], [$267.073$], [4.1],
+  [$M_3$], [$1373459063 slash 7741440$], [$177.416$], [C.8],
+  [orders 5, 7, 17, 31], [$2164244689 slash 62251875$], [$34.766$], [4.2],
+  [$M_4$], [$6983 slash 640$], [$10.911$], [C.8],
   [$M_5$], [$31 slash 24$], [$1.292$], [C.8],
-  [*sum*], [*$"11,044,268"$*], [], [5],
+  [*sum*], [*$11044268$*], [], [5],
 )
 
 == 4.5 One term in full: $31 - (1, 2) - 1$
@@ -165,7 +165,7 @@ of order 62, in agreement with (4.1): $1 slash 62 = 2 slash (2 dot 62)$. By Lemm
 $ E = 8 dot 2 / 62 = 8 / 31 approx 0.258, $
 the entry of Table 5. Integrality of the whole sum (§5.3) would detect an error here: a ninth rootless class would change $E$ by $2 slash 62 = 1 slash 31$, and an error of one in one $e(h)$ would change it by $1 slash 62$.
 
-The underlying lattices of these eight pairs need not be pairwise non-isometric and are not needed for this count. They can nevertheless be constructed. Taking for $Z$ the ideal $P slash overline(P)$ for a prime $P$ above a prime $ell equiv 1 med (mod 31)$, the fourteen primes $ell < "3,200"$ give lattices $Z$ of minimum 4, and the lattices $L$ obtained have the invariants of $"BW"_32$ or of the code lattice of the extended quadratic residue code of length 32 (Appendix A); this sample is not used in the proof #calc("C9").
+The underlying lattices of these eight pairs need not be pairwise non-isometric and are not needed for this count. They can nevertheless be constructed. Taking for $Z$ the ideal $P slash overline(P)$ for a prime $P$ above a prime $ell equiv 1 med (mod 31)$, the fourteen primes $ell < 3200$ give lattices $Z$ of minimum 4, and the lattices $L$ obtained have the invariants of $"BW"_32$ or of the code lattice of the extended quadratic residue code of length 32 (Appendix A); this sample is not used in the proof #calc("C9").
 
 
 
@@ -187,7 +187,7 @@ Every value in Table 7 is protected in three ways, and Table 7a collects them te
   caption: [Table 7a. How each term of Table 7 is computed and checked. "Complete by" is the identity that proves its lists complete; "confirmed by" lists independent checks of its value. The global identities are in the third item above the table; what remains assumed is in Table 10 of the paper.],
   table.header([term], [computed by], [complete by], [confirmed by]),
   [$2 m$], [King's inclusion–exclusion #calc("C14")], [— (a formula)], [King's table [Kin03], exactly],
-  [$M_2$], [formula of App. C #calc("C11")], [— (a formula)], [enumeration of $"76,742"$ classes (Prop. 4.7) #calc("C12")],
+  [$M_2$], [formula of App. C #calc("C11")], [— (a formula)], [enumeration of $76742$ classes (Prop. 4.7) #calc("C12")],
   [$(16, 16)$, $s = 16$, $delta = 1$], [gluings #calc("C4")\; $e$ #calc("C34")], [(4.1)\; components by Lemma B.1], [components by a classification of the genera (§B.2)\; $e$ recounted in $"Aut" L$ (lifting only, §5.4)\; the program for $e$ in rank 24 (§5.6)],
   [$(15, 17)$], [gluings #calc("C4")\; $e = 1$ (Lemma 4.2)], [(4.1)\; components by Lemma B.1], [rootless masses of the genera of the components (§B.2)],
   [$(14, 18)$], [gluings #calc("C4")\; $e$ #calc("C34")], [(4.1)\; components by Lemma B.1], [rootless masses (§B.2)\; $e$ recounted for $|C| <= 64$\; the program for $e$ in rank 24 (§5.6)],
@@ -216,25 +216,25 @@ The tools of §4 and of Appendices B–D were run on cases whose answers are kno
   caption: [Table 7b. Checks of the tools on known cases #calc("C37"). All agreements are exact unless a standard error is given.],
   table.header([tool], [compared with], [range], [result]),
   [mass formula of Minkowski–Siegel], [[SPLAG, Table 16.4]; the classes of ranks 8, 16, 24 with their $|"Aut"|$ ([SPLAG, Tables 16.1, 16.6, 16.7])], [ranks 8, 16, 24, 32], [agree; the 24 Niemeier contributions agree entry by entry],
-  [King's table [Kin03]], [the Minkowski–Siegel mass of rank 32 and Siegel's average number of roots $"16,320" slash "3,617"$], [all $"13,218"$ rows], [agree; this checks the table for internal consistency only],
+  [King's table [Kin03]], [the Minkowski–Siegel mass of rank 32 and Siegel's average number of roots $16320 slash 3617$], [all $13218$ rows], [agree; this checks the table for internal consistency only],
   [rootless mass $m$ #calc("C14")], [King's value [Kin03, Table 1]; the known values in ranks 8, 16, 24], [all root systems of rank at most 32], [agree; the method is King's, so this checks our implementation],
   [rootless masses of 2-elementary genera (§B.2)], [the Niemeier lattices and the Leech lattice [SPLAG, Table 16.1]; for $(24, 2, delta)$ a direct count of sublattices of index 2 of the Niemeier lattices], [rank 24], [agree],
   [unimodular lattices without vectors of norm 1 (start of Lemma B.1)], [numbers [SPLAG, Table 2.2], numbers of roots [SPLAG, Table 16.7], masses [SPLAG, Table 16.2], $|"Aut"| slash |W(R)|$ [SPLAG, Table 17.1]], [ranks at most 24], [agree],
   [existence of 2-elementary genera], [[Nik79, Thm 3.6.2]], [ranks at most 32, all $s$, $delta$], [no disagreement],
-  [random gluings of involution components], [exhaustive enumeration in ranks at most 5; the average number of roots $"4,080" slash 691$], [samples of 2,000 per case], [agree within 1.91 standard errors],
+  [random gluings of involution components], [exhaustive enumeration in ranks at most 5; the average number of roots $4080 slash 691$], [samples of 2000 per case], [agree within 1.91 standard errors],
   [lists of involution gluings], [estimates of $M$ from random gluings], [types $(16, 16)$, $(8, 24)$], [within 0.44 standard errors for $(16, 16)$; within the error for $(8, 24)$],
-  [type $(8, 24)$ (Theorem B.3)], [the counts of the 7-design equations $N_0, dots, N_3 = "12,240", "122,880", "11,520", 0$], [all $"14,482"$ lattices $K$], [agree; each $K$ has average 80 roots over its 270 Niemeier lattices],
-  [images of the 120 root lines of $E_8$ in $E_8 slash 3 E_8$ (type $3 - (12, 8) - 8$)], [their number $|"GO"^+_8 (3)| slash |W(E_8)| = "56,862"$], [all images under $"GO"^+_8 (3)$], [agree],
+  [type $(8, 24)$ (Theorem B.3)], [the counts of the 7-design equations $N_0, dots, N_3 = 12240, 122880, 11520, 0$], [all $14482$ lattices $K$], [agree; each $K$ has average 80 roots over its 270 Niemeier lattices],
+  [images of the 120 root lines of $E_8$ in $E_8 slash 3 E_8$ (type $3 - (12, 8) - 8$)], [their number $|"GO"^+_8 (3)| slash |W(E_8)| = 56862$], [all images under $"GO"^+_8 (3)$], [agree],
   [rootless masses over $ZZ[zeta_p]$ (Appendix D)], [the Leech lattice and the character table of $2."Co"_1$], [$p = 5, 7, 13$], [agree (§D.3)],
   [elements of order 3 without fixed vectors], [[Hen13, Thm 1, Table 4]], [the 80 classes of the genus], [the table, as transcribed, sums to the mass of [Hen13, Thm 1]; our eleven lattices give its eleven orders $|"U"|$],
   [elements of order 17], [[Jür15, Satz 3.6.9]], [the four lattices], [agree (§4.2 of the paper)],
   [rootless Hermitian mass over $ZZ[i]$ (Appendix C)], [the classes of ranks 4 and 8; a complete enumeration of 41 small types], [ranks 4, 8], [agree],
-  [bliss and `qfauto` in rank 32], [$|"Aut" "BW"_32| = "48,126,558,103,142,400"$; the orders predicted by [KN93] for its twelve lattices; isometries between lattices from different chains], [16 lattices], [agree; generators and isometries checked in integers],
+  [bliss and `qfauto` in rank 32], [$|"Aut" "BW"_32| = 48126558103142400$; the orders predicted by [KN93] for its twelve lattices; isometries between lattices from different chains], [16 lattices], [agree; generators and isometries checked in integers],
   [the codes of [KN93]], [[KN93, Thm 1] and the twelve codes of [KN93, Table 1]; $sum 1 slash |"Aut" C_0|$ against the value forced by King's mass], [12 codes], [one-to-one; for the column $|"Aut" C|$ see the notes to Table A1],
 )
 ]
 
-*Not checked against known values.* King's table was checked for internal consistency, not row by row against an independent computation of the other $"13,217"$ root systems. The lists of the genera $(20, 6)$ over $ZZ$ and $(13, 5)$ over $ZZ[omega]$ for elements of order 3 are complete by local formulas (§D.4) with no second route. The mass $M_3$ at rank 8 has no value to compare with (§5.4). Together with the last paragraph of §5.4, these are the places where the values rest on our programs alone.
+*Not checked against known values.* King's table was checked for internal consistency, not row by row against an independent computation of the other $13217$ root systems. The lists of the genera $(20, 6)$ over $ZZ$ and $(13, 5)$ over $ZZ[omega]$ for elements of order 3 are complete by local formulas (§D.4) with no second route. The mass $M_3$ at rank 8 has no value to compare with (§5.4). Together with the last paragraph of §5.4, these are the places where the values rest on our programs alone.
 
 == 5.6 The method in rank 24
 In rank 24 the answer is known. The Leech lattice $Lambda$ is the only even unimodular lattice of rank 24 without vectors of norm 2 [SPLAG, Table 16.1], so the analogue of $N$ is 1, and $"Aut" Lambda = "Co"_0$. Every term of the analogue of (3.3) is therefore a sum over conjugacy classes of $"Co"_0$, and can be read from the character table of $2."Co"_1$ in GAP. Table 7c compares these values with the values given by the tools of §4 and of Appendices C and D, run in rank 24 #calc("C38").
@@ -248,23 +248,23 @@ This is a check of the tools, not an independent proof. We did not redo §3 in r
   columns: (1.3fr, 1.4fr, auto), align: (left, left, right),
   caption: [Table 7c. The tools in rank 24 against the classes of $"Co"_0 = "Aut" Lambda$ #calc("C38"). In every row the value computed by the tool equals, as a fraction, the value read from $"Co"_0$: $1 slash |"Co"_0|$, the sum of $1 slash |C(g)|$ over the classes of the given kind, the order of the centralizer of an involution, or the contribution $E = sum e(h) slash |C(h)|$ of a type.],
   table.header([term in rank 24], [computed by], [value]),
-  [rootless mass $m$ of rank 24], [King's inclusion–exclusion, as for $m$ in rank 32 #calc("C14")], [$1 slash "8,315,553,613,086,720,000" = 1 slash |"Co"_0|$],
-  [$M_2$ ($ZZ[i]$, rank 12)], [the formula of Appendix C], [$1 slash "2,012,774,400"$],
-  [$M_3$ ($ZZ[zeta_8]$, rank 6)], [the formula of Appendix C.8], [$1 slash "48,384"$],
+  [rootless mass $m$ of rank 24], [King's inclusion–exclusion, as for $m$ in rank 32 #calc("C14")], [$1 slash 8315553613086720000 = 1 slash |"Co"_0|$],
+  [$M_2$ ($ZZ[i]$, rank 12)], [the formula of Appendix C], [$1 slash 2012774400$],
+  [$M_3$ ($ZZ[zeta_8]$, rank 6)], [the formula of Appendix C.8], [$1 slash 48384$],
   [$M_4$ ($ZZ[zeta_16]$, rank 3)], [Lemma 2.4: the rank is odd, so there is no such lattice], [$0$],
-  [order 3, no fixed vectors ($ZZ[omega]$, rank 12)], [rootless mass of Appendix D (§D.4)], [$1 slash "2,690,072,985,600"$],
-  [order 5, no fixed vectors ($ZZ[zeta_5]$, rank 6)], [rootless mass of Appendix D; $e(h)$ by the programs of #calc("C9"), unchanged], [$1 slash "6,048,000"$; $E = 191 slash "3,375"$],
-  [order 7, no fixed vectors ($ZZ[zeta_7]$, rank 4)], [as above], [$1 slash "35,280"$; $E = 92 slash "2,205"$],
+  [order 3, no fixed vectors ($ZZ[omega]$, rank 12)], [rootless mass of Appendix D (§D.4)], [$1 slash 2690072985600$],
+  [order 5, no fixed vectors ($ZZ[zeta_5]$, rank 6)], [rootless mass of Appendix D; $e(h)$ by the programs of #calc("C9"), unchanged], [$1 slash 6048000$; $E = 191 slash 3375$],
+  [order 7, no fixed vectors ($ZZ[zeta_7]$, rank 4)], [as above], [$1 slash 35280$; $E = 92 slash 2205$],
   [order 13, no fixed vectors ($ZZ[zeta_13]$, rank 2)], [as above], [$1 slash 312$; $E = 1 slash 39$],
-  [involutions of type $(16, 8)$], [gluings as in §4.1 of the paper: one double coset, extremal, giving $Lambda$; $e(sigma)$ by the program of #calc("C34"), unchanged], [$|"Stab"(phi)| = "178,362,777,600"$; $E = "465,333,121" slash "178,362,777,600"$],
-  [involutions of type $(8, 16)$], [the same double coset seen from $-sigma$; $e(-sigma)$ as above], [$E = "5,721,075,841" slash "178,362,777,600"$],
-  [involutions of type $(12, 12)$], [gluings as in §4.1 of the paper: six double cosets, one extremal, giving $Lambda$ with $sigma tilde -sigma$; $e$ as above], [$|"Stab"(phi)| = "389,283,840"$; $E = "5,069" slash "77,856,768"$],
-  [type $5 - (4, 8) - 4$], [gluings and $e(h)$ as in §4.2 of the paper, by the programs of #calc("C9"), unchanged; one pair, giving $Lambda$], [$E = 38 slash "1,125"$],
-  [type $5 - (5, 4) - 3$], [as above], [$E = 97 slash "1,875"$],
+  [involutions of type $(16, 8)$], [gluings as in §4.1 of the paper: one double coset, extremal, giving $Lambda$; $e(sigma)$ by the program of #calc("C34"), unchanged], [$|"Stab"(phi)| = 178362777600$; $E = 465333121 slash 178362777600$],
+  [involutions of type $(8, 16)$], [the same double coset seen from $-sigma$; $e(-sigma)$ as above], [$E = 5721075841 slash 178362777600$],
+  [involutions of type $(12, 12)$], [gluings as in §4.1 of the paper: six double cosets, one extremal, giving $Lambda$ with $sigma tilde -sigma$; $e$ as above], [$|"Stab"(phi)| = 389283840$; $E = 5069 slash 77856768$],
+  [type $5 - (4, 8) - 4$], [gluings and $e(h)$ as in §4.2 of the paper, by the programs of #calc("C9"), unchanged; one pair, giving $Lambda$], [$E = 38 slash 1125$],
+  [type $5 - (5, 4) - 3$], [as above], [$E = 97 slash 1875$],
   [type $7 - (3, 6) - 3$], [as above], [$E = 8 slash 147$],
-  [type $3 - (6, 12) - 6$], [as above, with the programs for order 3 #calc("C8")], [$E = 641 slash "6,561"$],
+  [type $3 - (6, 12) - 6$], [as above, with the programs for order 3 #calc("C8")], [$E = 641 slash 6561$],
   [type $3 - (8, 8) - 8$], [as above], [$E = 26 slash 243$],
-  [type $3 - (9, 6) - 5$], [as above], [$E = "3,736" slash "19,683"$],
+  [type $3 - (9, 6) - 5$], [as above], [$E = 3736 slash 19683$],
 )
 ]
 
@@ -294,12 +294,12 @@ _2-adic Jordan decomposition (Lemma C.9)._ Over the completion $cal(O)_(pi.alt_a
   columns: (auto, auto, auto, auto, auto, 1fr), align: (left, right, right, right, right, left),
   caption: [Table C8. Rootless masses for $a = 3, 4, 5$ #calc("C35").],
   table.header([$a$, $r$], [root types], [non-zero], [$M_a = mu_r^emptyset$], [$mu_r$], [independent check]),
-  [3, 8], [1,270], [174], [$"1,373,459,063" slash "7,741,440"$], [$"34,773,704,473,453" slash "112,742,891,520"$], [none at $r = 8$; at $r = 6$ the rootless mass $1 slash "48,384"$ is $1 slash |C_("Co"_0)(g)|$ for the unique class with $g^4 = -1$],
-  [4, 4], [122], [29], [$"6,983" slash 640$], [$"11,979,143" slash "786,432"$], [list of 514 classes (238 rootless), both masses exact],
-  [5, 2], [21], [7], [$31 slash 24$], [$"1,455" slash "1,024"$], [direct count of the 16 types of rank 2, using $h(QQ(zeta_32)) = 1$ [MM76, Main Theorem]],
+  [3, 8], [1270], [174], [$1373459063 slash 7741440$], [$34773704473453 slash 112742891520$], [none at $r = 8$; at $r = 6$ the rootless mass $1 slash 48384$ is $1 slash |C_("Co"_0)(g)|$ for the unique class with $g^4 = -1$],
+  [4, 4], [122], [29], [$6983 slash 640$], [$11979143 slash 786432$], [list of 514 classes (238 rootless), both masses exact],
+  [5, 2], [21], [7], [$31 slash 24$], [$1455 slash 1024$], [direct count of the 16 types of rank 2, using $h(QQ(zeta_32)) = 1$ [MM76, Main Theorem]],
 )
 
-*Checks.* For $a = 3$ and $r = 2, 4, 6$, every root system with non-zero mass gives $1 slash m(R)$ equal to the order of the unitary group of the corresponding lattice ($192$ for $r = 2$; $192^2 dot 2$, $2 dot "46,080"$ and $8^4 dot 4! slash 2$ for $r = 4$; at $r = 6$ the 17 root systems with non-zero mass map to Niemeier root systems or the Leech lattice), and the rootless mass $1 slash "48,384"$ at $r = 6$ is the value from the character table of $2."Co"_1$. For $a = 4$, the $pi.alt_a$-neighbours of the 514 classes close up, $sum 1 slash |"U"| = mu_4$ and the rootless part is $"6,983" slash 640$ exactly, and the 29 root types with non-zero mass match the 29 non-zero values of (C.2) one by one. For $a = 5$, for each root lattice $R$ of rank 2 the lattices with root system exactly $R$ correspond to the $g$-stable Lagrangian submodules of $D(R)$ creating no new root, so $m(R) = \#{C} slash |"U"(R)|$; an explicit count over all submodules gives $sum_R m(R) = 397 slash "3,072"$ over the 16 types of rank 2, and $mu_2 - 397 slash "3,072" = 31 slash 24$, the value of (C.2), the formula giving mass 0 to the four types of rank 1 #calc("C35").
+*Checks.* For $a = 3$ and $r = 2, 4, 6$, every root system with non-zero mass gives $1 slash m(R)$ equal to the order of the unitary group of the corresponding lattice ($192$ for $r = 2$; $192^2 dot 2$, $2 dot 46080$ and $8^4 dot 4! slash 2$ for $r = 4$; at $r = 6$ the 17 root systems with non-zero mass map to Niemeier root systems or the Leech lattice), and the rootless mass $1 slash 48384$ at $r = 6$ is the value from the character table of $2."Co"_1$. For $a = 4$, the $pi.alt_a$-neighbours of the 514 classes close up, $sum 1 slash |"U"| = mu_4$ and the rootless part is $6983 slash 640$ exactly, and the 29 root types with non-zero mass match the 29 non-zero values of (C.2) one by one. For $a = 5$, for each root lattice $R$ of rank 2 the lattices with root system exactly $R$ correspond to the $g$-stable Lagrangian submodules of $D(R)$ creating no new root, so $m(R) = \#{C} slash |"U"(R)|$; an explicit count over all submodules gives $sum_R m(R) = 397 slash 3072$ over the 16 types of rank 2, and $mu_2 - 397 slash 3072 = 31 slash 24$, the value of (C.2), the formula giving mass 0 to the four types of rank 1 #calc("C35").
 
 
 
@@ -309,11 +309,11 @@ _2-adic Jordan decomposition (Lemma C.9)._ Over the completion $cal(O)_(pi.alt_a
   columns: 7, align: (left, left, left, right, right, right, right),
   caption: [Table 4. Involution types. $F$ and $K$ are the components (number of classes, $s$, $delta$); "classes" and "extremal" count double cosets $[phi]$ and those giving an extremal $L$, that is, isometry classes of pairs $(L, sigma)$. $M = sum_("extremal") 1 slash |"Stab"(phi)|$ counts both orientations; $E$ is the contribution to (3.3); $E = M$ exactly when $e = 1$ throughout. The pairs of type $(16, 16)$ are in Table 6 of the paper #calc("C4", "C5", "C6", "C34", "C7").],
   table.header([type], [$F$], [$K$], [classes], [extremal], [$M$ (approx.)], [$E$ (approx.)]),
-  [$(15, 17)$], [$sqrt(2) A_15^+$; 1, $s = 15$, $delta = 1$], [1 class, $s = 15$, $delta = 1$], [$"82,086"$], [$"20,502"$], [$"9,664.170"$], [$"9,664.170"$],
-  [$(14, 18)$], [$sqrt(2) (E_7^2)^+$; 1, $s = 14$, $delta = 1$], [5 classes, $s = 14$, $delta = 1$], [$"54,649"$], [$"16,590"$], [$"6,876.012"$], [$"6,948.066"$],
-  [$(12, 20)$], [$sqrt(2) D_12^+$; 1, $s = 12$, $delta = 1$], [66 classes, $s = 12$, $delta = 1$], [$"27,434"$], [$"13,798"$], [$"5,507.962"$], [$"5,815.972"$],
-  [$(8, 24)$], [$sqrt(2) E_8$; 1, $s = 8$, $delta = 0$], [$"14,482"$ lattices, $s = 8$], [$"14,482"$], [$"14,482"$], [$"6,017.813"$], [$"6,185.440"$],
-  [$(16, 16)$], [10 classes, $8 <= s <= 16$], [same], [$"233,544"$], [$"46,805"$], [$"9,883.635"$], [$"10,077.337"$],
+  [$(15, 17)$], [$sqrt(2) A_15^+$; 1, $s = 15$, $delta = 1$], [1 class, $s = 15$, $delta = 1$], [$82086$], [$20502$], [$9664.170$], [$9664.170$],
+  [$(14, 18)$], [$sqrt(2) (E_7^2)^+$; 1, $s = 14$, $delta = 1$], [5 classes, $s = 14$, $delta = 1$], [$54649$], [$16590$], [$6876.012$], [$6948.066$],
+  [$(12, 20)$], [$sqrt(2) D_12^+$; 1, $s = 12$, $delta = 1$], [66 classes, $s = 12$, $delta = 1$], [$27434$], [$13798$], [$5507.962$], [$5815.972$],
+  [$(8, 24)$], [$sqrt(2) E_8$; 1, $s = 8$, $delta = 0$], [$14482$ lattices, $s = 8$], [$14482$], [$14482$], [$6017.813$], [$6185.440$],
+  [$(16, 16)$], [10 classes, $8 <= s <= 16$], [same], [$233544$], [$46805$], [$9883.635$], [$10077.337$],
 )
 
 

@@ -2,7 +2,7 @@
 
 English | [日本語](README.ja.md)
 
-`classified-lattices.jsonl` has one JSON object per line, one line for each of the 143,329 extremal even
+`classified-lattices.jsonl` has one JSON object per line, one line for each of the 143329 extremal even
 unimodular lattices L of rank 32 with Aut L ≠ {±1} (Theorem B).
 
 | Field | Meaning |
@@ -11,9 +11,9 @@ unimodular lattices L of rank 32 with Aut L ≠ {±1} (Theorem B).
 | `aut` | the order of Aut L |
 | `part` | the part of Theorem B: `general` (S_gen), `c2xc2` (S_(C_2^2)), `cyclic-quaternion` (S_CQ) |
 | `group.small_group_id` | `[order, number]` in the Small Groups Library of GAP, when identified; `null` otherwise |
-| `group.structure` | a structure description of Aut L where one was recorded; `null` for most lattices of S_gen (12,466 of the 12,546), whose groups are then identified by `small_group_id` alone (12,447), by the chief series (9), or not at all (the ten lattices with \|Aut L\| > 10^7, see below) |
+| `group.structure` | a structure description of Aut L where one was recorded; `null` for most lattices of S_gen (12466 of the 12546), whose groups are then identified by `small_group_id` alone (12447), by the chief series (9), or not at all (the ten lattices with \|Aut L\| > 10^7, see below) |
 | `group.chief_series_orders` | orders of a chief series, for groups identified only in this way |
-| `group.presentation_checked` | a presentation of Aut L was checked on its generators and its order confirmed (`true` for 12,536 lattices of S_gen); `false` for S_(C_2^2) and S_CQ, whose groups are determined in §§6.4–6.5 of the first paper, and for the ten lattices of S_gen with \|Aut L\| > 10^7, whose presentations are proved in the second paper and stored in `largest-groups.jsonl` |
+| `group.presentation_checked` | a presentation of Aut L was checked on its generators and its order confirmed (`true` for 12536 lattices of S_gen); `false` for S_(C_2^2) and S_CQ, whose groups are determined in §§6.4–6.5 of the first paper, and for the ten lattices of S_gen with \|Aut L\| > 10^7, whose presentations are proved in the second paper and stored in `largest-groups.jsonl` |
 | `entry_types` | the kinds of entries of L (§6.1), as strings: `involution <list>` for an involution entry, with the list identifier of its pair of components (for example `involution 16-16d8`; see `certificates/README.md`, section Identifiers); `odd prime 3-<z>-<f>-<s>` for an element of order 3 of type 3-(z, f)-s; `odd prime (type not recorded)` (174 lattices of S_gen) for an element of odd prime order whose type the database does not record; and `order 2^a with g^(2^(a-1)) = -1` (a = 2, 3, 4, 5) for a Hermitian entry of order 2^a. For S_CQ only the entry of order 4 is listed; the entries of order 8, 16 and 32 of the 238 lattices of S_CQ with such elements are not recorded |
 | | For the ten lattices with \|Aut L\| > 10^7 all four `group` fields are empty (`null`, `false`): their groups are too large for these identifications and are described in §6.3 of the paper and in the second paper |
 | `frame` | for S_(C_2^2), the frame shape of the involution σ: its characteristic polynomial written as ∏ (x^k − 1)^(a_k), for example `2^24 1^-16` for (x² − 1)^24 (x − 1)^−16, and `2^16` for (x² − 1)^16 (a factor with exponent 0 is not written) |
@@ -25,7 +25,7 @@ comes before 32.8.10, and 32.16.1 after all labels 32.8.i).
 ## largest-groups.jsonl
 
 `largest-groups.jsonl` has one JSON object per line, one line for each of the 99 lattices of the second paper:
-the lattices of S_gen with |Aut L| > 2,000 or |Aut L| = 512, 1,024 or 1,536 (the groups of the other lattices are
+the lattices of S_gen with |Aut L| > 2000 or |Aut L| = 512, 1024 or 1536 (the groups of the other lattices are
 identified by `IdGroup` in the Small Groups Library). The lines are in the order of Table A1: by |Aut L|, then by the index i of the label.
 `verify/verify_p2.py` checks this file. Its Gram matrices are those of the database; its generators are those to which
 the words of the presentations refer, and for six lattices (32.4608.2, 32.5760.1, 32.12288.1, 32.23328.1, 32.196608.2,
@@ -42,7 +42,7 @@ not in the other. Both lists generate Aut L.
 | `generators` | generators g of Aut L in the column convention g^T G g = G (those of the first paper, §7.1) |
 | `table_a1` | the columns of Table A1 other than the label and the order: `aut_factor`, `fstar`, `g_mod_fstar`, `chief`, `presentation`, `origin`, as in `paper/p2-lattices-99.json` |
 | `presentation` | a presentation of Aut L whose order is proved by the lemmas of §2.3 (below) |
-| `profile` | the profile of the second paper (§2.2) as far as it is data: `structure` (orders of F^*(G), of G/F^*(G), of the centre and of the derived group, the abelian invariants, the orders of a chief series and, for each chief factor from the top, its order, `kind` (`abelian` with `p`, `dim`, the order of the image of the action, absolute irreducibility, splitting and the number of classes of complements; or `non-abelian` with `simple` and `copies`), and `split_note` where splitting was not computed); `action_on_L` (for each conjugacy class: order, size, centralizer order, frame shape, trace and the fixed lattice with rank, determinant, discriminant group and minimum, `null` for rank 0; and the lengths of the orbits on the 146,880 minimal vectors); `construction` (for an involution σ in a small class: the size of the class, the order of C(σ), whether σ ~ −σ, the invariants and Gram matrices of F = L^σ and K = L^(−σ), the orders of their groups and the images of C(σ); `null` for the two largest groups, which §4.5 of the second paper leaves out (\|Aut L\| > 2 · 10^10); for `known:zeta17:s1-1`, whose only involution is −1, a `note` says so) |
+| `profile` | the profile of the second paper (§2.2) as far as it is data: `structure` (orders of F^*(G), of G/F^*(G), of the centre and of the derived group, the abelian invariants, the orders of a chief series and, for each chief factor from the top, its order, `kind` (`abelian` with `p`, `dim`, the order of the image of the action, absolute irreducibility, splitting and the number of classes of complements; or `non-abelian` with `simple` and `copies`), and `split_note` where splitting was not computed); `action_on_L` (for each conjugacy class: order, size, centralizer order, frame shape, trace and the fixed lattice with rank, determinant, discriminant group and minimum, `null` for rank 0; and the lengths of the orbits on the 146880 minimal vectors); `construction` (for an involution σ in a small class: the size of the class, the order of C(σ), whether σ ~ −σ, the invariants and Gram matrices of F = L^σ and K = L^(−σ), the orders of their groups and the images of C(σ); `null` for the two largest groups, which §4.5 of the second paper leaves out (\|Aut L\| > 2 · 10^10); for `known:zeta17:s1-1`, whose only involution is −1, a `note` says so) |
 
 **The presentation.** Its matrices are in the row convention: a matrix S acts on row vectors, v ↦ v S, and
 satisfies S G S^T = G; S is the transpose of an automorphism in the column convention. In this convention the
@@ -117,12 +117,12 @@ print(r['aut'], len(gens))
 The assets `database-v2.tar.gz`, `general-part-records.tar.gz` and `general-part-groups.tar` contain their own README.
 For the others:
 
-`type-8-24-classes.tar` has four files `classes-0.jsonl.gz`, ..., `classes-3.jsonl.gz` with the 376,306 orbits of
+`type-8-24-classes.tar` has four files `classes-0.jsonl.gz`, ..., `classes-3.jsonl.gz` with the 376306 orbits of
 good subspaces W for P = A_1^24 (Appendix B.3 of the first paper); orbit i is in the file `classes-<i mod 4>`.
 
 | Field | Content |
 |---|---|
-| `i` | the index of the orbit, 0, ..., 376,305 |
+| `i` | the index of the orbit, 0, ..., 376305 |
 | `stab` | \|Stab(W)\| in Aut P |
 | `gram` | the Gram matrix of K_W (rank 24, even, determinant 256, minimum 4), LLL-reduced |
 | `aut` | \|Aut K_W\| |
@@ -132,7 +132,7 @@ good subspaces W for P = A_1^24 (Appendix B.3 of the first paper); orbit i is in
 | `census` | for the 270 maximal totally singular subspaces T' of K_W^# / K_W, the number of T' by the number of roots of K_W + T' |
 | `np` | for the 135 non-zero singular classes p of K_W^# / K_W, the number of classes by the number of vectors of norm 2 in p |
 
-`gaussian-classes.jsonl.gz` has one line for each of the 76,742 rootless Hermitian Z[i]-lattices of Proposition 4.6:
+`gaussian-classes.jsonl.gz` has one line for each of the 76742 rootless Hermitian Z[i]-lattices of Proposition 4.6:
 
 | Field | Content |
 |---|---|

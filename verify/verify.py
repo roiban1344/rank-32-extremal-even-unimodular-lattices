@@ -22,7 +22,7 @@ What is checked (details in verify/README.md):
   G  the classification counts of §6 against the classified lattices, and the
      row-level witnesses of Lemmas 6.3 and 6.6 (general-part-witnesses.json):
      the identification classes from the saved rows and edges, a witness row of
-     an exact type for 12,519 classes, and the subtraction as set differences of
+     an exact type for 12519 classes, and the subtraction as set differences of
      individual list entries and Gaussian keys; the 849 quaternion triples in
      integers (quaternion-triples.json): Gram matrices even, positive definite
      and unimodular, W G W^T = G and W^2 = -1, and two isometries T^T G T = G'
@@ -66,27 +66,25 @@ def sha256(path):
     return h.hexdigest()
 
 
-# Numbers in the Typst source of the papers: integers of 4 or more digits are grouped by commas, written 11,044,268 in
-# text and "11,044,268" (a text in math) inside $...$.
+# Numbers in the Typst source of the papers are written without digit separators, 11044268, in text and in math.
 def fm(n):
-    return f'"{n:,}"' if abs(n) >= 1000 else str(n)
+    return str(n)
 
 
 def ft(n):
-    return f'{n:,}'
+    return str(n)
 
 
-NUM = r'"?([0-9][0-9,]*)"?'
+NUM = r'([0-9]+)'
 
 
 def fmf(x):
-    # a decimal in math, 3 places: "34,313.567" when the integer part has 4 or more digits
-    t = f'{float(x):,.3f}'
-    return f'"{t}"' if abs(float(x)) >= 1000 else t
+    # a decimal in math, 3 places: 34313.567
+    return f'{float(x):.3f}'
 
 
 def num(s):
-    return int(s.replace(',', ''))
+    return int(s)
 
 
 def matmul(a, b):
@@ -402,15 +400,15 @@ def main():
     # G. classification counts
     general = {r['label']: r['aut'] for r in rows if r['part'] == 'general'}
     classes = ident['classes']
-    c('G', '12,546 identification classes = the general part', len(classes) == 12546 and {k['label']: k['aut'] for k in classes} == general)
+    c('G', '12546 identification classes = the general part', len(classes) == 12546 and {k['label']: k['aut'] for k in classes} == general)
     dist = load(CERT / 'general-part-distinctness.json')
     prof_ok = all(len({tuple(dist['unlabelled_profiles'][l]['key']) for l in b}) == len(b) for b in dist['signature_buckets'])
-    c('G', 'Lemma 6.3: 12,519 classes with exact identifiers and 27 with distinct profiles',
+    c('G', 'Lemma 6.3: 12519 classes with exact identifiers and 27 with distinct profiles',
       dist['classes_with_exact_identifier'] + dist['classes_without_exact_identifier'] == 12546
       and dist['classes_without_exact_identifier'] == len(dist['unlabelled_profiles']) == 27 and prof_ok
-      and set(dist['unlabelled_profiles']) <= set(general) and '$"12,519"$' in body)
+      and set(dist['unlabelled_profiles']) <= set(general) and '$12519$' in body)
     c2 = load(CERT / 'c2xc2-part.json')
-    c('G', 'the 67,284 lattices of S_(C_2^2), each with |Aut L| = 4',
+    c('G', 'the 67284 lattices of S_(C_2^2), each with |Aut L| = 4',
       sorted(x['label'] for x in c2['lattices']) == sorted(r['label'] for r in rows if r['part'] == 'c2xc2') and all(x['aut'] == 4 for x in c2['lattices']))
     qt = load(CERT / 'quaternion-triples.json')
     quaternion = sum(v for k, v in cq.items() if k.startswith('Q'))
@@ -418,7 +416,7 @@ def main():
       and len(qt['classes']) == 3 * 849 and all(len(t['keys']) == 3 for t in qt['triples']))
     sub = load(CERT / 'subtraction-records.json')
     cyclic = sum(v for k, v in cq.items() if k.startswith('C'))
-    c('G', 'Lemma 6.6: 76,742 Gaussian classes minus 11,545 of S_gen = cyclic + 3 x quaternion',
+    c('G', 'Lemma 6.6: 76742 Gaussian classes minus 11545 of S_gen = cyclic + 3 x quaternion',
       sub['list_classes'] - sub['distinct_keys'] == cyclic + 3 * quaternion == 65197
       and sub['keys_not_in_list'] == sub['hermitian_rows_without_key'] == sub['unitary_order_or_f_mismatches'] == 0
       and sub['trivial_involution_rows_without_identifier'] == sub['lemma_6_2_violations'] == 0)
@@ -459,11 +457,11 @@ def main():
         for a, b in edges:
             join(a, b)
         steps.append(classes_of_records())
-    shown = re.search(r'the \$"17,736"\$ successful full-group records fall into \$"13,396"\$ classes by shared exact '
-                      r'identifiers, into \$"12,585"\$ when the inverse identifiers are added, and into \$"12,546"\$ by the 39 '
+    shown = re.search(r'the \$17736\$ successful full-group records fall into \$13396\$ classes by shared exact '
+                      r'identifiers, into \$12585\$ when the inverse identifiers are added, and into \$12546\$ by the 39 '
                       r'isometries among the 66 unlabelled records; the 67 isometries', main_text)
     unlabelled = [r for r in recs if all(row[3] is None for row in r['pair_rows'])]
-    c('G', '§6.3: the records join step by step into 13,396, 12,585, 12,546 classes (identifiers, inverse identifiers, '
+    c('G', '§6.3: the records join step by step into 13396, 12585, 12546 classes (identifiers, inverse identifiers, '
       'the 39 isometries of the 66 unlabelled records); the 67 isometries of the large groups join none',
       len(recs) == 17736 and steps == [13396, 12585, 12546, 12546] and len(unlabelled) == 66
       and len(wit['isometry_edges']) == 106 and shown is not None, f'{len(recs)} records; classes after each step {steps}')
@@ -474,7 +472,7 @@ def main():
             clash.append(label)
         label_at[t], aut_at[t] = label, aut
     roots = {root(x) for x in list(parent)}
-    c('G', 'Lemma 6.3: the records, their identifiers, the inverse and the isometry edges join into 12,546 classes, '
+    c('G', 'Lemma 6.3: the records, their identifiers, the inverse and the isometry edges join into 12546 classes, '
       'each with exactly one lattice of the general part, of the same |Aut L| as its records',
       not clash and roots == set(label_at) == {root(r['item']) for r in recs} and len(roots) == 12546
       and sorted(label_at.values()) == sorted(general) and all(general[label_at[t]] == aut_at[t] for t in roots)
@@ -497,7 +495,7 @@ def main():
     unanchored = set(general) - set(witness)
     prof = [tuple(dist['unlabelled_profiles'][l]['key']) for l in sorted(unanchored & set(dist['unlabelled_profiles']))]
     c('G', 'Lemma 6.3: the exact types from the rows (no row without identifier); a witness row of an exact type for '
-      'each of 12,519 classes; the other 27 classes are those with saved profiles, pairwise different',
+      'each of 12519 classes; the other 27 classes are those with saved profiles, pairwise different',
       exact == dist['exact_types'] and len(recs) == dist['successful_records']
       and {t: {'rows': totals[t], 'without_id': missing[t]} for t in totals if missing[t]} == dist['inexact_types']
       and witness == wit['component_witnesses'] and len(witness) == dist['classes_with_exact_identifier'] == 12519
@@ -544,7 +542,7 @@ def main():
         oriented += [e] if f is None else [e, f]
     selfinv_ok = selfinv <= cand and all(lists[s.rsplit(':', 1)[0]]['F'] == lists[s.rsplit(':', 1)[0]]['K'] for s in selfinv)
     c('G', 'Lemma 6.6(i): the extremal involution entries with |Stab| = 4 and the entries of type (8, 24) with |Aut K| = 2, '
-      'minus the self-inverse entries and the entries of S_gen, are exactly the oriented entries of the 67,284 lattices '
+      'minus the self-inverse entries and the entries of S_gen, are exactly the oriented entries of the 67284 lattices '
       'of S_(C_2^2) (inverse entry exactly for F = K); in S_gen at most one trivial involution row per record, '
       'only for |Aut L| = 4 mod 8',
       not bad and selfinv_ok and len(oriented) == len(set(oriented)) and set(oriented) == remaining
@@ -576,7 +574,7 @@ def main():
         keys += ks
     n_q = sum(len(ks) == 3 for _, _, ks in wit['cq_lattices'])
     c('G', 'Lemma 6.6(ii), (iii): the Gaussian keys of Proposition 4.6 minus the keys of S_gen are exactly the keys of the '
-      '63,499 lattices of S_CQ: one key with f = 2 and |U| = |Aut L| for C_(2^k), three keys with f = 1 and '
+      '63499 lattices of S_CQ: one key with f = 2 and |U| = |Aut L| for C_(2^k), three keys with f = 1 and '
       '|U| = 4, 4, |Aut L|/2 for Q_(2^k); in S_gen every key has the |U| and f of the list and lies in one class',
       not bad and len(keys) == len(set(keys)) and set(keys) == set(weight) - set(owner)
       and sorted(x[0] for x in wit['cq_lattices']) == sorted(cq_rows) and n_rows == sub['hermitian_rows']
@@ -726,10 +724,10 @@ def main():
            48: sum((Q(1, s) for s in k824['orbit_stabilizers']['A1^24']), Q(0)),
            72: sum((Q(g, s) for s, g in k824['orbit_terms_A2_12']), Q(0)) / 15}
     shown = re.search(r'g\(W_3\) slash \|"Stab"\(W_3\)\| = ' + NUM + ' slash ' + NUM + r'\$', body)
-    c('I', 'identity (B.1) for the Leech lattice and A_1^24 (all orbits of good W) and A_2^12 (the 106,624 orbits of good W_3, divided by 15, as in Appendix B.3)',
+    c('I', 'identity (B.1) for the Leech lattice and A_1^24 (all orbits of good W) and A_2^12 (the 106624 orbits of good W_3, divided by 15, as in Appendix B.3)',
       all(lhs[r] == rhs[r] for r in lhs) and len(k824['orbit_terms_A2_12']) == 106624 and lhs[72] == Q(k824['left_side_A2_12']) and all(sum(cs.values()) == 270 for cs in census)
       and shown is not None and Q(num(shown[1]), num(shown[2])) == lhs[72], {r: str(v) for r, v in lhs.items()})
-    # The 14,482 lattices K are distinct: 14,462 by a complete invariant (the canonical form of the graph of the 720
+    # The 14482 lattices K are distinct: 14462 by a complete invariant (the canonical form of the graph of the 720
     # vectors, which generate K^#), 16 by that form completed by the orbit of N/N', and the 4 others because each has an
     # order |Aut K| that no other K has (§B.3).
     froms = Counter(x.get('aut_from') for x in lat)
@@ -740,11 +738,11 @@ def main():
     split = Counter(min(cs) for cs in census)
     found = sum((Q(cs.get(72, 0), int(x['aut'])) for cs, x in zip(census, lat) if min(cs) == 72), Q(0))
     m824 = sum((Q(1, int(x['aut'])) for x in lat), Q(0))
-    c('I', 'Table B3 and Table 5: 1216 + 13,231 + 35 = 14,482 lattices K; the 35 fill 429583/768; M',
+    c('I', 'Table B3 and Table 5: 1216 + 13231 + 35 = 14482 lattices K; the 35 fill 429583/768; M',
       (split[0], split[48], split[72], len(lat)) == (1216, 13231, 35, 14482) and found == Q(429583, 768)
-      and '$"429,583" slash 768$' in body and '[$"1,244"$], [$"1,216"$]' in body and '[$"376,306"$], [$"13,231"$]' in body
+      and '$429583 slash 768$' in body and '[$1244$], [$1216$]' in body and '[$376306$], [$13231$]' in body
       and len(k824['orbit_stabilizers']['Leech']) == 1244 and len(k824['orbit_stabilizers']['A1^24']) == 376306
-      and f'[$"14,482"$], [$"14,482"$], [${fmf(m824)}$]' in main_text, dict(split))
+      and f'[$14482$], [$14482$], [${fmf(m824)}$]' in main_text, dict(split))
 
     # types of odd prime order: identity (4.1), Table B4, identity (B.2)
     od = load(CERT / 'odd-prime-masses.json')
@@ -797,7 +795,7 @@ def main():
     c('I', 'identity (4.1) for the pairs of components of the 19 types of odd prime order', not bad and len(od['types']) == 19,
       f'{n_pairs} pairs with all double cosets; failures {bad[:4]}')
     c('I', 'Section 4.2: 6617 extremal pairs of order 3 and 218 of orders 5, 7, 17, 31',
-      (ext_by_p[True], ext_by_p[False]) == (6617, 218) and 'have $"6,617"$ extremal pairs' in body and 'have $218$ extremal pairs' in body,
+      (ext_by_p[True], ext_by_p[False]) == (6617, 218) and 'have $6617$ extremal pairs' in body and 'have $218$ extremal pairs' in body,
       dict(ext_by_p))
     # identifiers of order 3 in the full-group records of S_gen: <z>-<f>-<s>:<i>-<j>/<k> is the k-th double coset of
     # the i-th F of minimum >= 4 and the j-th Z; it must be extremal with |Stab(phi)| = |C(h)| of the row
@@ -860,7 +858,7 @@ def main():
     c('I', 'the chains of (B.2): each step joins the lists of consecutive levels, and each chain starts at a list (z, z) of rootless mass',
       not bad and len(step_to) == len(od['b2_steps']), f'roots {sorted(roots)}; failures {bad}')
 
-    # Lemma 6.3(ii) (exhaustion of S_gen): for every list of §4.1-§4.2, the rows of the 12,546 lattices of S_gen, one
+    # Lemma 6.3(ii) (exhaustion of S_gen): for every list of §4.1-§4.2, the rows of the 12546 lattices of S_gen, one
     # record per lattice, weighted 1/|C(h)| (2/|C(sigma)| for an involution entry of a list with F = K whose sigma is not
     # conjugate to -sigma), add up to the extremal mass of the list less the classes T_0 assigned to S_(C_2^2); T_0
     # consists of trivial classes (|Stab| = 4, not self-inverse) none of which, nor its partner, is the identifier of a
@@ -940,15 +938,15 @@ def main():
       not inj_bad and mass_only_ok, f'{len(seen_inv)} involution entries, {len(seen_odd)} odd rows with identifiers; '
       f'failures {inj_bad[:3]}; mass-only pairs {mass_only}')
     bad = sorted(k for k in set(expected) | set(row_mass) if expected.get(k) != row_mass.get(k, Q(0)))
-    c('I', 'Lemma 6.3(ii): for every list, the rows of the 12,546 lattices of S_gen add up to its extremal mass less the trivial classes T_0 of S_(C_2^2)',
+    c('I', 'Lemma 6.3(ii): for every list, the rows of the 12546 lattices of S_gen add up to its extremal mass less the trivial classes T_0 of S_(C_2^2)',
       len(sources) == 12546 and all(s_ in recs_by_item for s_ in sources) and not bad and t0_ok and len(expected) == 83 + 1 + 18,
       f'{len(expected)} lists; |T_0| = {len(t0)}; differing {bad[:5]}; T_0 trivial and unmet: {t0_ok}')
 
     # Proposition 4.6: sum f/|U| = M_2
     total = sum((Q(f, u) for _, u, f in gl['classes']), Q(0))
-    c('I', 'Proposition 4.6: sum of f/|U| over the 76,742 Gaussian classes equals M_2',
+    c('I', 'Proposition 4.6: sum of f/|U| over the 76742 Gaussian classes equals M_2',
       total == Q(gl['rootless_mass']) == value and len(gl['classes']) == len({k for k, _, _ in gl['classes']}) == 76742 == sub['list_classes']
-      and all(f in (1, 2) for _, _, f in gl['classes']) and '$"76,742"$' in main_text, total)
+      and all(f in (1, 2) for _, _, f in gl['classes']) and '$76742$' in main_text, total)
     # The methods of the weights (proof of Proposition 4.6): the counts as stated, and every canonical-form class is a
     # discrete class (key k...) with |U| = 4 and f = 2, as the argument of the proof gives.
     wm = gl.get('weight_methods', [])

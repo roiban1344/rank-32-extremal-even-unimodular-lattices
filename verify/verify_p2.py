@@ -24,7 +24,7 @@ What is checked (data/largest-groups.jsonl, one line per lattice; field definiti
      table, and the lemma in the table is the lemma of the presentation;
   F  the profiles: for every conjugacy class, size * centralizer = |Aut L|, and its frame shape has degree 32,
      multiplicity of the eigenvalue 1 equal to the rank of the fixed lattice and a_1 equal to the trace; the class
-     sizes add up to |Aut L|; the orbits on the minimal vectors add up to 146,880.
+     sizes add up to |Aut L|; the orbits on the minimal vectors add up to 146880.
 Not recomputed (the assumptions of P2, §2.5): the orders |Aut L| themselves; the orders of the finitely presented
 groups of the block stages (the quotient Q and the simple sections T), which were counted by coset enumeration,
 directly or along the chain of Lemma 2.4.  These orders are inputs; the checks print them.  For the chains of
@@ -504,7 +504,7 @@ def main():
     # F. The profiles (§2.2): consistency of the stored action on L.  For each class: size * centralizer = |Aut L|; the
     # frame shape prod (x^k - 1)^(a_k) has degree sum k a_k = 32, its multiplicity of the eigenvalue 1, sum a_k, is the
     # rank of the fixed lattice, and a_1 is the trace.  The class sizes add up to |Aut L|, with one class of the
-    # identity, and the orbits on the minimal vectors add up to 146,880.  The classes themselves (GAP) are inputs.
+    # identity, and the orbits on the minimal vectors add up to 146880.  The classes themselves (GAP) are inputs.
     def frame_exponents(frame):
         out = {}
         for tok in frame.split():
@@ -524,7 +524,7 @@ def main():
         if not ok:
             bad.append(r['label'])
     c('F', 'profiles: class sizes add up to |Aut L| (size * centralizer = |Aut L|); frame shapes of degree 32, with fixed rank '
-           'and trace; orbits on the minimal vectors add up to 146,880', not bad,
+           'and trace; orbits on the minimal vectors add up to 146880', not bad,
       f"{sum(len(r['profile']['action_on_L']['classes']) for r in recs)} classes; failures {bad[:5]}")
 
     failures = [x for x in c.results if not x['ok']]

@@ -1,7 +1,7 @@
 {
- "version": "v2026-11-14.1",
- "research_commit": "c91a1ae2194937d5492bb3583f94ee7b3946d1c3",
- "source_date_epoch": 1794585060,
+ "version": "v2026-11-14.2",
+ "research_commit": "abb99d921b1148632f02e9488fd0ae78605d80a5",
+ "source_date_epoch": 1794663691,
  "files": [
   {
    "path": "LICENSE",
@@ -10,28 +10,28 @@
   },
   {
    "path": "README.ja.md",
-   "bytes": 10103,
-   "sha256": "e4d5de0469fee51dd32b96d0edf6af8165594d5ad31f3d7036b6322e9f8df0d9"
+   "bytes": 10091,
+   "sha256": "4e989f9eb7482f27489ba781ad3be8a7c8df22455304e986d379a16f3fabc35a"
   },
   {
    "path": "README.md",
-   "bytes": 8476,
-   "sha256": "56963b08f17b66c1a23d981854f27338e6b0578feb1b67435d1c9a48c55eba14"
+   "bytes": 8464,
+   "sha256": "611114cd23ad11c2d479193585a8a2b6da039f15334a42c7c646939e9c4ba9ef"
   },
   {
    "path": "certificates/README.ja.md",
-   "bytes": 18427,
-   "sha256": "ee70f8928d64ccf49d65432725814fb4e56ff681ecdb5800e5e1a058573ec3d5"
+   "bytes": 18412,
+   "sha256": "7035babcb83feb713b9655b6a76343501ddac2f3d947a063f07266f5d59de6cc"
   },
   {
    "path": "certificates/README.md",
-   "bytes": 15939,
-   "sha256": "1dc5822602bf1844d5e73659d822a789358013c9fb2473d96c868feae4ab2172"
+   "bytes": 15924,
+   "sha256": "e80b5bc5790fd8c66eeea536995c379dd1be8b80d1a7cbf60cc645285c9e4a60"
   },
   {
    "path": "certificates/c2xc2-part.json",
-   "bytes": 5646472,
-   "sha256": "763e7d3169d24a8a08d504383dff24a6e8e0327bf458f262ef50af24f0bdb388"
+   "bytes": 5646471,
+   "sha256": "6c7747ba75eac6f77622547cdef3cb3c44a5a8daf716f8a030410edbe9e799c7"
   },
   {
    "path": "certificates/exceptional-full-groups.json",
@@ -45,28 +45,28 @@
   },
   {
    "path": "certificates/gaussian-list-weights.json",
-   "bytes": 3350791,
-   "sha256": "d13c2afd55b66c0d7050d5c094e6106cbbdbc7d8c59ebe5220227019c0ca7ae6"
+   "bytes": 3350790,
+   "sha256": "93789dc3373539dda16f86fb6249d9fa521203d5512d5a1867236a669fa5e6e8"
   },
   {
    "path": "certificates/gaussian-rootless-mass.json",
-   "bytes": 2545407,
-   "sha256": "2611333d8d2b022397eb5de8ffff4b7347029d80f3e6ad572035be781f1a443a"
+   "bytes": 2545406,
+   "sha256": "fa4e74e2025f8a0eaf3c4a92901f40aa3531cb9f877dad88eac23c8ee2f51bc1"
   },
   {
    "path": "certificates/general-part-distinctness.json",
-   "bytes": 8697,
-   "sha256": "656bd6518cfe1aa0da547a722f842b0fdbaee2509f04bef402b120971ef3d0f8"
+   "bytes": 8696,
+   "sha256": "86885f98504ef713085615ea0c714ca500d66fe6dea6f5adda9a31e69b9cbb7f"
   },
   {
    "path": "certificates/general-part-identification.json",
-   "bytes": 2005757,
-   "sha256": "7c4884bd397edfdc3500ab7f69cb693aeec29a71edc6626f78101248832549d7"
+   "bytes": 2005756,
+   "sha256": "3b5d4158df579253b1c83dcd64daac7ac52b103ca39df0f4d661180c99d8ed16"
   },
   {
    "path": "certificates/general-part-witnesses.json",
-   "bytes": 8531547,
-   "sha256": "d1ffa2f0f2849bae0d467a4b666e950a80aa364271f4fe7cad3fa2099628dd26"
+   "bytes": 8531543,
+   "sha256": "30a36232c96c7a31c19671f4133eec6cf29b47c1ea0b72d0a62865376b0f10b3"
   },
   {
    "path": "certificates/involution-gluing-masses.json",
@@ -90,13 +90,13 @@
   },
   {
    "path": "certificates/quaternion-triples.json",
-   "bytes": 16826092,
-   "sha256": "7344862f753119dddb1ff7d5daf469085455e2311f9a9525bb4182d30a7c267e"
+   "bytes": 16826090,
+   "sha256": "5d08f739fb3381e259bd89428a48cfbdc79dd459ccffb8d9203f6a422192b6fb"
   },
   {
    "path": "certificates/root-coefficients.json",
-   "bytes": 917,
-   "sha256": "741641ab9c880963b7f535e0f3177a7114734cf72691f15c04c1d56922f58fbb"
+   "bytes": 916,
+   "sha256": "f32fb394abacd0c7a5f3ec9cde9a6c102d0cc43a9b37c708e9931e52e2159ad7"
   },
   {
    "path": "certificates/subtraction-records.json",
@@ -105,8 +105,8 @@
   },
   {
    "path": "certificates/type-8-24-masses.json",
-   "bytes": 3181394,
-   "sha256": "c60ec4cb0ebbe96e8ea243a82806b1d6124c8cc8eeee037eaae1927aad5cf5b5"
+   "bytes": 3181391,
+   "sha256": "784c51b17ce8acbfd0975c87c214e592ebf195e9e496a1622ede234ad33cc8ee"
   },
   {
    "path": "certificates/type-exclusion-lp.json",
@@ -115,13 +115,13 @@
   },
   {
    "path": "data/README.ja.md",
-   "bytes": 16217,
-   "sha256": "d536837d5df61b782f94e1d4095e43064006835da1d2df7cdb405a2500e5818d"
+   "bytes": 16205,
+   "sha256": "cc17c37d70f057f7328a75c56b84575834250f0ee8ebe81f5fe1381d0edf5c8c"
   },
   {
    "path": "data/README.md",
-   "bytes": 14069,
-   "sha256": "d067e0e4c9138b02bf32fcb033baeffe045b77d46d7c9553d026dbf79913bb7d"
+   "bytes": 14057,
+   "sha256": "eef788a222957f06d70f1bbef0ee9c619c007a3f328849f5ab64ed2e246f3c8e"
   },
   {
    "path": "data/classified-lattices.jsonl",
@@ -130,63 +130,63 @@
   },
   {
    "path": "data/largest-groups.jsonl",
-   "bytes": 8113140,
-   "sha256": "92d4c6f0b1bc2595f69303b6d10ec76a70893ccdb3af4ce275686922451dacef"
+   "bytes": 8113126,
+   "sha256": "1b78501a1ab48d3560d281c3d87e8a909be6450e6724f8654d71475f303661d9"
   },
   {
    "path": "paper/assignment-count.ja.pdf",
-   "bytes": 1008782,
-   "sha256": "9fafea4e9030991aefe6bd1f1558b7b44e9977b4e65550a2243615ab5e82ec32"
+   "bytes": 1025373,
+   "sha256": "e52b3f9d32830b4a5c82c514eb07e727da55fb1fa67f697d48252657ed5f8512"
   },
   {
    "path": "paper/assignment-count.ja.typ",
-   "bytes": 52336,
-   "sha256": "ce2429bbe1003ed9020c0017a1616af7dcb72d97fb1e1752c8666052ee7bead4"
+   "bytes": 51843,
+   "sha256": "ec542665b4d2edbdb702130d42e42e9cef4ded89181a6fe0125a4e2515309f38"
   },
   {
    "path": "paper/assignment-count.pdf",
-   "bytes": 665744,
-   "sha256": "4757bce60908bb18c6658ef573c2c4ae5598affed884d7664b2d37f751e10d7c"
+   "bytes": 681583,
+   "sha256": "acc7efc4228d6c40df6cdbc58330b513ba367a71ccd025a0ee7c42002b0ac26a"
   },
   {
    "path": "paper/assignment-count.typ",
-   "bytes": 44424,
-   "sha256": "45c4ab70907b0a5df955ccc011065189cf05f506c5e7c59882b3d40a9e078600"
+   "bytes": 43931,
+   "sha256": "08a1c5ab2aad7d9c2c5bd6e1b25e11d5b3e368c5a6100977e9356d8d535cf655"
   },
   {
    "path": "paper/automorphism-groups-rank-32.ja.pdf",
-   "bytes": 1956789,
-   "sha256": "5f0cdf929d5221264a8d157c4374dd20405656af2548a09334f058c15bd69f30"
+   "bytes": 1972931,
+   "sha256": "f7c4b3e5abf928991d85841479ec89a7672fa4119ab29a43fd66dc12a48dc446"
   },
   {
    "path": "paper/automorphism-groups-rank-32.ja.typ",
-   "bytes": 106110,
-   "sha256": "2b66e86333e917bff98f1e6c46908ad880fe340959ddb1f2bb37427819ecc502"
+   "bytes": 105390,
+   "sha256": "f3727f70a2299d23be358372df05b07e2b49f35907c3bd3baab8a0d9dc1a15a2"
   },
   {
    "path": "paper/automorphism-groups-rank-32.pdf",
-   "bytes": 1466643,
-   "sha256": "d72f112685b6f9217fda9409a70a8c759eb7aafa94cecc9232e55c72918887f2"
+   "bytes": 1485002,
+   "sha256": "830bbf153f7c631b8cb18a883d7c4767ceabad8bbfc084e4c60948e6c487c24b"
   },
   {
    "path": "paper/automorphism-groups-rank-32.typ",
-   "bytes": 94985,
-   "sha256": "526a63af04e892025b06722f2af0adbc3e294f231acd5855e5ef53788420caa8"
+   "bytes": 94265,
+   "sha256": "6d081f2898739600d716c85bfa861c19caf34c858355b913b16eaeab61972362"
   },
   {
    "path": "paper/computations-ja.typ",
-   "bytes": 15725,
-   "sha256": "f8b89cfd6fe901c2d0fcbbda952e02e0da493e7aa392d61604445cf24c4320c7"
+   "bytes": 15699,
+   "sha256": "65737fecf0fa239e5f828ceec8e7568f3b06cff249e0258c2412af94588ec3e9"
   },
   {
    "path": "paper/computations-p2.typ",
-   "bytes": 5995,
-   "sha256": "0447be2a8bf0dbc507262b405def0592c9e7868fef4b040476559aeb7e82573c"
+   "bytes": 5991,
+   "sha256": "58c75badca9fbc3e56cb4d35d6a26312065c24d17e603fc8f8603727810f0df9"
   },
   {
    "path": "paper/computations.typ",
-   "bytes": 13449,
-   "sha256": "56e27443b4705e4efe6f06ad19baf996a0258659367808c28e4f71a3528103f7"
+   "bytes": 13439,
+   "sha256": "513abe1ae653d44f02cb12c6a65fa96d6ea940a2a17814dc4771244d943451f9"
   },
   {
    "path": "paper/exponent9.ja.typ",
@@ -200,23 +200,23 @@
   },
   {
    "path": "paper/extremal-lattices-rank-32.ja.pdf",
-   "bytes": 4473049,
-   "sha256": "debb30222b99cc85d39973ddccc2c6039400400c5424787fa86426f3e335d58a"
+   "bytes": 4494619,
+   "sha256": "45bf7ee4d6bea5809c720cdc36cef6ee00cfcdacf05140ba60b55bb669464888"
   },
   {
    "path": "paper/extremal-lattices-rank-32.ja.typ",
-   "bytes": 335889,
-   "sha256": "a3e283b760c96bc3b0432d67d92a02b42733d06e4816aeb1b62fc72176d96e5b"
+   "bytes": 334571,
+   "sha256": "b26b16f93334681395b5d21b1cc0f3204ed492ee400f2b89a6420dc6a5352b60"
   },
   {
    "path": "paper/extremal-lattices-rank-32.pdf",
-   "bytes": 3179745,
-   "sha256": "e702ecf7ac679681e12175579b9077980f91b186c6c337a5df96da1b4ac8e844"
+   "bytes": 3226466,
+   "sha256": "7d817e4eeffbf0d675f36297aac2b0ae92c26e63f7059985ae653a7192c9a06c"
   },
   {
    "path": "paper/extremal-lattices-rank-32.typ",
-   "bytes": 278048,
-   "sha256": "d15b5144a743a6ce0187b6ef948b481b26f829eabf3e570a15edf40fdc25c6c2"
+   "bytes": 276730,
+   "sha256": "26ae3669dbb8061a241666914861bd0e311a841223be7498755550f6adeebda5"
   },
   {
    "path": "paper/finite-type-exclusions.ja.typ",
@@ -250,13 +250,13 @@
   },
   {
    "path": "paper/p2-lattices-99.json",
-   "bytes": 33385,
-   "sha256": "0f757cf960a080367bdfd4d4040dc9992cea0f8fb6506560c75c976c00202839"
+   "bytes": 33371,
+   "sha256": "2a321649b38f039438bca4501230b422c0313573b3c902971391b545f506e823"
   },
   {
    "path": "paper/release-files.json",
-   "bytes": 3420,
-   "sha256": "0b0fc711422b084beb7edb5ac469a725b83e752db16fcd21c7b2b52ceead6009"
+   "bytes": 3400,
+   "sha256": "878e56be1aabae31b56a0e0539952bb4f4340445e497f155f9d5753bc1292749"
   },
   {
    "path": "paper/style-base.typ",
@@ -275,13 +275,13 @@
   },
   {
    "path": "verify/README.ja.md",
-   "bytes": 14288,
-   "sha256": "09b95f2446749c81e68dd8bf1cecec16fa88c8a19e0e88e63f652a2237eb2e0c"
+   "bytes": 14266,
+   "sha256": "283ada20c4effc5da98f557e321b7f7e1db3edbde91de41abb1e55f33bf806d0"
   },
   {
    "path": "verify/README.md",
-   "bytes": 12244,
-   "sha256": "8f10143c7eb046446ee95191c34e1407a1fa7a6c56982e627d765c98d8863596"
+   "bytes": 12222,
+   "sha256": "77d4282cd967cd9c25e69ae794aeac046f89e80eae173fcd10464d19a0614c0d"
   },
   {
    "path": "verify/check_exponent9.py",
@@ -290,8 +290,8 @@
   },
   {
    "path": "verify/check_m2_terms.py",
-   "bytes": 30547,
-   "sha256": "594d9577c19e791e0316e2eaac81a23f4a948bae6518495c419f4dd848283be5"
+   "bytes": 30540,
+   "sha256": "a834b86550ae7f154b97be77ae74bdc2cbf96e1870625ab968e8ee83da246007"
   },
   {
    "path": "verify/check_quadratic2_orbits.py",
@@ -300,25 +300,25 @@
   },
   {
    "path": "verify/verify.py",
-   "bytes": 56511,
-   "sha256": "c9c8cf2e9e2084355bb53b39d947c0b093b5b76463316c8a16d65176cf4ee363"
+   "bytes": 56228,
+   "sha256": "9b9f862788f30e62f88fafdbb14a1927e1f7b1a1f3f20e0da840f3da7bf5ff6a"
   },
   {
    "path": "verify/verify_database.py",
-   "bytes": 10963,
-   "sha256": "215c79c2ae9286b5e17c7534b01ecd4d6f58a7bf0ffb7756b0931a53d133d910"
+   "bytes": 10959,
+   "sha256": "f23809e3d3b2dbe5619f39458dfdd2360918c3c62e83fa903bff17e23e33c16f"
   },
   {
    "path": "verify/verify_p2.py",
-   "bytes": 26198,
-   "sha256": "19981ec51166cf6591fc203327b1f734b3ac74f9977c88d5e432172500b0b980"
+   "bytes": 26195,
+   "sha256": "750077e4df55ac27aea1e97b8ac59485bd4e690ea915f76369384adc2a6fd4da"
   }
  ],
  "release_assets": [
   {
    "name": "research-record.tar.gz",
-   "bytes": 10288756,
-   "sha256": "5d8e2f282e1e3569d9cc45bac7fae1637c734d1907c6e221ce5d832bab09d981"
+   "bytes": 10289398,
+   "sha256": "6992eb25bd73c9d700eee09c530cd57c639aed41c40d5f1159f46fc8488e37bd"
   },
   {
    "name": "research-runs.tar.gz",
@@ -343,7 +343,7 @@
   {
    "name": "general-part-groups.tar",
    "bytes": 29665280,
-   "sha256": "f75a42f14de3578580dd555823ca6373bc4fcde8b0451806e88b99d132429036"
+   "sha256": "36b349bacf838da819e5b378f7e48fbcee3f60c5dc0d6d3b54e3e37c3fd456d2"
   },
   {
    "name": "type-8-24-classes.tar",
@@ -352,13 +352,13 @@
   },
   {
    "name": "general-part-records.tar.gz",
-   "bytes": 1295287,
-   "sha256": "ef1187d1c734cff8a7862e1190d2989c9ef292f6748ee9abbbf16d422e733a08"
+   "bytes": 1295279,
+   "sha256": "5e249575c459326a6ae07e206046b57aace534522535c6ed737e14e0eacb6a87"
   },
   {
    "name": "database-v2.tar.gz",
-   "bytes": 90221636,
-   "sha256": "a0c9d3211bf71d3785bb74a827840a2726bdcd2140e5704c767dffedf4f3f023"
+   "bytes": 90221613,
+   "sha256": "44c0210d5d8c328645b3a210d23ee239bef2d6b641fd075f71eb501920b92a29"
   }
  ]
 }
