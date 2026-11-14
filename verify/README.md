@@ -45,8 +45,7 @@ and does not recompute it.
 **What is not checked here.** The completeness identities are added again from their terms (section I), but the
 terms themselves are not recomputed: the automorphism groups and stabilizers, the numbers of decompositions and of good lines g(Z_+), the masses of genera and rootless masses,
 and the isometry decisions that make the listed classes distinct. They rest on the arguments of the paper (Table 7) and on the assumptions about
-the software (Table 10). The programs that computed them are in the research record (release asset
-`research-record.tar.gz`).
+the software (Table 10). The programs that computed them are not part of this version; they are to be added under `code/`.
 
 ## verify_p2.py (the second paper)
 
