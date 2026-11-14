@@ -8,7 +8,7 @@ standard library.  Exit status 0 means that every check passed.
 
 What is recomputed, in exact rational arithmetic:
   * the index of root types: all multisets of the irreducible root lattices of
-    Proposition C.1 of total rank at most 16 (12,934 of them, with the counts by
+    Proposition C.1 of total rank at most 16 (12934 of them, with the counts by
     rank of §C.2); every term of the certificate is one of them, each once;
   * for every irreducible Y, from the Cartan matrix of its root system over Z
     (A_n[i], D_n[i], E_n[i] by base change; G_m from D_2m with g = i; E_8^g
@@ -30,7 +30,7 @@ What is recomputed, in exact rational arithmetic:
     coefficients and Proposition C.1; the term c(T) A_16(T) / |U(T)| and the
     sum (C.2), compared with term and rootless_mass;
   * as a consistency check, (C.2) for r = 4, 8, 12 from the same data
-    (Table C2: 0, 0, 1/2,012,774,400);
+    (Table C2: 0, 0, 1/2012774400);
   * that local_statistics has one row for every block multiset the terms need
     (rows that no term uses are reported), and light invariants of each row.
 
@@ -44,7 +44,7 @@ What remains input:
     from explicit roots in the paper) are compared with the values stated in
     §C.3 only;
   * |Aut E_n| (textbook values) and the centralizer orders 96 (G_2) and
-    46,080 (E_8^g) of Proposition C.1.
+    46080 (E_8^g) of Proposition C.1.
 """
 import itertools
 import json
@@ -523,7 +523,7 @@ def gaussian_D2m(m):
     return [('d', 1, int(u) % 4)]
 
 
-AUT_E = {6: 2 * 51840, 7: 2903040, 8: 696729600}      # |Aut E_n| (|W(E_6)| = 51,840, -1 not in W(E_6))
+AUT_E = {6: 2 * 51840, 7: 2903040, 8: 696729600}      # |Aut E_n| (|W(E_6)| = 51840, -1 not in W(E_6))
 EXCEPTIONAL_C = {'E6': 7680, 'E7': -233280, 'E8': -28183680, 'Eg8': -5184}   # values stated in §C.3
 
 
@@ -735,7 +735,7 @@ def main():
         fail(f'terms cover {len(seen & set(index))} of {len(index)} types')
     if total != Q(data['rootless_mass']):
         fail(f'sum (C.2) = {total}, certificate {data["rootless_mass"]}')
-    # (The 11,780 zero masses of §C.7 are masses of exact root systems, after Moebius
+    # (The 11780 zero masses of §C.7 are masses of exact root systems, after Moebius
     # inversion over the sublattice poset, not zero averages; they are not checked here.)
 
     # Table C2 for r = 4, 8, 12 from the same data

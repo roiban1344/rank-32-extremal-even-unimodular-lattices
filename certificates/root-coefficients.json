@@ -1,6 +1,6 @@
 {
  "certificate": "Closed formulas for the inclusion-exclusion coefficients over Z[i]",
- "statement": "c(A_n) = (-1)^n n!, c(D_n) = (-1)^n (n-1)! (2^(n-1) - 1), c(G_m) = (-1)^m 2^(m-1) (m-1)! agree with all 12,934 terms of gaussian-rootless-mass.json.",
+ "statement": "c(A_n) = (-1)^n n!, c(D_n) = (-1)^n (n-1)! (2^(n-1) - 1), c(G_m) = (-1)^m 2^(m-1) (m-1)! agree with all 12934 terms of gaussian-rootless-mass.json.",
  "computations": [
   "C20"
  ],

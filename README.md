@@ -9,12 +9,12 @@ This repository accompanies two papers, published together in each version:
 - *Automorphism groups of extremal even unimodular lattices of rank 32* (`paper/automorphism-groups-rank-32.pdf`),
   on the 99 lattices with the largest groups.
 
-**Results.** There are exactly 11,044,268 isometry classes of extremal even unimodular lattices of rank 32
-(Theorem A). Exactly 143,329 of them have automorphisms other than ±1; the paper classifies these lattices and
+**Results.** There are exactly 11044268 isometry classes of extremal even unimodular lattices of rank 32
+(Theorem A). Exactly 143329 of them have automorphisms other than ±1; the paper classifies these lattices and
 determines the order of each automorphism group (Theorem B). The proof is computer-assisted. Table 7 of the
 paper lists the statements on which it rests, and Table 10 lists what it assumes about the software.
 
-The second paper describes the groups of the 99 lattices whose groups have order larger than 2,000 or equal to 512, 1,024 or 1,536 (the groups of the other lattices are identified by `IdGroup` in the Small Groups Library):
+The second paper describes the groups of the 99 lattices whose groups have order larger than 2000 or equal to 512, 1024 or 1536 (the groups of the other lattices are identified by `IdGroup` in the Small Groups Library):
 generalized Fitting subgroup, chief series, a presentation of proved order, conjugacy classes and orbits on the
 minimal vectors; 27 of the 99 are in the literature, and the other 72 were not found in the literature we read.
 
@@ -26,7 +26,7 @@ Japanese translations of the two papers and of the note are in `paper/extremal-l
 |---|---|
 | `paper/` | The two papers (Typst sources and PDFs) with their computation ledgers (`computations.typ`, Table 11 of the first; `computations-p2.typ`, Table 11 of the second), the data of Table A1 of the second (`p2-lattices-99.json`), and an auxiliary note on an earlier organization of the count, which shares the component lists (`assignment-count.pdf`, [Aux] in the first paper) |
 | `certificates/` | The certificates read by the checks, one file per statement or computation; see `certificates/README.md` |
-| `data/classified-lattices.jsonl` | The 143,329 lattices with automorphisms other than ±1: label, order and (where identified) structure of the automorphism group, and the part of Theorem B to which the lattice belongs; see `data/README.md` |
+| `data/classified-lattices.jsonl` | The 143329 lattices with automorphisms other than ±1: label, order and (where identified) structure of the automorphism group, and the part of Theorem B to which the lattice belongs; see `data/README.md` |
 | `data/largest-groups.jsonl` | The 99 lattices of the second paper: label, Gram matrix, generators of the automorphism group, the presentation and the columns of its Table A1; see `data/README.md` |
 | `verify/` | `verify.py`, which checks the certificates and data against the first paper, and `verify_p2.py`, which checks the data of the second in integers; see `verify/README.md` |
 | `LICENSE` | MIT for the code in `verify/`; CC BY 4.0 for text and data |
@@ -38,12 +38,12 @@ Release assets (Table 12 of the paper) hold the larger data and the research rec
 |---|---|
 | `research-record.tar.gz` | The programs that produced the lists and certificates, unchanged, with an index by computation and the verification notes ([Rec] in the paper) |
 | `research-runs.tar.gz` | The recorded runs of those programs |
-| `gaussian-classes.jsonl.gz` | The 76,742 rootless Hermitian Z[i]-lattices of Proposition 4.6 |
+| `gaussian-classes.jsonl.gz` | The 76742 rootless Hermitian Z[i]-lattices of Proposition 4.6 |
 | `gaussian-walk-grams-1.jsonl.gz`, `gaussian-walk-grams-2.jsonl.gz` | Gram matrices met by the two neighbour walks that built the Gaussian list (fields in `data/README.md`) |
-| `type-8-24-classes.tar` | The 376,306 orbits of good subspaces W for the Niemeier lattice A_1^24 (Appendix B.3 of the first paper), each with a Gram matrix of K_W, \|Aut K_W\| and the order of the stabilizer of W |
-| `general-part-groups.tar` | Generators, presentations, conjugacy classes and group identifications for the 12,536 lattices of S_gen with \|Aut L\| <= 10^7, by label, with a README |
-| `general-part-records.tar.gz` | The 17,736 full-group records of S_gen (§6.3 of the first paper): for each, the label, \|Aut L\|, the conjugacy classes and the rows of entries, with a README |
-| `database-v2.tar.gz` | The database [D], version 2: for each of the 143,329 lattices of S its Gram matrix and generators of its automorphism group, with a README, an index by label and a manifest; `verify/verify_database.py` checks it against this repository and looks up a lattice by its label |
+| `type-8-24-classes.tar` | The 376306 orbits of good subspaces W for the Niemeier lattice A_1^24 (Appendix B.3 of the first paper), each with a Gram matrix of K_W, \|Aut K_W\| and the order of the stabilizer of W |
+| `general-part-groups.tar` | Generators, presentations, conjugacy classes and group identifications for the 12536 lattices of S_gen with \|Aut L\| <= 10^7, by label, with a README |
+| `general-part-records.tar.gz` | The 17736 full-group records of S_gen (§6.3 of the first paper): for each, the label, \|Aut L\|, the conjugacy classes and the rows of entries, with a README |
+| `database-v2.tar.gz` | The database [D], version 2: for each of the 143329 lattices of S its Gram matrix and generators of its automorphism group, with a README, an index by label and a manifest; `verify/verify_database.py` checks it against this repository and looks up a lattice by its label |
 
 ## Checking
 

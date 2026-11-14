@@ -1,11 +1,11 @@
 {
  "repository": "https://github.com/roiban1344/rank-32-extremal-even-unimodular-lattices",
- "version": "v2026-11-14.1",
+ "version": "v2026-11-14.2",
  "files": [
   {
    "name": "research-record.tar.gz",
-   "bytes": 10288756,
-   "sha256": "5d8e2f282e1e3569d9cc45bac7fae1637c734d1907c6e221ce5d832bab09d981",
+   "bytes": 10289398,
+   "sha256": "6992eb25bd73c9d700eee09c530cd57c639aed41c40d5f1159f46fc8488e37bd",
    "size": "10.3 MB",
    "content": "the research record [Rec]: programs by computation, verification notes and an index"
   },
@@ -35,33 +35,33 @@
    "bytes": 69917890,
    "sha256": "7e8e1b92a2936de1fc7af40d7bb4fbbb1a789d810eff87495d1b676a916b8263",
    "size": "69.9 MB",
-   "content": "the $\"76,742\"$ rootless Hermitian $ZZ[i]$-lattices of Proposition 4.6: key, $D$, $|U|$, $f$, weight, Gram matrix $G$ and $W$ with $W G W^sans(T) = G$, $W^2 = -1$"
+   "content": "the $76742$ rootless Hermitian $ZZ[i]$-lattices of Proposition 4.6: key, $D$, $|U|$, $f$, weight, Gram matrix $G$ and $W$ with $W G W^sans(T) = G$, $W^2 = -1$"
   },
   {
    "name": "general-part-groups.tar",
    "bytes": 29665280,
-   "sha256": "f75a42f14de3578580dd555823ca6373bc4fcde8b0451806e88b99d132429036",
+   "sha256": "36b349bacf838da819e5b378f7e48fbcee3f60c5dc0d6d3b54e3e37c3fd456d2",
    "size": "29.7 MB",
-   "content": "generators, presentations, conjugacy classes and group identifications for the $\"12,536\"$ lattices of $S_\"gen\"$ with $|\"Aut\" L| <= 10^7$, by label, with a README"
+   "content": "generators, presentations, conjugacy classes and group identifications for the $12536$ lattices of $S_\"gen\"$ with $|\"Aut\" L| <= 10^7$, by label, with a README"
   },
   {
    "name": "type-8-24-classes.tar",
    "bytes": 119091200,
    "sha256": "d25b90009a6617708fe194b78d655bb448126efe6cec025d17d4637589068ce3",
    "size": "119.1 MB",
-   "content": "the $\"376,306\"$ orbits of good $W$ for $P = A_1^(24)$ of \u00a7B.3, each with a Gram matrix of $K_W$, $|\"Aut\" K_W|$ and $|\"Stab\"(W)|$"
+   "content": "the $376306$ orbits of good $W$ for $P = A_1^(24)$ of \u00a7B.3, each with a Gram matrix of $K_W$, $|\"Aut\" K_W|$ and $|\"Stab\"(W)|$"
   },
   {
    "name": "general-part-records.tar.gz",
-   "bytes": 1295287,
-   "sha256": "ef1187d1c734cff8a7862e1190d2989c9ef292f6748ee9abbbf16d422e733a08",
+   "bytes": 1295279,
+   "sha256": "5e249575c459326a6ae07e206046b57aace534522535c6ed737e14e0eacb6a87",
    "size": "1.3 MB",
-   "content": "the $\"17,736\"$ full-group records of \u00a76.3 (Lemma 6.3): for each, the label, the group order, the conjugacy classes and the rows of entries, with a README"
+   "content": "the $17736$ full-group records of \u00a76.3 (Lemma 6.3): for each, the label, the group order, the conjugacy classes and the rows of entries, with a README"
   },
   {
    "name": "database-v2.tar.gz",
-   "bytes": 90221636,
-   "sha256": "a0c9d3211bf71d3785bb74a827840a2726bdcd2140e5704c767dffedf4f3f023",
+   "bytes": 90221613,
+   "sha256": "44c0210d5d8c328645b3a210d23ee239bef2d6b641fd075f71eb501920b92a29",
    "size": "90.2 MB",
    "content": "the database [D], version 2: for each lattice of $S$ its Gram matrix and generators of $\"Aut\" L$, with a README, a manifest and an index by label"
   }

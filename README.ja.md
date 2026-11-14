@@ -11,9 +11,9 @@
 
 論文と補助ノートには日本語版がある（`paper/extremal-lattices-rank-32.ja.pdf`、`paper/automorphism-groups-rank-32.ja.pdf`、`paper/assignment-count.ja.pdf`）。定理・式・表・計算の番号は英語版と同じである。
 
-**結果.** 階数 32 の極値偶ユニモジュラー格子の等長類は、ちょうど 11,044,268 個ある（定理 A）。そのうちちょうど 143,329 個が ±1 以外の自己同型を持つ。論文はこれらの格子を分類し、それぞれの自己同型群の位数を決定する（定理 B）。証明は計算機援用である。論文の表 7 に証明が依拠する主張を、表 10 にソフトウェアについて仮定することを挙げてある。
+**結果.** 階数 32 の極値偶ユニモジュラー格子の等長類は、ちょうど 11044268 個ある（定理 A）。そのうちちょうど 143329 個が ±1 以外の自己同型を持つ。論文はこれらの格子を分類し、それぞれの自己同型群の位数を決定する（定理 B）。証明は計算機援用である。論文の表 7 に証明が依拠する主張を、表 10 にソフトウェアについて仮定することを挙げてある。
 
-第 2 の論文は、群の位数が 2,000 を超えるか 512、1,024、1,536 に等しい 99 個の格子の群を記述する（それ以外の格子の群は Small Groups Library の `IdGroup` で同定される）。記述するのは、一般 Fitting 部分群、主列、位数を証明した表示、共役類、最短ベクトルの上の軌道である。なお、99 個のうち 27 個は文献にあり、残りの 72 個は、我々が読んだ文献には見つからなかった。
+第 2 の論文は、群の位数が 2000 を超えるか 512、1024、1536 に等しい 99 個の格子の群を記述する（それ以外の格子の群は Small Groups Library の `IdGroup` で同定される）。記述するのは、一般 Fitting 部分群、主列、位数を証明した表示、共役類、最短ベクトルの上の軌道である。なお、99 個のうち 27 個は文献にあり、残りの 72 個は、我々が読んだ文献には見つからなかった。
 
 ## 内容
 
@@ -21,7 +21,7 @@
 |---|---|
 | `paper/` | 二つの論文（Typst のソースと PDF）と、その計算の一覧表（`computations.typ` は第 1 の論文の表 11、`computations-p2.typ` は第 2 の論文の表 11）、第 2 の論文の表 A1 のデータ（`p2-lattices-99.json`）、および数え上げの以前の整理についての補助ノート（成分の一覧を共有する。`assignment-count.pdf`、第 1 の論文では [Aux]） |
 | `certificates/` | 検査が読む certificate（検証用データ）。主張または計算ごとに 1 ファイル。`certificates/README.md` を参照 |
-| `data/classified-lattices.jsonl` | ±1 以外の自己同型を持つ 143,329 個の格子: ラベル、自己同型群の位数と（同定されている場合は）構造、およびその格子が属する定理 B の部分。`data/README.md` を参照 |
+| `data/classified-lattices.jsonl` | ±1 以外の自己同型を持つ 143329 個の格子: ラベル、自己同型群の位数と（同定されている場合は）構造、およびその格子が属する定理 B の部分。`data/README.md` を参照 |
 | `data/largest-groups.jsonl` | 第 2 の論文の 99 個の格子: ラベル、Gram 行列、自己同型群の生成元、表示、およびその論文の表 A1 の列。`data/README.md` を参照 |
 | `verify/` | `verify.py` は certificate とデータを第 1 の論文と照らして検査し、`verify_p2.py` は第 2 の論文のデータを整数で検査する。`verify/README.md` を参照 |
 | `LICENSE` | `verify/` のコードは MIT、文章とデータは CC BY 4.0 |
@@ -33,12 +33,12 @@
 |---|---|
 | `research-record.tar.gz` | 一覧と certificate を作ったプログラム（変更なし）。計算ごとの索引と検証のノートが付く（論文では [Rec]） |
 | `research-runs.tar.gz` | それらのプログラムの実行の記録 |
-| `gaussian-classes.jsonl.gz` | 命題 4.6 の、ルートを持たないエルミート Z[i]-格子 76,742 個 |
+| `gaussian-classes.jsonl.gz` | 命題 4.6 の、ルートを持たないエルミート Z[i]-格子 76742 個 |
 | `gaussian-walk-grams-1.jsonl.gz`, `gaussian-walk-grams-2.jsonl.gz` | Gauss 構造の一覧を作った 2 本の近傍のランダムウォークが出会った Gram 行列（フィールドは `data/README.md` にある） |
-| `type-8-24-classes.tar` | Niemeier 格子 A_1^24 についての良い部分空間 W の 376,306 個の軌道（第 1 の論文の付録 B.3）。それぞれに K_W の Gram 行列、\|Aut K_W\|、W の固定部分群の位数が付く |
-| `general-part-groups.tar` | \|Aut L\| <= 10^7 である S_gen の 12,536 個の格子の生成元、表示、共役類、群の同定。ラベルごとに収め、README が付く |
-| `general-part-records.tar.gz` | S_gen の 17,736 件の全自己同型群の記録（第 1 の論文の §6.3）。それぞれにラベル、\|Aut L\|、共役類、項目の行を収め、README が付く |
-| `database-v2.tar.gz` | データベース [D]、版 2: S の 143,329 個の格子それぞれの Gram 行列と自己同型群の生成元。README、ラベルによる索引、マニフェストが付く。`verify/verify_database.py` はこれをこのリポジトリと照らして検査し、ラベルから格子を引く |
+| `type-8-24-classes.tar` | Niemeier 格子 A_1^24 についての良い部分空間 W の 376306 個の軌道（第 1 の論文の付録 B.3）。それぞれに K_W の Gram 行列、\|Aut K_W\|、W の固定部分群の位数が付く |
+| `general-part-groups.tar` | \|Aut L\| <= 10^7 である S_gen の 12536 個の格子の生成元、表示、共役類、群の同定。ラベルごとに収め、README が付く |
+| `general-part-records.tar.gz` | S_gen の 17736 件の全自己同型群の記録（第 1 の論文の §6.3）。それぞれにラベル、\|Aut L\|、共役類、項目の行を収め、README が付く |
+| `database-v2.tar.gz` | データベース [D]、版 2: S の 143329 個の格子それぞれの Gram 行列と自己同型群の生成元。README、ラベルによる索引、マニフェストが付く。`verify/verify_database.py` はこれをこのリポジトリと照らして検査し、ラベルから格子を引く |
 
 ## 検査
 

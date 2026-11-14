@@ -5,7 +5,7 @@
 "C11",
 "C19"
 ],
-"scope":"All 12,934 terms with their coefficients, group orders and embedding averages, and the local 2-adic statistics they use. The local statistics are inputs here; their computation is the finite transition of Appendix C.6.",
+"scope":"All 12934 terms with their coefficients, group orders and embedding averages, and the local 2-adic statistics they use. The local statistics are inputs here; their computation is the finite transition of Appendix C.6.",
 "rootless_mass":"4128748922231417/120324096000",
 "root_types":12934,
 "counts_by_rank":[

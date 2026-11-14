@@ -1,5 +1,5 @@
 {
-"certificate":"Weights of the 76,742 rootless Hermitian Z[i]-lattices of rank 16",
+"certificate":"Weights of the 76742 rootless Hermitian Z[i]-lattices of rank 16",
 "statement":"Proposition 4.6: sum over the list of f/|U| equals M_2 of Theorem 4.5, where f = 2 if the lattice is not isometric to its complex conjugate and f = 1 otherwise; hence the list is complete (Lemma 7.1).",
 "computations":[
 "C12"
