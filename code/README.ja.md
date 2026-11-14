@@ -20,6 +20,25 @@
 - C の部分のために、bliss 0.77 と gcc。
 - numpy と pytest。
 
+この環境は `environment.lock.txt` で固定してある。これは、プログラムを走らせた環境の conda-forge のパッケージ 433 個（linux-64）を、MD5 ダイジェストとともに挙げたものである。プログラムが使わないもの（JupyterLab など）も含む。
+環境の作り方は二つある。どちらも、コマンドはリポジトリの一番上で走らせる。
+
+1. micromamba で環境を作る（conda なら `conda create -n rank32 --file code/environment.lock.txt`）。
+
+   ```
+   micromamba create -n rank32 -f code/environment.lock.txt
+   micromamba run -n rank32 python -m pytest -q code/tests
+   ```
+
+2. `Dockerfile` からコンテナを作る。`Dockerfile` は、版を固定した micromamba のイメージの上に、同じパッケージを入れる（展開すると約 10 GB）。
+
+   ```
+   docker build -t rank32 code
+   docker run --rm -v "$PWD":/work:ro -w /work rank32 python -m pytest -q -p no:cacheprovider code/tests
+   ```
+
+パッケージは linux-64 用なので、1 の方法は linux-64 のマシンでだけ使える。ほかのマシンでは、`docker build` と `docker run` の両方に `--platform linux/amd64` を付ける。この場合、コンテナはエミュレーションで動くので遅くなる。
+
 環境変数は次のとおりである。
 
 | 変数 | 用途 | 既定 |
@@ -31,10 +50,10 @@
 
 ## 試験
 
-リポジトリの一番上で、次を走らせる。
+上の環境で、リポジトリの一番上で次を走らせる。
 
 ```
-sage -python -m pytest -q code/tests
+python -m pytest -q code/tests
 ```
 
 マーカー `slow` の付いた試験は、1 分以上かかり、メモリも多く使う。`RANK32_SLOW_TESTS` を設定しなければ飛ばされる。SageMath が無い環境では、それを使う試験は飛ばされる。
