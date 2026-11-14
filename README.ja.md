@@ -27,12 +27,10 @@
 | `LICENSE` | `verify/` のコードは MIT、文章とデータは CC BY 4.0 |
 | `MANIFEST.json` | この版のすべてのファイルの SHA-256 ダイジェスト |
 
-リリースの添付ファイル（論文の表 12）には、大きなデータと研究記録がある。
+リリースの添付ファイル（論文の表 12）には、大きなデータがある。
 
 | 添付ファイル | 内容 |
 |---|---|
-| `research-record.tar.gz` | 一覧と certificate を作ったプログラム（変更なし）。計算ごとの索引と検証のノートが付く（論文では [Rec]） |
-| `research-runs.tar.gz` | それらのプログラムの実行の記録 |
 | `gaussian-classes.jsonl.gz` | 命題 4.6 の、ルートを持たないエルミート Z[i]-格子 76742 個 |
 | `gaussian-walk-grams-1.jsonl.gz`, `gaussian-walk-grams-2.jsonl.gz` | Gauss 構造の一覧を作った 2 本の近傍のランダムウォークが出会った Gram 行列（フィールドは `data/README.md` にある） |
 | `type-8-24-classes.tar` | Niemeier 格子 A_1^24 についての良い部分空間 W の 376306 個の軌道（第 1 の論文の付録 B.3）。それぞれに K_W の Gram 行列、\|Aut K_W\|、W の固定部分群の位数が付く |
@@ -56,7 +54,7 @@ python3 verify/verify_p2.py
 安価なものから高価なものまで、三つの水準がある。
 
 1. **リポジトリ.** 上のとおり、`python3 verify/verify.py` と `python3 verify/verify_p2.py`（およそ 30 秒と 1 分）。`verify/README.md` に、すべての検査と、それぞれが入力に取るものを挙げてある。
-2. **一つの計算.** 論文の表 11（`paper/computations.typ`）は、各計算 C1, C2, ... について、ここにあるその certificate と、リリースの添付ファイル `research-record.tar.gz` の中の置き場 `C<n>/` を示す。そこにある `INDEX.md` は、各計算（第 1 の論文の C1, C2, ... と、第 2 の論文の A1, ..., A16。後者は `A<n>/` の下）のプログラムを挙げ、書かれている場合には再実行のノート `REPRODUCE.md` も挙げる。このノートには、コマンド、入力とそのダイジェスト、出力、再実行が再現すべきものが書いてある。なお、プログラムは実行したときのまま、研究時のパスで保存してある。実行には SageMath、PARI/GP、GAP、bliss が必要で、数時間から数日かかったものもある（表 11）。
+2. **一つの計算.** 第 1 の論文の表 11（`paper/computations.typ`）は、各計算 C1, C2, ... について、ここにあるその certificate を示す。ただし、C10、C13、C21、C30〜C38 には certificate が無く、第 2 の論文の表 11（`paper/computations-p2.typ`）の A1, ..., A16 にも無い。計算のプログラムはこの版には含まれないので、この水準はまだ使えない。プログラムは `code/` の下に加わる予定である。実行には SageMath、PARI/GP、GAP、bliss が必要で、数時間から数日かかったものもある（表 11）。なお、この版の論文は、記録 [Rec] をまだ引いている。その場所は、二つの表 11 の置き場 `C<n>/` と `A<n>/`、表 12 の 2 行、第 1 の論文の §7・§7.4・文献表、第 2 の論文の §9 である。しかし、その記録はもう配布しておらず、次の版の論文でこれらの参照を除く予定である。
 3. **データ.** リリースの添付ファイルには、certificate を書き出した元の一覧と記録がある。また、その大きさと SHA-256 ダイジェストは `MANIFEST.json`（フィールド `release_assets`）と、第 1 の論文の表 12 にある。certificate は、フィールド `computations` に、由来する計算の名前を持つ。
 
 ## 組版

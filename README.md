@@ -32,12 +32,10 @@ Japanese translations of the two papers and of the note are in `paper/extremal-l
 | `LICENSE` | MIT for the code in `verify/`; CC BY 4.0 for text and data |
 | `MANIFEST.json` | SHA-256 digests of all files of this version |
 
-Release assets (Table 12 of the paper) hold the larger data and the research record:
+Release assets (Table 12 of the paper) hold the larger data:
 
 | Asset | Content |
 |---|---|
-| `research-record.tar.gz` | The programs that produced the lists and certificates, unchanged, with an index by computation and the verification notes ([Rec] in the paper) |
-| `research-runs.tar.gz` | The recorded runs of those programs |
 | `gaussian-classes.jsonl.gz` | The 76742 rootless Hermitian Z[i]-lattices of Proposition 4.6 |
 | `gaussian-walk-grams-1.jsonl.gz`, `gaussian-walk-grams-2.jsonl.gz` | Gram matrices met by the two neighbour walks that built the Gaussian list (fields in `data/README.md`) |
 | `type-8-24-classes.tar` | The 376306 orbits of good subspaces W for the Niemeier lattice A_1^24 (Appendix B.3 of the first paper), each with a Gram matrix of K_W, \|Aut K_W\| and the order of the stabilizer of W |
@@ -71,12 +69,14 @@ There are three levels, from cheap to expensive.
 
 1. **The repository.** `python3 verify/verify.py` and `python3 verify/verify_p2.py`, as above (about half a minute and one minute). `verify/README.md` lists every check and what
    it takes as input.
-2. **One computation.** Table 11 of the paper (`paper/computations.typ`) names, for each computation C1, C2, ..., its
-   certificate here and its place `C<n>/` in the release asset `research-record.tar.gz`. `INDEX.md` there lists the
-   programs of each computation (C1, C2, ... of the first paper and A1, ..., A16 of the second, the latter under
-   `A<n>/`) and, where one was written, its rerun note `REPRODUCE.md` with the command, the
-   inputs and their digests, the outputs and what a rerun must reproduce. The programs are kept as they were run,
-   with their research paths; they need SageMath, PARI/GP, GAP and bliss, and some ran for hours to days (Table 11).
+2. **One computation.** Table 11 of the first paper (`paper/computations.typ`) names, for each computation C1, C2, ...,
+   its certificate here; C10, C13, C21 and C30 to C38 have none, nor have A1, ..., A16 of Table 11 of the second paper
+   (`paper/computations-p2.typ`). The programs of the computations are not part of this version, so this level is not
+   available yet; they are to be added under `code/`. They need SageMath, PARI/GP, GAP and bliss, and some ran for
+   hours to days (Table 11).
+   The papers of this version still refer to the record [Rec], which is no longer distributed: the places `C<n>/` and
+   `A<n>/` in the two Tables 11, two rows of Table 12, §7 and §7.4 and the references of the first paper, and §9 of the
+   second. The next version of the papers is to drop these references.
 3. **The data.** The release assets hold the lists and records the certificates were exported from; their sizes and
    SHA-256 digests are in `MANIFEST.json` (field `release_assets`) and in Table 12 of the first paper. The certificates name the computations they come from in their field
    `computations`.

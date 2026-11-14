@@ -10,13 +10,13 @@
   },
   {
    "path": "README.ja.md",
-   "bytes": 10091,
-   "sha256": "4e989f9eb7482f27489ba781ad3be8a7c8df22455304e986d379a16f3fabc35a"
+   "bytes": 9938,
+   "sha256": "55a782882f62617ffe1a105826a451e7250b36e66f8d1003b3ebdb7c2cd9da8d"
   },
   {
    "path": "README.md",
-   "bytes": 8464,
-   "sha256": "611114cd23ad11c2d479193585a8a2b6da039f15334a42c7c646939e9c4ba9ef"
+   "bytes": 8344,
+   "sha256": "397f3efdebb7673d45e291d0fee0e0f855ae8f9a05c2778ca72eed87cf9f1489"
   },
   {
    "path": "certificates/README.ja.md",
@@ -275,13 +275,13 @@
   },
   {
    "path": "verify/README.ja.md",
-   "bytes": 14266,
-   "sha256": "283ada20c4effc5da98f557e321b7f7e1db3edbde91de41abb1e55f33bf806d0"
+   "bytes": 14252,
+   "sha256": "0492c5c5a71008b64dffa55a1dcbfe49f1cdfdea9f009d0176f33ea0029e5cfe"
   },
   {
    "path": "verify/README.md",
-   "bytes": 12222,
-   "sha256": "77d4282cd967cd9c25e69ae794aeac046f89e80eae173fcd10464d19a0614c0d"
+   "bytes": 12219,
+   "sha256": "507b87cd171314c1936d364ea9f269a95e2f57b858785eeb7a4972ea4d637b94"
   },
   {
    "path": "verify/check_exponent9.py",
@@ -315,16 +315,6 @@
   }
  ],
  "release_assets": [
-  {
-   "name": "research-record.tar.gz",
-   "bytes": 10289398,
-   "sha256": "6992eb25bd73c9d700eee09c530cd57c639aed41c40d5f1159f46fc8488e37bd"
-  },
-  {
-   "name": "research-runs.tar.gz",
-   "bytes": 347684963,
-   "sha256": "f08b1cf95cae0210f1133d67b4280be0434e7a85df66f65911ed2b20b756c055"
-  },
   {
    "name": "gaussian-walk-grams-1.jsonl.gz",
    "bytes": 81276158,
