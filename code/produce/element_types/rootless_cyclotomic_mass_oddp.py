@@ -86,7 +86,6 @@ def std():
                 L *= cm.F(cm.ptmass.l_value(p, j))
             std = Fr(1, 2 ** (z * d - 1)) * L * (Fr(1, 2) if z % 2 else 1)
             s = z % 2
-            n = z * (p - 1)  # noqa: F841
             m = cm.mass_H(p, z, s)
             ok = (m == std) or (m == 0)
             bad += not ok
@@ -97,8 +96,6 @@ def std():
 def level():
     # the F of 5-(7,4)-3 and 5-(6,8)-6: the number of classes with q = 2/5
     # 5-(7,4)-3 と 5-(6,8)-6 の F：q = 2/5 の類の数
-    for n, s, name in [(3, 3, "D(sqrt5 A_4^#)")]:
-        pass
     import itertools
 
     # the Gram matrix of A_4, D = A_4 / 5 A_4^#, Q(a) = (a, a)/2 mod 5 (the norms of F^# are (a, a)/5)
@@ -142,7 +139,9 @@ def fcount(out, genus_dir, example):
     ex = json.load(open(example))["hurwitz:s1-21"]
     G = matrix(ZZ, ex["gram"])
     Dm = (5 * G.inverse()).change_ring(ZZ)
-    rows.append({"p": 5, "d": 16, "s": 4, "aut": ex["aut"], "min": 4, "norm_2_over_p_vectors": int(pari(Dm).qfminim(2, 0, 0)[0]), "classes": 0})
+    n2 = int(pari(Dm).qfminim(2, 0, 0)[0])
+    assert n2 == 0, n2  # so there are no classes / したがって類も無い
+    rows.append({"p": 5, "d": 16, "s": 4, "aut": ex["aut"], "min": 4, "norm_2_over_p_vectors": n2, "classes": 0})
     print(rows[-1], flush=True)
     out.mkdir(parents=True, exist_ok=True)
     write_json_atomic_indent1(out / "fcount.json", rows)

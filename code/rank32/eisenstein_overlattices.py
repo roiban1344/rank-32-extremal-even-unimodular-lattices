@@ -9,7 +9,7 @@ if and only if the class of y contains no vector of norm 2 (no other norm below 
   overlattice(G, W, D, key)  the overlattice Z + Z y for the line key, with omega, in an LLL basis
   qfsafe                     rank32.forms with retries after a SystemError of cypari2 (a race when the alarm
                              fires just before sig_on); a PARI error (stack overflow) becomes QfTimeout
-Lines are stored as integers: the coordinates in base 3, normalised so that the first nonzero one is 1.
+Lines are stored as integers: the coordinates in base 3, normalized so that the first nonzero one is 1.
 The PARI stack is set to 1 GB (at most 2 GB) on import: a qfisom that does not finish keeps using it
 (it reached 5 GB); when it overflows, the caller turns to another method.
 Used by computation C2 of the first paper (code/produce/element_types/eisenstein_overlattice_chain.py)
@@ -140,7 +140,7 @@ def line_key(a):
 
 
 def key_to_vec(k, s):
-    """The normalised vector of F_3^s of a line key.
+    """The normalized vector of F_3^s of a line key.
 
     直線のキーの、正規化した F_3^s のベクトル。"""
     v = [0] * s

@@ -189,7 +189,7 @@ class Shell:
         idx = np.flatnonzero(np.abs(ips)==2)
         V = np.vstack([x, self.X[idx]*np.sign(ips[idx,None])])
         if len(V)!=1241 and self.G.nrows()==32:
-            raise ValueError('unexpected neighborhood size')
+            raise ValueError('unexpected neighbourhood size')
         Q = V @ self.Gn @ V.T
         if np.max(np.abs(Q))>4:
             raise ValueError('Gram overflow')
@@ -263,7 +263,7 @@ def lattice_key(R):
 def integral_stabilizer_fallback(a,G):
     """Schreier orbit of Z^n under the finite rational local graph group.
 
-    A graph symmetry can preserve the index-two neighbor sublattice but not L.
+    A graph symmetry can preserve the index-two neighbour sublattice but not L.
     Stabilizing the lattice, rather than discarding bad generators, is essential.
 
     有限の有理数の局所グラフの群による Z^n の Schreier 軌道。

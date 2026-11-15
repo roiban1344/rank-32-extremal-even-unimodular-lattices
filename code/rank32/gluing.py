@@ -1,4 +1,4 @@
-"""Gluing of involutions: double cosets of the anti-isometries phi between the discriminant forms of 2-elementary parts F and K.
+"""Gluing of involutions: double cosets of the anti-isometries phi between the discriminant forms of 2-elementary components F and K.
 
 Notation: D_F = F^#/F and D_K = K^#/K are vector spaces over F_2; an element is an integer mask
 (bit i is the coefficient of basis vector i). A linear map is the list of "the mask of the image
@@ -16,7 +16,7 @@ The C part _gluing.c is compiled on first use (gcc -O2 -shared -fPIC) into the d
 $RANK32_BUILD (default $XDG_CACHE_HOME/rank32, that is ~/.cache/rank32). The keys depend on the constant SMALL and on the C code;
 neither may be changed.
 
-対合の貼り合わせ：2-初等的な部品 F, K の判別式形式の間の反等長 phi の両側剰余類を扱う道具。
+対合の貼り合わせ：2-初等的な成分 F, K の判別式形式の間の反等長 phi の両側剰余類を扱う道具。
 
 記法：D_F = F^#/F、D_K = K^#/K は F_2 上のベクトル空間で、元は整数の mask（ビット i が基底 i の
 係数）である。線形写像は「基底 i の像の mask」の列（長さ s の numpy 配列）で持つ。bar G_F、bar G_K は
@@ -395,9 +395,9 @@ def invariant_span(root, d, s, dom, split=False):
 
 
 class Glue:
-    """A pair of parts. F and K are dict(k, q2, mu2, B4, bits) (tables of the discriminant forms); gF and gK are generators acting on the discriminant groups.
+    """A pair of components. F and K are dict(k, q2, mu2, B4, bits) (tables of the discriminant forms); gF and gK are generators acting on the discriminant groups.
 
-    部品の組。F, K は dict(k, q2, mu2, B4, bits)（判別式の表）、gF, gK は判別式の上の生成元。"""
+    成分の組。F, K は dict(k, q2, mu2, B4, bits)（判別式の表）、gF, gK は判別式の上の生成元。"""
 
     def __init__(self, F, K, gF, gK, orderF, orderK):
         assert F["k"] == K["k"]

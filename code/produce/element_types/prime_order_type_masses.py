@@ -90,10 +90,10 @@ def test():
     for p in (3, 5, 7):
         check_16(p)
     # n = 24, p = 13, type 13-(2,0)-0: the Niemeier lattice A_12^2 (|Aut| = (13!)^2 * 4) and the Leech lattice
-    # (order 312 of the centralizer of an element of order 13 in Co_0). 312 = 2 * |13 x A_4| is recalled from
-    # the maximal subgroup A_4 x G_2(4) of Co_1, not read from the ATLAS.
+    # (order 312 of the centralizer of an element of order 13 in Co_0 = 2.Co_1: the class 13a of the character table
+    # "2.Co1" of the GAP character table library). This value is used only in this self-test.
     # n = 24、p = 13、型 13-(2,0)-0：Niemeier 格子 A_12^2（|Aut| = (13!)^2 * 4）と Leech 格子（Co_0 の位数 13 の
-    # 元の中心化群の位数 312）。312 = 2 * |13 x A_4| は Co_1 の極大部分群 A_4 x G_2(4) からの記憶で、ATLAS では確かめていない。
+    # 元の中心化群の位数 312。GAP の指標表のライブラリの指標表 "2.Co1" の類 13a）。この値はこの自己試験でだけ使う。
     from sage.all import factorial
     v = QQ(factorial(12) ** 2) / (factorial(13) ** 2 * 4) + QQ(1) / 312
     assert gm.M_pair(13, 24, 2, 0) == v, (gm.M_pair(13, 24, 2, 0), v)

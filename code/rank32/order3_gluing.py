@@ -5,9 +5,9 @@ matrix T acting as a -> a T (from the right). B is 3(y_i, y_j) mod 3 (y_i lifts 
 phi: D_F -> D_Z is an anti-isometry if and only if T B_Z T^t = -B_F (mod 3).
 A "line" is a pair +-a ((3^s - 1)/2 of them, 0 left out).
 
-The set X = Iso / bar G (bar G the image of the group of one part in its discriminant group) is
+The set X = Iso / bar G (bar G the image of the group of one component in its discriminant group) is
 represented by the O(q)-orbit of a colouring of a bar G-invariant set of lines. The orbits of the
-group of the other part on X are the double cosets, and
+group of the other component on X are the double cosets, and
 |Stab(phi)| = |group| |kernel| / |orbit| (the kernel is that of Aut -> O(q) on the bar G side).
 
 位数 3 の貼り合わせ：判別式 F_3^s の上の反等長 phi の両側剰余類を扱う道具。
@@ -16,9 +16,9 @@ group of the other part on X are the double cosets, and
 3(y_i, y_j) mod 3（y_i は基底の持ち上げ）。phi: D_F -> D_Z が反等長であることと、
 T B_Z T^t = -B_F (mod 3) は同値である。「直線」は +-a の組（0 を除く (3^s - 1)/2 個）。
 
-点の集合 X = Iso / bar G（bar G は片側の部品の群の判別式への像）は、bar G で不変な直線の集合の彩色の
-O(q) の軌道で表す。もう片方の群が X に働く軌道が両側剰余類で、|Stab(phi)| = |群| |核| / |軌道|
-である（核は bar G の側の Aut -> O(q) の核）。
+点の集合 X = Iso / bar G（bar G は片側の成分の群の判別式への像）は、bar G で不変な直線の集合の彩色の
+O(q) の軌道で表す。もう片方の群が X に働く軌道が両側剰余類で、|Stab(phi)| = |群| |カーネル| / |軌道|
+である（カーネルは bar G の側の Aut -> O(q) のカーネル）。
 """
 import numpy as np
 

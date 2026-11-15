@@ -1,6 +1,6 @@
 """Tests of rank32.gluing: the normal form of the double cosets, and the mass of two closed pairs.
 
-Input: data/gluing_pairs.json, two pairs of 2-elementary parts (F, K) of the involution gluing
+Input: data/gluing_pairs.json, two pairs of 2-elementary components (F, K) of the involution gluing
 with the tables of their discriminant forms, generators of bar G_F and bar G_K on the discriminant
 groups, and the full list of double cosets (phi, |Stab|, extremal) of each pair:
   16-16-s12d0  involution type (16, 16) of §4.1 of the first paper, the components with s = 12, delta = 0;
@@ -66,7 +66,7 @@ PAIRS = load_pairs()
 def build(name, cls=None):
     """(Glue of the pair, |kernel of Aut F -> O(q_F)| * |kernel of Aut K -> O(q_K)|).
 
-    (組の Glue, |Aut F -> O(q_F) の核| * |Aut K -> O(q_K) の核|)。"""
+    (組の Glue, |Aut F -> O(q_F) のカーネル| * |Aut K -> O(q_K) のカーネル|)。"""
     p = PAIRS[name]
     F, K = p["F"], p["K"]
     cls = cls or gluing.Glue
