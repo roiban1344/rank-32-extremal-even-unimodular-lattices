@@ -62,9 +62,9 @@ def test_neighbours_of_e8():
         for Gn, Wn in w.herm_neighbours(G, W, w.to_vec(x, 8)):
             assert Gn.det() == 1 and Wn * Gn * Wn.transpose() == Gn
     E8 = matrix(ZZ, CartanMatrix(["E", 8]))
-    D16 = block_diagonal_matrix([E8, E8], subdivide=False)
+    E8E8 = block_diagonal_matrix([E8, E8], subdivide=False)
     v = w.to_vec(1 | 1 << 8, 16)
-    nb = w.real_neighbour(D16, v)
+    nb = w.real_neighbour(E8E8, v)
     assert all(Gn.det() == 1 for Gn, _ in nb)
 
 

@@ -129,7 +129,7 @@ def random_phi(DF, DZ, rng):
     p, s = DF.p, DF.s
     V, W = [], []
     for i in range(s):
-        bF = nullspace(DF.B @ np.array(V, dtype=np.int64).T % p if False else (np.array(V, dtype=np.int64) @ DF.B) % p, p) if V else [np.eye(s, dtype=np.int64)[k] for k in range(s)]
+        bF = nullspace((np.array(V, dtype=np.int64) @ DF.B) % p, p) if V else [np.eye(s, dtype=np.int64)[k] for k in range(s)]
         bZ = nullspace((np.array(W, dtype=np.int64) @ DZ.B) % p, p) if W else [np.eye(s, dtype=np.int64)[k] for k in range(s)]
         found = False
         for _ in range(200):

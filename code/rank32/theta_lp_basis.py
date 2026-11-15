@@ -148,7 +148,7 @@ def spaces_for(p, n, s, th):
             if c:
                 f *= th[nm][0] ** c
                 fd *= th[nm][1] ** c
-        g = QQ(p) ** QQ((s - si) / 2) * fd if (s - si) % 2 == 0 else None
+        g = QQ(p) ** (QQ(s - si) / 2) * fd if (s - si) % 2 == 0 else None
         if g is None:
             continue
         row = [f[j] for j in range(P)]
