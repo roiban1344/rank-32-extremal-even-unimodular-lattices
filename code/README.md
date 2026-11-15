@@ -21,6 +21,28 @@ The programs were run with:
 - bliss 0.77 and gcc, for the C parts;
 - numpy and pytest.
 
+`environment.lock.txt` fixes this environment: it lists, with their MD5 digests, the 433 conda-forge packages (linux-64)
+of the environment in which the programs were run, including some that the programs do not use, such as JupyterLab.
+There are two ways to set it up; run the commands from the repository root.
+
+1. Create the environment with micromamba (with conda: `conda create -n rank32 --file code/environment.lock.txt`):
+
+   ```
+   micromamba create -n rank32 -f code/environment.lock.txt
+   micromamba run -n rank32 python -m pytest -q code/tests
+   ```
+
+2. Build a container from `Dockerfile`, which installs the same packages on a pinned micromamba image (about 10 GB
+   unpacked):
+
+   ```
+   docker build -t rank32 code
+   docker run --rm -v "$PWD":/work:ro -w /work rank32 python -m pytest -q -p no:cacheprovider code/tests
+   ```
+
+The packages are for linux-64, so the first way works only on linux-64 machines. On other machines, add
+`--platform linux/amd64` to both `docker build` and `docker run`; the container then runs under emulation, more slowly.
+
 Environment variables:
 
 | Variable | Use | Default |
@@ -32,10 +54,10 @@ Environment variables:
 
 ## Tests
 
-From the repository root:
+In the environment above, from the repository root:
 
 ```
-sage -python -m pytest -q code/tests
+python -m pytest -q code/tests
 ```
 
 Tests marked `slow` take a minute or more and more memory; they are skipped unless `RANK32_SLOW_TESTS` is set.
