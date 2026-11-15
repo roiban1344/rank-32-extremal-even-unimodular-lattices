@@ -1,0 +1,619 @@
+r"""The numbers e(h) for elements h of order p = 5, 7, 17, 31, and E = sum e(h)/|C(h)| over the types of such elements.
+
+Used by computation C9 of the first paper (Table 11).
+e(h) is the number of g in C(h) with n = ord(g) such that the smallest odd prime dividing n is p and
+g^(n/p) = h (GAP function EofH in oddp_e_counts.g).
+  check(ids)       for known lattices: Aut L as a permutation group of the shortest vectors; the
+                   number of elements whose smallest odd prime divisor is p, counted directly from
+                   the conjugacy classes, against sum |Aut L| e(h)/|C(h)| (GAP CheckGroup).
+  eknown(id, p)    (|C(h)|, e(h), fixed points) per class of elements of order p, without all
+                   conjugacy classes (for large groups; GAP EKnown).
+  group_pairs(typ) e(h) for the listed pairs of the types 5-(7,4)-3 and 5-(6,8)-6, by the lemma
+                   (lemma_e) where it applies and by the group (GAP) otherwise.
+  generic(p, z, s, d, zlist, tag)  for a type whose F is one class: the pairs as double cosets
+                   O \\ (A x B) of the reflection group of the discriminant form, with |C(h)| and e(h);
+                   with phi_out also phi and the lattice L of every pair.
+  summary()        E per type and per p, and the check that the (|C|, e) of the known lattices
+                   occur in the lists.
+GAP runs as a subprocess (`gap -q -o 3g`). The paths are module attributes.
+  OUT              the outputs; by default results/C9 under the current directory. summary() reads back
+                   the files that check, eknown, group_pairs and generic wrote there, and check skips
+                   the lattices already in its check.jsonl.
+  inputs           by default in the release assets: KNOWN (the 26 known lattices with generators),
+                   PAIRS_DIR (lists of pairs and types of known lattices), GENUS_DIR (genus lists),
+                   EXAMPLE_P5_16_4.
+  GLIB             the GAP functions (next to this file).
+
+位数 p = 5, 7, 17, 31 の元 h の e(h) と、その型ごとの E = sum e(h)/|C(h)|。
+
+第 1 の論文の計算 C9（表 11）が使う。
+e(h) は、g in C(h)（n = ord(g)）のうち、n を割る最小の奇素数が p で g^(n/p) = h となるものの個数である
+（oddp_e_counts.g の GAP の関数 EofH）。
+  check(ids)       既知の格子で、Aut L を最小ベクトルの置換群にし、最小の奇素因数が p の元の個数を共役類から
+                   直接数えて、sum |Aut L| e(h)/|C(h)| と比べる（GAP の CheckGroup）。
+  eknown(id, p)    全部の共役類を作らずに、位数 p の元の類ごとの (|C(h)|, e(h), 不動点の数)（大きい群用。
+                   GAP の EKnown）。
+  group_pairs(typ) 型 5-(7,4)-3 と 5-(6,8)-6 の一覧のある対の e(h)。補題（lemma_e）が使えればそれで、
+                   使えなければ群（GAP）で求める。
+  generic(p, z, s, d, zlist, tag)  F が 1 類の型について、判別式形式の鏡映群による両側剰余類
+                   O \\ (A x B) として対を作り、|C(h)| と e(h) を出す。phi_out があれば、対ごとの phi と
+                   格子 L も書く。
+  summary()        型ごと・p ごとの E と、既知の格子の (|C|, e) が一覧に現れることの照合。
+GAP は子プロセス（`gap -q -o 3g`）で走らせる。パスはモジュールの属性である。
+  OUT              出力。既定は今のディレクトリの下の results/C9。summary() は、check・eknown・group_pairs・
+                   generic がそこに書いたファイルを読み戻す。check は、そこの check.jsonl にある格子を飛ばす。
+  入力             既定では Release のアセットにある：KNOWN（生成元つきの既知の 26 格子）、PAIRS_DIR（対の一覧と
+                   既知の格子の型）、GENUS_DIR（種の一覧）、EXAMPLE_P5_16_4。
+  GLIB             GAP の関数（このファイルの隣）。
+"""
+import gzip
+import json
+import subprocess
+import time
+from fractions import Fraction as Fr
+from pathlib import Path
+
+import numpy as np
+from sage.all import GF, ZZ, matrix
+
+from . import forms as _qfsafe
+from .io import asset
+
+DATA = asset("computation-outputs")        # inputs / 入力
+OUT = Path("results/C9")                    # outputs (written, and read back by summary) / 出力（書いて、summary が読み戻す）
+KNOWN = DATA / "C32/known-s-26.jsonl"
+PAIRS_DIR = DATA / "C9"
+GENUS_DIR = DATA / "C2"
+EXAMPLE_P5_16_4 = DATA / "C17/example-p5-16-4.json"
+GLIB = Path(__file__).with_name("oddp_e_counts.g")
+
+
+def qfauto(forms):
+    for seed in range(1, 9):
+        try:
+            return _qfsafe.qfauto(forms, seed=seed)
+        except SystemError:
+            continue
+    raise RuntimeError("qfauto")
+
+
+def lattice_perms(r):
+    """The generators of a known lattice as permutations of the shortest vectors (with signs).
+
+    既知の格子の生成元を、最小ベクトル（符号つき）の置換に。"""
+    G = matrix(ZZ, r["gram"])
+    Gn = np.array([[int(x) for x in row] for row in G.rows()], dtype=np.int64)
+    V = np.asarray(_qfsafe.short_vectors(G, 4), dtype=np.int64)
+    if V.shape[0] == 32:
+        V = V.T
+    if V.shape[0] == 73440:
+        V = np.vstack([V, -V])
+    assert V.shape == (146880, 32)
+    idx = {tuple(v): i for i, v in enumerate(V.tolist())}
+    perms = []
+    for g in r["generators"]:
+        M = np.array(g, dtype=np.int64)
+        img = V @ M if (M @ Gn @ M.T == Gn).all() else V @ M.T
+        perms.append([idx[tuple(w)] + 1 for w in img.tolist()])
+    return perms
+
+
+def run_gap(script, timeout=7200):
+    p = subprocess.run(["gap", "-q", "-o", "3g"], input=script, capture_output=True, text=True, timeout=timeout)
+    return p.stdout.replace("\\\n", "").replace("\n ", " ")
+
+
+CHECK_TIMEOUT = 900
+
+
+def check(ids):
+    rows = {r["id"]: r for r in (json.loads(l) for l in open(KNOWN))}
+    path = OUT / "check.jsonl"
+    done = set()
+    if path.exists():
+        done = {json.loads(l)["id"] for l in open(path)}
+    for i in ids:
+        if i in done:
+            continue
+        r = rows[i]
+        t0 = time.time()
+        perms = lattice_perms(r)
+        primes = [q for q in (3, 5, 7, 11, 13, 17, 19, 23, 29, 31) if int(r["order"]) % q == 0]
+        scr = f'SizeScreen([60000, 100]);;\nRead("{GLIB}");\n'
+        scr += "gens := [" + ",\n".join("PermList(" + json.dumps(p) + ")" for p in perms) + "];;\n"
+        scr += f"G := Group(gens);; SetSize(G, {int(r['order'])});;\n"
+        scr += f"G := ReduceDegree(G);; Print(\"DEGREE \", NrMovedPoints(G), \"\\n\");\n"
+        scr += f"Print(\"RESULT \", CheckGroup(G, {primes}), \"\\n\");\nQUIT;\n"
+        try:
+            out = run_gap(scr, timeout=CHECK_TIMEOUT)
+        except subprocess.TimeoutExpired:
+            out = ""
+        line = [l for l in out.splitlines() if l.startswith("RESULT")]
+        if not line:
+            # a large group overflows in the conjugacy classes or times out; record it as undecided and go on
+            # 群が大きいと共役類で溢れるか時間切れになる。止めずに未判定として記録する
+            with open(OUT / "check-undecided.jsonl", "a") as fh:
+                fh.write(json.dumps({"id": i, "aut": r["order"], "timeout_s": CHECK_TIMEOUT, "sec": round(time.time() - t0, 1)}) + "\n")
+            print(i, r["order"], "undecided", f"{time.time() - t0:.0f} s", flush=True)
+            continue
+        res = json.loads(line[0][7:].replace("true", "true").replace(" ", ""))
+        rec = {"id": i, "aut": r["order"], "primes": [{"p": x[0], "direct": x[1], "via_e": x[2], "equal": x[3], "classes": x[4]} for x in res], "sec": round(time.time() - t0, 1)}
+        with open(path, "a") as fh:
+            fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
+        print(i, r["order"], [(x["p"], x["equal"], x["classes"]) for x in rec["primes"]], f"{time.time() - t0:.0f} s", flush=True)
+
+
+def eknown(i, p):
+    """For a known lattice, (|C(h)|, e(h), number of fixed points) for every class of elements h of order p, without the conjugacy classes of the whole group (for groups too large for check).
+
+    既知の格子で、全体の共役類を作らずに位数 p の類ごとの (|C(h)|, e(h), 不動点の数) を求める。check の届かない大きい群用。"""
+    rows = {r["id"]: r for r in (json.loads(l) for l in open(KNOWN))}
+    r = rows[i]
+    t0 = time.time()
+    perms = lattice_perms(r)
+    scr = f'SizeScreen([60000, 100]);;\nRead("{GLIB}");\n'
+    scr += "gens := [" + ",\n".join("PermList(" + json.dumps(q) + ")" for q in perms) + "];;\n"
+    scr += f"G := Group(gens);; SetSize(G, {int(r['order'])});;\n"
+    scr += f'Print("RESULT ", EKnown(G, {p}), "\\n");\nQUIT;\n'
+    try:
+        out = run_gap(scr, timeout=CHECK_TIMEOUT)
+    except subprocess.TimeoutExpired:
+        out = ""
+    line = [l for l in out.splitlines() if l.startswith("RESULT")]
+    if not line:
+        print(i, p, "undecided", out[-300:], flush=True)
+        return
+    rec = {"id": i, "aut": r["order"], "p": p, "classes": json.loads(line[0][7:].replace(" ", "")), "sec": round(time.time() - t0, 1)}
+    with open(OUT / "e-known.jsonl", "a") as fh:
+        fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
+    print(rec, flush=True)
+
+
+def summary():
+    """Collect E per type, and check that the (|C|, e) of the known lattices occur in the lists of pairs. Uses only parts that run in plain python3.
+
+    型ごとの E をまとめ、既知の格子の (|C|, e) が対の一覧に現れることを確かめる。素の python3 でも動く部分だけを使う。"""
+    tabs = {}
+    for f in sorted(OUT.glob("E-*.json")):
+        if f.name == "E-summary.json":
+            continue
+        d = json.load(open(f))
+        tabs[d["type"]] = d
+    known = {}
+    for l in open(PAIRS_DIR / "known-types.jsonl"):
+        d = json.loads(l)
+        known[d["id"]] = d["classes"]
+    # p = 17: the 4 known lattices with an element of order 17 (the four lattices of [Jür15, Satz 3.6.9] fill the mass). p = 31: the 8 pairs with |C| = 62, e = 2 by the lemma
+    # p = 17：位数 17 の元を持つ既知の 4 格子（[Jür15, Satz 3.6.9] の 4 個で質量が埋まる）。p = 31：|C| = 62 の 8 対で、補題により e = 2
+    cl = {}
+    for l in open(OUT / "check.jsonl"):
+        d = json.loads(l)
+        for x in d["primes"]:
+            cl.setdefault(d["id"], {}).setdefault(x["p"], []).extend(x["classes"])
+    for l in open(OUT / "e-known.jsonl"):
+        d = json.loads(l)
+        if d["id"] not in cl or d["p"] not in cl[d["id"]]:
+            cl.setdefault(d["id"], {})[d["p"]] = [c[:2] for c in d["classes"]]
+    rows17 = [c for i in ("code:r32", "zeta17:s1-14", "zeta17:s1-10", "zeta17:s1-1") for c in cl[i][17]]
+    assert sum(Fr(1, c[0]) for c in rows17) == Fr(1, 12)
+    tabs["17-2-0-0"] = {"type": "17-2-0-0", "n_pairs": len(rows17), "M_ext": str(sum(Fr(1, c[0]) for c in rows17)), "E": str(sum(Fr(c[1], c[0]) for c in rows17)), "rows": [{"C": c[0], "e": c[1]} for c in rows17]}
+    assert lemma_e(62, 31) == 2
+    tabs["31-1-2-1"] = {"type": "31-1-2-1", "n_pairs": 8, "M_ext": str(Fr(8, 62)), "E": str(Fr(16, 62)), "rows": [{"C": 62, "e": 2}] * 8}
+    # match the (|C|, e) of the known lattices with the lists of pairs / 既知の格子の (|C|, e) と対の一覧の照合
+    bad = []
+    n = 0
+    for i, by in cl.items():
+        for p_, rows in by.items():
+            if p_ == 3:
+                continue
+            types = [t for t in known.get(i, []) if t["p"] == p_]
+            for C, e in rows:
+                cands = [f"{t['p']}-{t['z']}-{t['d']}-{t['s']}" for t in types if int(t["C"]) == C]
+                if p_ == 17:
+                    cands = ["17-2-0-0"]
+                if p_ == 31:
+                    cands = ["31-1-2-1"]
+                n += 1
+                if not any(c in tabs and any(int(r["C"]) == C and int(r["e"]) == e for r in tabs[c]["rows"]) for c in cands):
+                    bad.append((i, p_, C, e, cands))
+    total = {}
+    for t, d in tabs.items():
+        q = int(t.split("-")[0])
+        total.setdefault(q, [Fr(0), Fr(0), 0])
+        total[q][0] += Fr(d["M_ext"])
+        total[q][1] += Fr(d["E"])
+        total[q][2] += int(d["n_pairs"])
+    out = {"types": {t: {"n_pairs": d["n_pairs"], "M_ext": d["M_ext"], "E": d["E"]} for t, d in tabs.items()},
+           "by_p": {str(q): {"M_ext": str(v[0]), "E": str(v[1]), "n_pairs": v[2]} for q, v in sorted(total.items())},
+           "E_total": str(sum(v[1] for v in total.values())), "known_checked": n, "known_mismatch": bad}
+    with open(OUT / "E-summary.json", "w") as fh:
+        json.dump(out, fh, ensure_ascii=False, indent=1)
+    print(json.dumps(out, ensure_ascii=False, indent=1))
+
+
+def lemma_e(C, p):
+    """Lemma: if p^2 does not divide |C|, then C = <h> x H (p does not divide |H|). For g = h^a t, n = p ord(t); the conditions are that a is unique
+    and that ord(t) is not divisible by an odd prime smaller than p. If |H| is not divisible by an odd prime smaller than p, then e = |H|. None if the lemma does not apply.
+
+    補題：p^2 が |C| を割らなければ C = <h> x H（p は |H| を割らない）。g = h^a t で n = p ord(t)、条件は a が 1 通りに決まることと、
+    ord(t) が p より小さい奇素数で割れないこと。|H| が p より小さい奇素数で割れなければ e = |H|。使えないときは None。"""
+    if C % p or C % (p * p) == 0:
+        return None
+    H = C // p
+    for q in (3, 5, 7, 11, 13, 17, 19, 23, 29):
+        if q < p and H % q == 0:
+            return None
+    return H
+
+
+def z_points(G, S):
+    """The vectors of norm 4 of Z (with signs) and their index.
+
+    Z のノルム 4 のベクトル（符号つき）と、その添字。"""
+    V = np.asarray(_qfsafe.short_vectors(G, 4), dtype=np.int64)
+    Gn = np.array([[int(x) for x in r] for r in G.rows()], dtype=np.int64)
+    n = np.einsum("ij,jk,ik->i", V, Gn, V)
+    V = V[n == 4]
+    V = np.vstack([V, -V])
+    assert np.linalg.matrix_rank(V.astype(float)) == G.nrows()
+    return V, {tuple(v): i for i, v in enumerate(V.tolist())}
+
+
+def group_pairs(typ, nverify=2):
+    """e(h) for the listed pairs (5-(7,4)-3, 5-(6,8)-6). Pairs where the lemma does not apply get the group; where it applies, nverify pairs per |C| are checked with the group.
+
+    一覧のある対（5-(7,4)-3, 5-(6,8)-6）の e(h)。補題が使えない対は群を作り、使える対も |C| ごとに nverify 個は群で確かめる。"""
+    fn = {"5-7-4-3": PAIRS_DIR / "pairs-5-7-4-3.json", "5-6-8-6": PAIRS_DIR / "pairs-5-6-8-6.json"}[typ]
+    if fn.exists():
+        d = json.load(open(fn))
+    else:
+        import gzip
+
+        d = json.load(gzip.open(str(fn) + ".gz", "rt"))
+    p = 5
+    rows = []
+    E = Fr(0)
+    M = Fr(0)
+    seen_lemma = {}
+    t0 = time.time()
+    cache = {}
+    for pi, pr in enumerate(d["pairs"]):
+        C = int(pr["Stab"])
+        M += Fr(1, C)
+        le = lemma_e(C, p)
+        need = le is None or seen_lemma.get(C, 0) < nverify
+        e = le
+        how = "lemma"
+        if need:
+            G = matrix(ZZ, pr["Z_gram"])
+            Sg = matrix(ZZ, pr["Z_sigma"])
+            key = (tuple(G.list()), tuple(Sg.list()))
+            if key not in cache:
+                order, gens = qfauto([G, G * Sg.transpose()])
+                V, idx = z_points(G, Sg)
+                perms = [[idx[tuple(w)] + 1 for w in (V @ np.array([[int(x) for x in r] for r in T.transpose().rows()], dtype=np.int64)).tolist()] for T in gens]
+                hperm = [idx[tuple(w)] + 1 for w in (V @ np.array([[int(x) for x in r] for r in Sg.rows()], dtype=np.int64)).tolist()]
+                cache[key] = (int(order), gens, V, idx, perms, hperm)
+            order, gens, V, idx, perms, hperm = cache[key]
+            assert order == int(pr["U"])
+            scr = f'SizeScreen([60000, 100]);;\nRead("{GLIB}");\n'
+            nv = V.shape[0]
+            if "V1" in pr:
+                # 5-(6,8)-6: add the points of the lines and take the stabilizer of {V, V^perp}
+                # 5-(6,8)-6：直線の点を足して {V, V^perp} の固定部分群を取る
+                D = disc_of(G, p)
+                acts = [D["action"](T) for T in gens]
+                lines = line_table(6, p)
+                lidx = {k: i for i, k in enumerate(lines)}
+                exp_perms = []
+                for A_, pm in zip(acts, perms):
+                    im = [lidx[norm_line((np.array(v, dtype=np.int64) @ A_) % p, p)] + nv + 1 for v in lines]
+                    exp_perms.append(pm + im)
+                hA = D["action"](Sg.transpose())
+                assert (hA == np.eye(6, dtype=np.int64)).all(), "sigma is trivial on D"
+                hp2 = hperm + list(range(nv + 1, nv + len(lines) + 1))
+                Vr = np.array(pr["V1"], dtype=np.int64)
+                Vp = matrix(GF(p), [[int(x) for x in r] for r in (Vr @ D["B"]) % p]).right_kernel().basis_matrix()
+                Vp = np.array([[int(x) for x in r] for r in Vp.rows()], dtype=np.int64)
+                sett = set()
+                for co in ([a_, b_, c_] for a_ in range(p) for b_ in range(p) for c_ in range(p)):
+                    if any(co):
+                        sett.add(lidx[norm_line((np.array(co) @ Vr) % p, p)] + nv + 1)
+                        sett.add(lidx[norm_line((np.array(co) @ Vp) % p, p)] + nv + 1)
+                scr += "gens := [" + ",\n".join("PermList(" + json.dumps(q) + ")" for q in exp_perms) + "];;\n"
+                scr += f"U := Group(gens);; SetSize(U, {order});;\nh := PermList({json.dumps(hp2)});;\n"
+                scr += f"C := Stabilizer(U, {json.dumps(sorted(sett))}, OnSets);;\n"
+            else:
+                scr += "gens := [" + ",\n".join("PermList(" + json.dumps(q) + ")" for q in perms) + "];;\n"
+                scr += f"U := Group(gens);; SetSize(U, {order});;\nh := PermList({json.dumps(hperm)});;\nC := U;;\n"
+            scr += f'Print("RESULT ", Size(C), " ", h in C, " ", EofH(C, h, {p}), "\\n");\nQUIT;\n'
+            out = run_gap(scr)
+            line = [l for l in out.splitlines() if l.startswith("RESULT")]
+            assert line, out[-400:]
+            sz, inn, eg = line[0].split()[1:4]
+            assert int(sz) == C, (int(sz), C)
+            assert inn == "true"
+            eg = int(eg)
+            if le is not None:
+                assert eg == le, (eg, le, C)
+                seen_lemma[C] = seen_lemma.get(C, 0) + 1
+            e = eg
+            how = "group"
+        E += Fr(e, C)
+        rows.append({"pair": pi, "C": C, "e": e, "how": how, "Z_index": pr["Z_index"]})
+        if need:
+            print(typ, pi, "|C|", C, "e", e, how, f"{time.time() - t0:.0f} s", flush=True)
+    res = {"type": typ, "n_pairs": len(rows), "M_ext": str(M), "E": str(E), "E_float": float(E), "rows": rows}
+    with open(OUT / f"E-{typ}.json", "w") as fh:
+        json.dump(res, fh, ensure_ascii=False, indent=1)
+    print(typ, "M_ext", M, "E", E, float(E), f"{time.time() - t0:.0f} s", flush=True)
+
+
+def disc_of(G, p):
+    n = G.nrows()
+    Ginv = G.inverse()
+    E = matrix(GF(p), (p * Ginv).change_ring(ZZ)).echelon_form()
+    rows = [r for r in E.rows() if not r.is_zero()]
+    piv = [next(i for i in range(n) if r[i] != 0) for r in rows]
+    from sage.all import QQ
+
+    Y = matrix(QQ, [[int(x) for x in r] for r in rows]) / p
+    B = p * Y * G * Y.transpose()
+    Bn = np.array([[int(x) % p for x in r] for r in B.rows()], dtype=np.int64)
+
+    def action(T):
+        A = []
+        for i in range(len(rows)):
+            yp = p * Y[i] * T.transpose()
+            A.append([int(yp[q]) % p for q in piv])
+        return np.array(A, dtype=np.int64)
+
+    return {"action": action, "B": Bn}
+
+
+def disc_Y(G, p):
+    """The basis of the discriminant group of disc_of (rows of rational vectors).
+
+    disc_of と同じ判別式の基底（有理ベクトルの行）。"""
+    from sage.all import QQ
+
+    n = G.nrows()
+    E = matrix(GF(p), (p * G.inverse()).change_ring(ZZ)).echelon_form()
+    rows = [r for r in E.rows() if not r.is_zero()]
+    return matrix(QQ, [[int(x) for x in r] for r in rows]) / p
+
+
+def phi_rows(fh, tag, p, zi, GF_, GZ, Sz, psi, C, e):
+    """phi: basis e_i of D_F -> psi[i] (coordinates of D_Z in the basis of disc_of). Build L = F + Z + {(y_F(e_i), y_Z(psi_i))}, check that it is
+    unimodular, even and without roots and that h = I_F + Sz (block diagonal, row convention) preserves L, and write one line.
+
+    phi：D_F の基底 e_i -> psi[i]（D_Z の座標、disc_of の基底）。L = F + Z + {(y_F(e_i), y_Z(psi_i))} を作り、
+    ユニモジュラー・偶・ルート無しと、h = I_F + Sz（ブロック対角、行の約束）が L を保つことを確かめて 1 行書く。"""
+    from sage.all import QQ, block_diagonal_matrix, pari
+
+    YF, YZ = disc_Y(GF_, p), disc_Y(GZ, p)
+    nF, nZ = GF_.nrows(), GZ.nrows()
+    n = nF + nZ
+    gens = [[p if i == j else 0 for j in range(n)] for i in range(n)]
+    for i in range(YF.nrows()):
+        yZ = sum((QQ(int(c)) * YZ[j] for j, c in enumerate(psi[i])), YZ[0] * 0)
+        gens.append([int(x * p) for x in list(YF[i]) + list(yZ)])
+    H = matrix(ZZ, gens).hermite_form(include_zero_rows=False)
+    B = H.change_ring(QQ) / p
+    A = block_diagonal_matrix([GF_, GZ])
+    G = B * A * B.transpose()
+    assert G.denominator() == 1 and G.det() == 1, (tag, zi, "not unimodular")
+    G = G.change_ring(ZZ)
+    assert all(G[i, i] % 2 == 0 for i in range(n)), (tag, zi, "not even")
+    assert int(pari(G).qfminim(2, 0)[0]) == 0, (tag, zi, "has roots")
+    Hh = block_diagonal_matrix([matrix.identity(ZZ, nF), Sz])
+    hL = B * Hh * B.inverse()
+    assert hL.denominator() == 1, (tag, zi, "h does not preserve L")
+    hL = hL.change_ring(ZZ)
+    assert hL * G * hL.transpose() == G and hL ** p == 1 and hL != 1
+    rec = dict(type=tag, p=p, Z_index=zi, C=C, e=e, F_gram=[[int(x) for x in r] for r in GF_.rows()], Z_gram=[[int(x) for x in r] for r in GZ.rows()],
+               Z_sigma=[[int(x) for x in r] for r in Sz.rows()], phi_F=[[1 if j == i else 0 for j in range(YF.nrows())] for i in range(YF.nrows())],
+               phi_Z=[[int(x) for x in r] for r in psi], L_gram=[[int(x) for x in r] for r in G.rows()], h=[[int(x) for x in r] for r in hL.rows()],
+               convention="phi_F, phi_Z are coordinates (rows) in the basis of the discriminant group of disc_of. The basis of L is B (coordinates of F + Z). h uses the row convention x -> x h, h G h^T = G")
+    fh.write(json.dumps(rec) + "\n")
+    fh.flush()
+
+
+def norm_line(v, p):
+    v = [int(x) for x in v]
+    for x in v:
+        if x:
+            inv = pow(x, -1, p)
+            return tuple((inv * t) % p for t in v)
+    return tuple(v)
+
+
+def line_table(s, p):
+    import itertools
+
+    out = []
+    for v in itertools.product(range(p), repeat=s):
+        if any(v) and next(x for x in v if x) == 1:
+            out.append(tuple(v))
+    return out
+
+
+def vec_table(s_, p):
+    import itertools
+
+    return list(itertools.product(range(p), repeat=s_))
+
+
+def mat_perm(A, tab, tidx, p):
+    M = (np.array(tab, dtype=np.int64) @ A) % p
+    wt = p ** np.arange(M.shape[1] - 1, -1, -1, dtype=np.int64)
+    return [int(k) + 1 for k in (M @ wt).tolist()]
+
+
+def orth_frame(B, p, rng, wants=None):
+    n = B.shape[0]
+    out = []
+    i = 0
+    while len(out) < n:
+        v = np.array([rng.randrange(p) for _ in range(n)], dtype=np.int64)
+        for b in out:
+            qb = int(b @ B @ b) % p
+            v = (v - int(v @ B @ b) * pow(qb, -1, p) * b) % p
+        q = int(v @ B @ v) % p
+        if q == 0:
+            continue
+        if wants is not None and q != wants[len(out)]:
+            continue
+        out.append(v)
+    return out
+
+
+def generic(p, z, s_, d, zlist, tag, nverify=3, phi_out=None):
+    """For a type whose F is a single class, build the pairs as double cosets and give |C(h)| and e(h); C(h) is generated by the kernels and lifts of I.
+
+    With phi_out, write for every pair phi (images of the basis of D_F, coordinates of D_Z), the Gram matrix of L and h (phi_rows).
+    E-*.json is then not written; the random sequence and the computation are the same as without phi_out (the same P and representatives).
+
+    F が 1 類の型の対を両側剰余類で作り、|C(h)| と e(h) を出す。C(h) はカーネルと I の持ち上げで作る。
+
+    phi_out を与えると、対ごとに phi（D_F の基底の像、D_Z の座標）と L の Gram、h を書き出す（phi_rows）。
+    このとき E-*.json は書かず、乱数の列と計算は phi_out なしと同じ（同じ P と同じ両側剰余類の代表）。"""
+    import random
+
+    rng = random.Random(p * 1000 + z)
+    t0 = time.time()
+    if (p, d, s_) == (5, 16, 4):
+        # the genus list of F for (16, 4) is not complete; use the one class of the example (it exhausts the mass)
+        # (16, 4) の F は種の一覧が未完なので、実例の 1 類を使う（質量で尽きる）
+        Fc = [json.load(open(EXAMPLE_P5_16_4))["hurwitz:s1-21"]]
+    else:
+        gf = json.load(open(GENUS_DIR / f"genus-p{p}-n{d}-s{s_}.json"))
+        Fc = [c for c in gf["classes"] if c["min"] >= 4]
+    assert len(Fc) == 1
+    GF_ = matrix(ZZ, Fc[0]["gram"])
+    autF = int(Fc[0]["aut"])
+    oF, gF = qfauto([GF_])
+    assert int(oF) == autF
+    DF = disc_of(GF_, p)
+    tab = vec_table(s_, p)
+    tidx = None
+    BF = DF["B"]
+    # O(q) generated by reflections / O(q) を鏡映で生成
+    refl = []
+    while len(refl) < 14:
+        v = np.array([rng.randrange(p) for _ in range(s_)], dtype=np.int64)
+        q = int(v @ BF @ v) % p
+        if q == 0:
+            continue
+        c = (2 * pow(q, -1, p)) % p
+        R = (np.eye(s_, dtype=np.int64) - c * (BF @ v.reshape(-1, 1)) @ v.reshape(1, -1)) % p
+        refl.append(R)
+    Oorder = None
+    VF, iF = z_points(GF_, matrix.identity(ZZ, GF_.nrows()))
+    pF = [[iF[tuple(w)] + 1 for w in (VF @ np.array([[int(x) for x in r] for r in T.transpose().rows()], dtype=np.int64)).tolist()] for T in gF]
+    aF = [mat_perm(DF["action"](T), tab, None, p) for T in gF]
+    zs = json.load(open(zlist))
+    assert zs["status"] == "done", zs["status"]
+    rows = []
+    E = Fr(0)
+    M = Fr(0)
+    seen_lemma = {}
+    for zi, oz in enumerate(zs["classes"]):
+        GZ = matrix(ZZ, oz["G"])
+        Sz = matrix(ZZ, oz["S"])
+        oZ, gZ = qfauto([GZ, GZ * Sz.transpose()])
+        oZ = int(oZ)
+        assert oZ == int(oz["U"]), (oZ, oz["U"])
+        DZ = disc_of(GZ, p)
+        BZ = DZ["B"]
+        # phi_0: orthogonal basis of F -> orthogonal basis of Z (Q_Z = -Q_F) / phi_0：F の直交基底 -> Z の直交基底（Q_Z = -Q_F）
+        fF = orth_frame(BF, p, rng)
+        fZ = orth_frame(BZ, p, rng, wants=[(-int(u @ BF @ u)) % p for u in fF])
+        mF = matrix(GF(p), [[int(x) for x in v] for v in fF])
+        mZ = matrix(GF(p), [[int(x) for x in v] for v in fZ])
+        # x (coordinates of F) -> x mF^{-1} mZ (coordinates of Z) / x（F の座標）-> x mF^{-1} mZ（Z の座標）
+        P = mF.inverse() * mZ
+        Pi = P.inverse()
+        aZ = []
+        for T in gZ:
+            Ab = DZ["action"](T)
+            Mz = P * matrix(GF(p), [[int(x) for x in r] for r in Ab.tolist()]) * Pi
+            aZ.append(mat_perm(np.array([[int(x) for x in r] for r in Mz.rows()], dtype=np.int64), tab, None, p))
+        VZ, iZ = z_points(GZ, Sz)
+        pZ = [[iZ[tuple(w)] + 1 for w in (VZ @ np.array([[int(x) for x in r] for r in T.transpose().rows()], dtype=np.int64)).tolist()] for T in gZ]
+        h = [iZ[tuple(w)] + 1 for w in (VZ @ np.array([[int(x) for x in r] for r in Sz.rows()], dtype=np.int64)).tolist()]
+        nF = VF.shape[0]
+        nZ = VZ.shape[0]
+        scr = f'SizeScreen([60000, 100]);;\nRead("{GLIB}");\n'
+        scr += "refl := [" + ",".join("PermList(" + json.dumps(mat_perm(R, tab, None, p)) + ")" for R in refl) + "];;\nO := Group(refl);;\n"
+        scr += f'Print("ORDER ", Size(O), "\\n");\n'
+        scr += "gFa := [" + ",".join("PermList(" + json.dumps(q) + ")" for q in aF) + "];;\n"
+        scr += "gZa := [" + ",".join("PermList(" + json.dumps(q) + ")" for q in aZ) + "];;\n"
+        scr += "A := Group(gFa);; B := Group(gZa);;\n"
+        scr += "gFp := [" + ",".join("PermList(" + json.dumps(q) + ")" for q in pF) + "];;\n"
+        scr += "gZp := [" + ",".join("PermList(" + json.dumps(q) + f")" for q in [[x + nF for x in r] for r in pZ]) + "];;\n"
+        # shift the indices of the points: F is 1..nF, Z is nF+1..nF+nZ / 点の添字をずらす：F は 1..nF、Z は nF+1..nF+nZ
+        scr += f"sh := MappingPermListList([1..{nZ}], [{nF + 1}..{nF + nZ}]);;\n"
+        scr += f"GFp := Group(gFp);; SetSize(GFp, {autF});;\nGZp := Group(List([1..Length(gZa)], i -> PermList(Concatenation([1..{nF}], {json.dumps([[x + nF for x in r] for r in pZ])}[i]))));; SetSize(GZp, {oZ});;\n"
+        scr += f"hp := PermList(Concatenation([1..{nF}], {json.dumps([x + nF for x in h])}));;\n"
+        scr += "piF := GroupHomomorphismByImagesNC(GFp, A, GeneratorsOfGroup(GFp), gFa);;\npiZ := GroupHomomorphismByImagesNC(GZp, B, GeneratorsOfGroup(GZp), gZa);;\n"
+        scr += "kF := Kernel(piF);; kZ := Kernel(piZ);;\n"
+        scr += 'Print("IMG ", Size(A), " ", Size(B), " ", Size(kF), " ", Size(kZ), "\\n");\n'
+        scr += "dc := DoubleCosets(O, A, B);;\n"
+        scr += 'Print("DC ", Length(dc), "\\n");\n'
+        scr += f"""for d_ in dc do
+  x := Representative(d_);
+  I_ := Intersection(A, B^(x^-1));;
+  # lift the pairs a in A, b in B with a = x b x^-1
+  gc := Concatenation(GeneratorsOfGroup(kF), GeneratorsOfGroup(kZ));;
+  for i in GeneratorsOfGroup(I_) do
+    Add(gc, PreImagesRepresentative(piF, i) * PreImagesRepresentative(piZ, x^-1 * i * x));
+  od;
+  C := Group(Concatenation(gc, [hp]));;
+  sz := Size(kF) * Size(kZ) * Size(I_);;
+  e := -1;;
+  if Size(C) <> sz then Print("NG size ", Size(C), " ", sz, "\\n"); fi;
+  if hp in C then
+    e := EofH(C, hp, {p});;
+  fi;
+  Print("PAIR ", sz, " ", Size(d_), " ", e, " ", hp in C, "\\n");
+  {{phi_print}}
+od;
+QUIT;
+"""
+        scr = scr.replace("{phi_print}", (f'Print("PHI ", List([1..{s_}], i -> OnPoints({p}^({s_}-i)+1, x)), "\\n");') if phi_out is not None else "")
+        out = run_gap(scr, timeout=3600)
+        lines = out.splitlines()
+        assert any(l.startswith("ORDER") for l in lines), out[-500:]
+        order_line = [l for l in lines if l.startswith("ORDER")][0]
+        img = [l for l in lines if l.startswith("IMG")][0]
+        assert not any(l.startswith("NG") for l in lines), [l for l in lines if l.startswith("NG")][:3]
+        prs = [l.split()[1:] for l in lines if l.startswith("PAIR")]
+        if phi_out is not None:
+            phis = [json.loads(l[4:].replace(" ", "")) for l in lines if l.startswith("PHI ")]
+            assert len(phis) == len(prs)
+            Pn = np.array([[int(x) for x in r] for r in P.rows()], dtype=np.int64)
+            for (sz_, dsz_, e_, inn_), ph in zip(prs, phis):
+                X = np.array([tab[q - 1] for q in ph], dtype=np.int64)          # row i: the image of e_i under x (coordinates of F) / 行 i：e_i の x による像（F の座標）
+                phi_rows(phi_out, tag, p, zi, GF_, GZ, Sz, (X @ Pn) % p, int(sz_), int(e_))
+        zm = Fr(0)
+        for sz, dsz, e, inn in prs:
+            sz, dsz, e = int(sz), int(dsz), int(e)
+            assert inn == "true"
+            le = lemma_e(sz, p)
+            if le is not None:
+                assert e == le, (sz, e, le)
+            M += Fr(1, sz)
+            zm += Fr(1, sz)
+            E += Fr(e, sz)
+            rows.append({"Z_index": zi, "U": oZ, "C": sz, "coset_size": dsz, "e": e, "lemma": le})
+        print(tag, f"Z {zi}: |U| = {oZ}, {order_line}, {img}, pairs {len(prs)}, mass {zm}, total {M}, E {E} ({time.time() - t0:.0f} s)", flush=True)
+    res = {"type": tag, "p": p, "z": z, "d": d, "s": s_, "n_pairs": len(rows), "M_ext": str(M), "E": str(E), "E_float": float(E), "rows": rows}
+    if phi_out is not None:
+        with open(OUT / f"phis-E-{tag}.json", "w") as fh:
+            json.dump(res, fh, ensure_ascii=False, indent=1)
+        print(tag, "pairs", len(rows), "M_ext", M, "E", E, "(phis rerun; E-*.json is not written)", flush=True)
+        return
+    with open(OUT / f"E-{tag}.json", "w") as fh:
+        json.dump(res, fh, ensure_ascii=False, indent=1)
+    print(tag, "pairs", len(rows), "M_ext", M, "E", E, float(E), f"{time.time() - t0:.0f} s", flush=True)

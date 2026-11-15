@@ -3,15 +3,39 @@
 English | [日本語](README.ja.md)
 
 The programs behind the computations of the papers in this repository. They are kept as they were
-run, with the same functions, constants and random seeds. Comments are in English and Japanese.
-For now `code/` holds the shared library and its tests; the programs of the computations follow.
+run, with the same functions, constants and random seeds. The one exception is that labels the outputs wrote in
+Japanese (such as the verdict of a linear program) are now English constants with the same meaning.
+Comments are in English and Japanese.
+Not all programs are here yet; the others follow.
 
 ## Layout
 
 | Directory | Contents |
 |---|---|
 | `rank32/` | The shared library. It imports nothing else from `code/`. |
+| `produce/<topic>/` | The programs that produced the lists, certificates and data, by topic of the first paper; so far `element_types` (elements of odd prime order). The docstring of each file names its computations (C1, C2, ... of Table 11), its inputs (if any), its outputs and its running time. |
 | `tests/` | Small cases, run with `pytest`. |
+
+## Inputs and outputs
+
+The programs read their default inputs from the release asset `computation-outputs.tar.gz`, unpacked in the
+directory `$RANK32_ASSETS` (by default `assets/` under the current directory): the outputs of computation C<n> are
+in `computation-outputs/C<n>/`. This asset is not attached to a release yet; it comes with a later version. Until
+then, give the inputs with the options of each program. The programs write their outputs, by default, to
+`results/C<n>/` under the current directory.
+
+Run the programs with the Python of the environment below, from the repository root. For example,
+
+```
+python code/produce/element_types/prime_order_type_masses.py test
+```
+
+checks the mass formulas of the types in about 10 seconds; `--help` lists the modes and options of each program.
+
+## Notation
+
+The programs write the type p-(z, f)-s of an element of odd prime order (§3.3 of the first paper) as p-(z, d)-s:
+d is the rank f of the fixed lattice.
 
 ## Requirements
 
@@ -51,6 +75,7 @@ Environment variables:
 |---|---|---|
 | `RANK32_BUILD` | where the C parts are compiled on first use | `$XDG_CACHE_HOME/rank32`, that is `~/.cache/rank32` |
 | `BLISS_PREFIX` | where bliss is installed (`include/` and `lib/`) | `$CONDA_PREFIX`, else the prefix of the running Python |
+| `RANK32_ASSETS` | where the release assets are unpacked; the programs read their default inputs from it (`rank32.io.asset`) | `assets/` under the current directory |
 | `RANK32_TMP` | where `rank32.canonical` writes its temporary graph files | the system's temporary directory |
 | `RANK32_SLOW_TESTS` | when set to any non-empty value, the tests marked `slow` run too | not set |
 
