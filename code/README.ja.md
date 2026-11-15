@@ -10,12 +10,14 @@
 | ディレクトリ | 中身 |
 |---|---|
 | `rank32/` | 共有ライブラリ。`code/` のほかのものは import しない。 |
-| `produce/<topic>/` | 一覧・certificate・データを作ったプログラム。第 1 の論文の区分ごとに分けてある。今あるのは `element_types`（奇素数位数の元）である。各ファイルの docstring に、その計算（表 11 の C1, C2, ...）、入力（あれば）と出力、所要時間を書いてある。 |
+| `produce/<topic>/` | 一覧・certificate・データを作ったプログラム。第 1 の論文の区分ごとに分けてある。今あるのは `element_types`（奇素数位数の元）、`involutions`（対合の型）、`gaussian`（Z[i] 上のエルミート格子）、`known_lattices` である。各ファイルの docstring に、その計算（表 11 の C1, C2, ...）、入力（あれば）と出力、所要時間を書いてある。 |
+| `crosscheck/<topic>/` | `produce/` の結果の検算。その一部は独立な方法による。`produce/` は import しない。 |
+| `toolcheck/` | 既知の場合での道具の検査（計算 C37 と C38）と、表 11 に無い補助の計算。今あるのは補助の計算の `frame_fingerprint.py` だけである。 |
 | `tests/` | 小さい場合の試験。`pytest` で走らせる。 |
 
 ## 入力と出力
 
-プログラムは、既定の入力を Release のアセット `computation-outputs.tar.gz` から読む。このアセットは、ディレクトリ `$RANK32_ASSETS`（既定は今のディレクトリの下の `assets/`）に展開する。計算 C<n> の出力は `computation-outputs/C<n>/` にある。ただし、このアセットはまだ Release に付いていない。後の版で加わる。それまでは、入力を各プログラムのオプションで与える。出力は、既定では今のディレクトリの下の `results/C<n>/` に書く。
+プログラムは、既定の入力を Release のアセット `computation-outputs.tar.gz` から読む。このアセットは、ディレクトリ `$RANK32_ASSETS`（既定は今のディレクトリの下の `assets/`）に展開する。計算 C<n> の出力は `computation-outputs/C<n>/` にある。ただし、このアセットはまだ Release に付いていない。後の版で加わる。それまでは、入力を各プログラムのオプションで与える。出力は、既定では今のディレクトリの下の `results/C<n>/` に書く。表 11 に無い補助の計算は `results/` に書く。
 
 プログラムは、下の環境の Python で、リポジトリの一番上から走らせる。たとえば、
 
@@ -66,6 +68,9 @@ python code/produce/element_types/prime_order_type_masses.py test
 | `BLISS_PREFIX` | bliss を入れた場所（`include/` と `lib/`） | `$CONDA_PREFIX`、なければ実行中の Python の prefix |
 | `RANK32_ASSETS` | Release のアセットを展開した場所。プログラムは既定の入力をここから読む（`rank32.io.asset`） | 今のディレクトリの下の `assets/` |
 | `RANK32_TMP` | `rank32.canonical` がグラフの一時ファイルを書く場所 | システムの一時ディレクトリ |
+| `FRAME_PL` | `rank32.frame_fingerprint` の C の部分は、直線を最上位 PL ビットで分ける。表の大きさは 2^(32-PL) | `12` |
+| `FRAME_SCRATCH` | `rank32.frame_fingerprint` が C の部分の入力のバイナリを書く場所 | システムの一時ディレクトリ |
+| `CC` | `rank32.frame_fingerprint` の C のコンパイラ | `gcc` |
 | `RANK32_SLOW_TESTS` | 空でない値を設定すると、マーカー `slow` の付いた試験も走る | 設定しない |
 
 ## 試験

@@ -13,7 +13,9 @@ Not all programs are here yet; the others follow.
 | Directory | Contents |
 |---|---|
 | `rank32/` | The shared library. It imports nothing else from `code/`. |
-| `produce/<topic>/` | The programs that produced the lists, certificates and data, by topic of the first paper; so far `element_types` (elements of odd prime order). The docstring of each file names its computations (C1, C2, ... of Table 11), its inputs (if any), its outputs and its running time. |
+| `produce/<topic>/` | The programs that produced the lists, certificates and data, by topic of the first paper; so far `element_types` (elements of odd prime order), `involutions` (involution types), `gaussian` (Hermitian lattices over Z[i]) and `known_lattices`. The docstring of each file names its computations (C1, C2, ... of Table 11), its inputs (if any), its outputs and its running time. |
+| `crosscheck/<topic>/` | Checks of the results of `produce/`, some of them by independent methods. They do not import `produce/`. |
+| `toolcheck/` | Checks of the tools on known cases (computations C37 and C38) and auxiliary computations that are not in Table 11; so far only `frame_fingerprint.py` (auxiliary). |
 | `tests/` | Small cases, run with `pytest`. |
 
 ## Inputs and outputs
@@ -22,7 +24,7 @@ The programs read their default inputs from the release asset `computation-outpu
 directory `$RANK32_ASSETS` (by default `assets/` under the current directory): the outputs of computation C<n> are
 in `computation-outputs/C<n>/`. This asset is not attached to a release yet; it comes with a later version. Until
 then, give the inputs with the options of each program. The programs write their outputs, by default, to
-`results/C<n>/` under the current directory.
+`results/C<n>/` under the current directory; an auxiliary computation that is not in Table 11 writes to `results/`.
 
 Run the programs with the Python of the environment below, from the repository root. For example,
 
@@ -77,6 +79,9 @@ Environment variables:
 | `BLISS_PREFIX` | where bliss is installed (`include/` and `lib/`) | `$CONDA_PREFIX`, else the prefix of the running Python |
 | `RANK32_ASSETS` | where the release assets are unpacked; the programs read their default inputs from it (`rank32.io.asset`) | `assets/` under the current directory |
 | `RANK32_TMP` | where `rank32.canonical` writes its temporary graph files | the system's temporary directory |
+| `FRAME_PL` | the C part of `rank32.frame_fingerprint` splits the lines by their top PL bits; its table has 2^(32-PL) entries | `12` |
+| `FRAME_SCRATCH` | where `rank32.frame_fingerprint` writes the binary input of its C part | the system's temporary directory |
+| `CC` | the C compiler of `rank32.frame_fingerprint` | `gcc` |
 | `RANK32_SLOW_TESTS` | when set to any non-empty value, the tests marked `slow` run too | not set |
 
 ## Tests
