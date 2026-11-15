@@ -40,6 +40,8 @@ There are two ways to set it up; run the commands from the repository root.
    docker run --rm -v "$PWD":/work:ro -w /work rank32 python -m pytest -q -p no:cacheprovider code/tests
    ```
 
+`-p no:cacheprovider` is there because the repository is mounted read-only (`:ro`), so pytest cannot write its cache.
+
 The packages are for linux-64, so the first way works only on linux-64 machines. On other machines, add
 `--platform linux/amd64` to both `docker build` and `docker run`; the container then runs under emulation, more slowly.
 

@@ -81,13 +81,15 @@ def _binary():
 
 
 def generating_shell(G, maxvec=60000):
-    """(m, S): S is all vectors of norm <= m (both signs, coordinates as rows), for the least m such that S generates Z^n; (m, None) if S would be too large.
+    """(m, S): S is all vectors of norm <= m (both signs, coordinates as rows), for the least m such that S generates Z^n; (m, None) if S would have more than maxvec rows.
 
-    (m, S)：S はノルム <= m のベクトル全部（+- 両方、行が座標）で、Z^n を生成する最小の m。大きすぎれば (m, None)。"""
+    (m, S)：S はノルム <= m のベクトル全部（+- 両方、行が座標）で、Z^n を生成する最小の m。S の行が maxvec を超えるなら (m, None)。"""
     n = G.nrows()
     q = pari(G)
     m = 2
     while True:
+        # qfminim counts v and -v separately (240 for E_8 and m = 2), so cnt is the number of rows S would have
+        # qfminim は v と -v を別に数える（E_8、m = 2 で 240）。だから cnt は S の行の数になる
         cnt = int(q.qfminim(m, 0)[0])
         if cnt * 2 > maxvec * 2:
             return m, None
@@ -132,10 +134,13 @@ def canonical(G, W=None, maxvec=60000, keep_min=None, timeout=None):
     if S is None:
         return None
     if keep_min is None:
-        # dense graphs take several GB in bliss (more than 5 GB for (20, 6)); for z = 13 (20000 vectors)
-        # keep 3 gave the same order as PARI and keep 4 gave extra automorphisms
-        # 密なグラフは bliss が数 GB になる（(20, 6) で 5 GB 超）。z = 13（2 万本）で keep 3 は位数が
-        # PARI と一致し、keep 4 は余分な自己同型が出た
+        # dense graphs take several GB in bliss (more than 5 GB for a lattice of the genus (20, 6), the even rank-20
+        # lattices F with F^#/F = F_3^6 of Appendix D.4.6 of the first paper); for a lattice Z of rank z = 13 over
+        # Z[omega] (type 3-(13, 6)-5, §3.3 of the first paper; 20000 vectors) keep 3 gave the same order as PARI
+        # and keep 4 gave extra automorphisms
+        # 密なグラフは bliss が数 GB になる（種 (20, 6) の格子で 5 GB 超。第 1 の論文の付録 D.4.6 の、F^#/F = F_3^6 で
+        # 階数 20 の偶格子 F）。Z[omega] 上の階数 z = 13 の格子 Z（型 3-(13, 6)-5、第 1 の論文の §3.3。2 万本）で、
+        # keep 3 は位数が PARI と一致し、keep 4 は余分な自己同型が出た
         keep_min = 0 if S.shape[0] <= 2000 else (2 if S.shape[0] <= 8000 else 3)
     E = _edges(S, G, W, keep_min)
     with tempfile.TemporaryDirectory(dir=os.environ.get("RANK32_TMP")) as td:
@@ -244,7 +249,13 @@ def group_order(res):
 def isometry(res1, G1, res2, G2, W1=None, W2=None):
     """Compare canonical forms: an R with R G2 R^T = G1 (c -> c R maps L1 to L2) if isometric, else None.
 
-    標準形で比べる。同型なら R（R G2 R^T = G1 の行列、c -> c R が L1 -> L2）、違えば None。"""
+    res1 and res2 must come from canonical() with the same keep_min. The default rule chooses keep_min from |S| only,
+    so it agrees for isometric lattices; with different values the hashes can differ, so None may be returned
+    for isometric lattices.
+
+    標準形で比べる。同型なら R（R G2 R^T = G1 の行列、c -> c R が L1 -> L2）、違えば None。
+    res1 と res2 は、同じ keep_min の canonical() の結果でなければならない。既定の規則は keep_min を |S| だけで決めるので、
+    同型な格子では一致する。値が違うと、同型な格子でもハッシュが違うことがあり、None を返しうる。"""
     if res1["hash"] != res2["hash"] or res1["S"].shape != res2["S"].shape or res1["m"] != res2["m"]:
         return None
     inv2 = np.argsort(res2["lab"])

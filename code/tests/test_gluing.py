@@ -3,18 +3,24 @@
 Input: data/gluing_pairs.json, two pairs of 2-elementary parts (F, K) of the involution gluing
 with the tables of their discriminant forms, generators of bar G_F and bar G_K on the discriminant
 groups, and the full list of double cosets (phi, |Stab|, extremal) of each pair:
-  16-16-s12d0  F = K, s = 12, 122 classes;
-  12-20-c14    F != K, s = 12, 1605 classes.
+  16-16-s12d0  involution type (16, 16) of §4.1 of the first paper, the components with s = 12, delta = 0;
+               F = K, 122 classes;
+  12-20-c14    involution type (12, 20) of §4.1: F = sqrt(2) D_12^+ and K one of the 66 lattices of rank 20 with
+               s = 12, delta = 1 and minimum at least 4, the one with index 14 (counting from 0) in
+               certificates/involution-gluing-masses.json; F != K, 1605 classes.
+The names are the identifiers of the pairs in the certificates (certificates/README.md, "Identifiers").
 keys_sha256 is the sha256 of the sorted, concatenated keys canon(phi) of all classes.
 Needs gcc and GAP (through Sage). Time: about 30 seconds.
 
 rank32.gluing の試験：両側剰余類の正規形と、閉じた 2 組の質量。
 
-入力：data/gluing_pairs.json。対合の貼り合わせの 2-初等的な部品の組 (F, K) を 2 つ収める。
+入力：data/gluing_pairs.json。対合の貼り合わせの 2-初等的な成分の組 (F, K) を 2 つ収める。
 判別式形式の表、判別式群の上の bar G_F と bar G_K の生成元、各組の両側剰余類の全部の一覧
 （phi、|Stab|、極値か）である。
-  16-16-s12d0  F = K、s = 12、122 類
-  12-20-c14    F != K、s = 12、1605 類
+  16-16-s12d0  第 1 の論文の §4.1 の対合の型 (16, 16)。s = 12、delta = 0 の成分。F = K、122 類
+  12-20-c14    §4.1 の対合の型 (12, 20)。F = sqrt(2) D_12^+、K は s = 12、delta = 1、最小値 4 以上の階数 20 の格子 66 個の
+               うち、certificates/involution-gluing-masses.json で（0 から数えて）14 番の格子。F != K、1605 類
+名前は certificates の組の識別子である（certificates/README.md の「Identifiers」）。
 keys_sha256 は、全部の類のキー canon(phi) をソートして連結したものの sha256 である。
 gcc と GAP（Sage 経由）が要る。時間：約 30 秒。
 """

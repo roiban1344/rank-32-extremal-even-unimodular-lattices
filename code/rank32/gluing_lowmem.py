@@ -6,7 +6,7 @@ splits only the step that takes a lot of memory.
 The memory went to the chain on the F side in Glue.__init__ (Glue._fixed_chain). At each stage of
 the chain, Node.orbits_of is called on all 2^s points. A node of order <= SMALL keeps all its
 elements, and orbits_of then builds an int64 array of size (order x number of points x s) at once:
-2.64 GB for the pair (15, 17) (s = 15, order 720) and 8.6 GB for s = 16 and order 1024.
+2.64 GB for the pair of involution type (15, 17) of §4.1 of the first paper (F = sqrt(2) A_15^+ and K of rank 17; s = 15, order 720) and 8.6 GB for s = 16 and order 1024.
 
 The value of orbits_of is determined point by point (the least point of the orbit of the point and
 the size of the orbit). Computing it on slices of the points and joining the results gives the same
@@ -20,7 +20,7 @@ rank32.gluing は変えない。ここでは同じ計算を、メモリの大き
 
 メモリを食っていたのは Glue.__init__ の F 側の鎖（Glue._fixed_chain）である。鎖の各ステージで、全部の
 点 2^s について Node.orbits_of を呼ぶ。位数 <= SMALL のノードは元を全部持っていて、orbits_of は
-(位数 x 点の数 x s) の int64 の配列を一度に作る。組 (15, 17)（s = 15、位数 720）で 2.64 GB、
+(位数 x 点の数 x s) の int64 の配列を一度に作る。第 1 の論文の §4.1 の対合の型 (15, 17) の組（F = sqrt(2) A_15^+、K は階数 17。s = 15、位数 720）で 2.64 GB、
 s = 16 で位数 1024 なら 8.6 GB になる。
 
 orbits_of の値は点ごとに独立に決まる（その点の軌道の最小の点と、軌道の大きさ）。だから点を区切って

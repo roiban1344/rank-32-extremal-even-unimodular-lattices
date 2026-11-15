@@ -6,11 +6,13 @@
 #
 #   docker build -t rank32 code
 #   docker run --rm -v "$PWD":/work:ro -w /work rank32 python -m pytest -q -p no:cacheprovider code/tests
+# (-p no:cacheprovider: the repository is mounted read-only, so pytest cannot write its cache.)
 #
 # プログラムを走らせた環境を、コンテナにしたもの（linux-64）。版を固定した micromamba のイメージの上に、
 # environment.lock.txt のパッケージ（conda-forge、MD5 ダイジェスト付き）をそのまま入れる。README.ja.md の
 # 「必要なもの」を参照。コマンドはリポジトリの一番上で走らせる（linux-64 以外のマシンでは、両方に
-# --platform linux/amd64 を付ける）。
+# --platform linux/amd64 を付ける）。-p no:cacheprovider を付けるのは、リポジトリを読み取り専用でマウントするので
+# pytest がキャッシュを書けないためである。
 FROM mambaorg/micromamba:2.10.0-ubuntu24.04@sha256:c3897a06f87c1c13f038188b3665a8c4162da62eac5109ae6a939d1e290dcefa
 
 # The lock file stays in the image, at /opt/rank32/environment.lock.txt, as the list of what it holds.

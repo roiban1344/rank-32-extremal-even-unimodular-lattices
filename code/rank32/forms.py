@@ -4,8 +4,8 @@ Why the wrapper:
   - The default call searches for the depth of its pruning table automatically, and that is
     where the stack overflows and the memory grows. We pass fl = [1, 0] (depth fixed at 1).
     This only changes the strength of the pruning, never the answer.
-    fl = [0, 0] turns the pruning off and is not used (a lattice of the 16-dimensional
-    genus (8, 1) goes from 0.06 seconds to more than 30 seconds).
+    fl = [0, 0] turns the pruning off and is not used (a lattice of rank 16 in the genus of even
+    2-elementary lattices with s = 8, delta = 1 goes from 0.06 seconds to more than 30 seconds).
   - The search tree depends strongly on the basis (1 second and more than 150 seconds for the
     same lattice). We stop after a short time limit, change the basis at random and retry with
     a longer limit.
@@ -27,7 +27,7 @@ PARI の qfauto / qfisom を、スタック溢れと無応答を避けて呼ぶ�
 包む理由：
   - 既定の呼び方は、枝刈りの表の深さを自動で探す。ここでスタックが溢れ、メモリが膨らむ。
     そこで fl = [1, 0]（深さを 1 に固定）を渡す。変わるのは枝刈りの強さだけで、答えは変わらない。
-    fl = [0, 0] は枝刈りを切るので使わない（16 次元の種 (8, 1) の格子で 0.06 秒が 30 秒超になる）。
+    fl = [0, 0] は枝刈りを切るので使わない（s = 8、delta = 1 の偶 2-初等的な格子の種の、階数 16 の格子で 0.06 秒が 30 秒超になる）。
   - 探索のツリーは基底で桁違いに変わる（同じ格子で 1 秒と 150 秒超）。短い上限で切り、基底を乱択で
     替えて、上限を伸ばしながら再試行する。
   - 基底に長いベクトルが 1 本あると、そのノルムまで全部列挙する。基底を替えるときも、対角の

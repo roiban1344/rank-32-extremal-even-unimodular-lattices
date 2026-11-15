@@ -37,6 +37,8 @@
    docker run --rm -v "$PWD":/work:ro -w /work rank32 python -m pytest -q -p no:cacheprovider code/tests
    ```
 
+`-p no:cacheprovider` を付けるのは、リポジトリを読み取り専用（`:ro`）でマウントするので、pytest がキャッシュを書けないためである。
+
 パッケージは linux-64 用なので、1 の方法は linux-64 のマシンでだけ使える。ほかのマシンでは、`docker build` と `docker run` の両方に `--platform linux/amd64` を付ける。この場合、コンテナはエミュレーションで動くので遅くなる。
 
 環境変数は次のとおりである。
